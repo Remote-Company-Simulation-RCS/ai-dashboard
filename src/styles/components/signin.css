@@ -1,0 +1,15 @@
+.sign-in{
+    background: url(../../assets/icons/SignIn-dark.svg);
+    width: 100vw;
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+.title-signin{
+    font-size: 3.25rem;
+    margin-top: -8rem;
+
+    color: #FFFFFF;
+}
