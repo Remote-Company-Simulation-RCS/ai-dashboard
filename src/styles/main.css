@@ -1,9 +1,15 @@
-/* Fonts */
+/* * Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-/* Variables */
+
+/* * Variables */
+
 @import "./variables.css";
-/* Components */
+
+/* * Components */
+
 @import "./components/signin.css";
+@import "./components/signup.css";
 
 * {
   font-family: "Urbanist" !important;

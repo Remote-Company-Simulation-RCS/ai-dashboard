@@ -90,7 +90,7 @@ function SignIn() {
           Sign In
         </button>
         <p className="text-center text-secondary">
-          Don't have an account?{" "}
+          Don't have an account?
           <a href="#" className="signin-herf text-decoration-none">
             Sign up
           </a>
