@@ -6,7 +6,6 @@ import { AiOutlineUser } from "react-icons/ai";
 import { LuLuggage } from "react-icons/lu";
 import { FaArrowRightLong, FaApple, FaCirclePlay  } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
-import { SiYoutubemusic } from "react-icons/si";
 
 function SignUp() {
   const [email, setEmail] = useState("");
@@ -22,8 +21,8 @@ function SignUp() {
 
   return (
     <div className="sign-up dark d-flex flex-column align-items-center text-center">
-      <img src={Logo} className="img-fluid py-4" alt="icon image" />
-      <h2 className="title-signup text-center mb-5 lh-lg">Create account</h2>
+      <img src={Logo} className="img-fluid py-5" alt="icon image" />
+      <h2 className="title-signup text-center mb-5 ">Create account</h2>
       <p className="desc-signup lead text-white-50">
         Start your 30-day free trial. Cancel anytime.
       </p>
