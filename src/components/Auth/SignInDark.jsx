@@ -23,13 +23,10 @@ function SignIn() {
     console.log("Password:", password);
   };
 
-
   return (
-    <div className="sign-in d-flex flex-column align-items-center text-center">
+    <div className="sign-in dark d-flex flex-column align-items-center text-center">
       <img src={Logo} className="img-fluid py-4" alt="icon image" />
-      <h2 className="title-signin text-center mb-5 lh-lg ">
-        Quickit: Sign In
-      </h2>
+      <h2 className="title-signin text-center mb-5 lh-lg ">Quickit: Sign In</h2>
       <form
         onSubmit={handleSubmit}
         className="d-flex justify-content-evenly align-items-center flex-column w-40 h-25"
@@ -76,17 +73,27 @@ function SignIn() {
               className="form-check-input mt-0"
               type="checkbox"
               value=""
-              checked={ checked }
+              checked={checked}
               onChange={() => setChecked(!checked)}
               aria-label="Checkbox for following text input"
             />
             <p className="m-0 text-white">Remember password</p>
           </div>
-          <a href="#" className="signin-herf text-decoration-none">Restore password</a>
+          <a href="#" className="signin-herf text-decoration-none">
+            Restore password
+          </a>
         </div>
-        <button type="submit" className="btn btn-primary w-100 py-3 rounded-4 mb-3">Sign In</button>
+        <button
+          type="submit"
+          className="btn btn-primary w-100 py-3 rounded-4 mb-3"
+        >
+          Sign In
+        </button>
         <p className="text-center text-secondary">
-          Don't have an account? <a href="#" className="signin-herf text-decoration-none" >Sign up</a>
+          Don't have an account?{" "}
+          <a href="#" className="signin-herf text-decoration-none">
+            Sign up
+          </a>
         </p>
       </form>
     </div>

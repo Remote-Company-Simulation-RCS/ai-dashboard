@@ -1,39 +1,73 @@
-.sign-in {
+.dark {
   background: url(../../assets/icons/SignIn-dark.svg);
+  color: var(--white);
+}
+
+.light {
+  background: url(../../assets/icons/SignIn-light.svg);
+  color: var(--black);
+}
+
+.sign-in {
   width: 100vw;
   height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: var(--white);
 }
-.title-signin {
+
+.dark .title-signin {
   font-size: 3.25rem;
   margin-top: -8rem;
   color: var(--white);
   font-weight: 900;
 }
 
-input{
-    border-radius:  0 15px 15px 0  !important;
-    color: var(--white) !important;
+.light .title-signin {
+  font-size: 3.25rem;
+  margin-top: -8rem;
+  color: var(--black);
+  font-weight: 900;
 }
-input:focus{
-    box-shadow: none !important;
+
+.dark input {
+  border-radius: 0 15px 15px 0 !important;
+  color: var(--white) !important;
+  font-size: larger;
 }
-.input-group-text{
-    border-radius: 15px 0  0 15px !important;
+
+.light input {
+  border-radius: 0 15px 15px 0 !important;
+  color: var(--black) !important;
+  font-size: larger;
 }
-input::placeholder{
+input:focus {
+  box-shadow: none !important;
+}
+
+.dark .input-group-text,
+.light .input-group-text {
+  border-radius: 15px 0 0 15px !important;
+}
+
+.dark input::placeholder {
   color: var(--white) !important;
 }
-.form-check-input{
-    border-radius: 100% !important;
-    padding: 10px;
+
+.light input::placeholder {
+  color: var(--black) !important;
 }
-.signin-herf{
-    transition: all 100ms ease-in-out;
+
+.dark .form-check-input,
+.light .form-check-input {
+  border-radius: 100% !important;
+  padding: 10px;
 }
-.signin-herf:hover{
-    color: var(--white) !important;
+
+.signin-herf {
+  transition: all 100ms ease-in-out;
+}
+
+.dark .signin-herf:hover {
+  color: var(--white) !important;
 }
