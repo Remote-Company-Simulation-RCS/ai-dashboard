@@ -1,9 +1,9 @@
-.dark {
+.dark-signin {
   background: url(../../assets/icons/SignIn-dark.svg);
   color: var(--white);
 }
 
-.light {
+.light-signin {
   background: url(../../assets/icons/SignIn-light.svg);
   color: var(--black);
 }
@@ -13,30 +13,31 @@
   height: 100vh;
   background-size: cover;
   background-position: center;
+  background-attachment: scroll;
   background-repeat: no-repeat;
 }
 
-.dark .title-signin {
+.dark-signin .title-signin {
   font-size: 3.25rem;
   margin-top: -8rem;
   color: var(--white);
   font-weight: 900;
 }
 
-.light .title-signin {
+.light-signin .title-signin {
   font-size: 3.25rem;
   margin-top: -8rem;
   color: var(--black);
   font-weight: 900;
 }
 
-.dark input {
+.dark-signin input {
   border-radius: 0 15px 15px 0 !important;
   color: var(--white) !important;
   font-size: larger;
 }
 
-.light input {
+.light-signin input {
   border-radius: 0 15px 15px 0 !important;
   color: var(--black) !important;
   font-size: larger;
@@ -45,21 +46,21 @@ input:focus {
   box-shadow: none !important;
 }
 
-.dark .input-group-text,
-.light .input-group-text {
+.dark-signin .input-group-text,
+.light-signin .input-group-text {
   border-radius: 15px 0 0 15px !important;
 }
 
-.dark input::placeholder {
+.dark-signin input::placeholder {
   color: var(--white) !important;
 }
 
-.light input::placeholder {
+.light-signin input::placeholder {
   color: var(--black) !important;
 }
 
-.dark .form-check-input,
-.light .form-check-input {
+.dark-signin .form-check-input,
+.light-signin .form-check-input {
   border-radius: 100% !important;
   padding: 10px;
 }
@@ -68,6 +69,6 @@ input:focus {
   transition: all 100ms ease-in-out;
 }
 
-.dark .signin-herf:hover {
+.dark-signin .signin-herf:hover {
   color: var(--white) !important;
 }
