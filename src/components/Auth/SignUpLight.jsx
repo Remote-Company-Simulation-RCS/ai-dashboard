@@ -20,7 +20,7 @@ function SignUp() {
   };
 
   return (
-    <div className="sign-up light d-flex flex-column align-items-center text-center">
+    <div className="sign-up light-signup d-flex flex-column align-items-center text-center">
       <img src={Logo} className="img-fluid py-5" alt="icon image" />
       <h2 className="title-signup text-center mb-5 ">Create account</h2>
       <p className="desc-signup lead text-black-50">

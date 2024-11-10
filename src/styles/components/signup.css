@@ -1,9 +1,9 @@
-.dark {
+.dark-signup {
   background: url(../../assets/icons/SignIn-dark.svg);
   color: var(--white);
 }
 
-.light {
+.light-signup {
   background: url(../../assets/icons/SignIn-light.svg);
   color: var(--black);
 }
@@ -39,7 +39,7 @@ body{
     padding: 16px;
 }
 
-.dark .card {
+.dark-signup .card {
     background-color: var(--card-color-dark);
     border-color: var(--card-color-dark);
     backdrop-filter: blur(15px);
@@ -48,7 +48,7 @@ body{
     border-radius: 15px;
     padding: 15px;
 }
-.light .card {
+.light-signup .card {
   background-color: var(--card-color-light);
   border-color: var(--card-color-light);
   backdrop-filter: blur(15px);
@@ -61,7 +61,7 @@ body{
 .sign-up .apple-icon {
     fill: var(--white);
 }
-.light .apple-icon {
+.light-signup .apple-icon {
   fill: var(--black);
 }
 
@@ -70,7 +70,7 @@ body{
     width: 250px;
 }
 
-.light .card-yt::before {
+.light-signup .card-yt::before {
   content: '';
   position: absolute;
   top: 0;

@@ -24,7 +24,7 @@ function SignIn() {
   };
 
   return (
-    <div className="sign-in light d-flex flex-column align-items-center text-center">
+    <div className="sign-in light-signin d-flex flex-column align-items-center text-center">
       <img src={Logo} className="img-fluid py-4" alt="icon image" />
       <h2 className="title-signin text-center mb-5 lh-lg ">Quickit: Sign In</h2>
       <form
