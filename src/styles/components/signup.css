@@ -7,21 +7,21 @@
   background: url(../../assets/icons/SignIn-light.svg);
   color: var(--black);
 }
-body{
-    overflow-x: hidden !important ;
+body {
+  overflow-x: hidden !important ;
 }
 .sign-up {
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-  }
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
 
 .sign-up input,
 .sign-up span {
-    backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 .sign-up .title-signup {
@@ -36,42 +36,70 @@ body{
 }
 
 .sign-up .next-btn {
-    padding: 16px;
+  padding: 16px;
+}
+.sign-up span {
+  border-radius: 15px 0 0 15px !important;
+  /* color: var(--white) !important; */
+  font-size: larger;
+}
+
+.dark-signup input {
+  border-radius: 0 15px 15px 0 !important;
+  color: var(--white) !important;
+  font-size: larger;
+}
+
+.light-signup input {
+  border-radius: 0 15px 15px 0 !important;
+  color: var(--black) !important;
+  font-size: larger;
+}
+input:focus {
+  box-shadow: none !important;
+}
+
+.dark-signup input::placeholder {
+  color: var(--white) !important;
+}
+
+.light-signup input::placeholder {
+  color: var(--black) !important;
 }
 
 .dark-signup .card {
-    background-color: var(--card-color-dark);
-    border-color: var(--card-color-dark);
-    backdrop-filter: blur(15px);
-    width: 135px;
-    height: 135px;
-    border-radius: 15px;
-    padding: 15px;
+  background-color: var(--card-color-dark);
+  border-color: var(--card-color-dark);
+  backdrop-filter: blur(15px);
+  width: 150px;
+  height: 140px;
+  border-radius: 15px;
+  padding: 15px;
 }
 .light-signup .card {
   background-color: var(--card-color-light);
   border-color: var(--card-color-light);
   backdrop-filter: blur(15px);
-  width: 135px;
-  height: 135px;
+  width: 150px;
+  height: 140px;
   border-radius: 15px;
   padding: 15px;
 }
 
 .sign-up .apple-icon {
-    fill: var(--white);
+  fill: var(--white);
 }
 .light-signup .apple-icon {
   fill: var(--black);
 }
 
 .sign-up .card-yt {
-    background: url(../../assets/images/bg-icon.jpg);
-    width: 250px;
+  background: url(../../assets/images/bg-icon.jpg);
+  width: 250px;
 }
 
 .light-signup .card-yt::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -82,15 +110,15 @@ body{
   border-radius: 15px;
 }
 .sign-up .yt-icon {
-    fill: var(--white);
+  fill: var(--white);
 }
 
 @media screen and (max-width: 767px) {
-    .sign-up {
-        height: auto;
-    }
-    
-    .sign-up .card {
-        width: 250px;
-    }
+  .sign-up {
+    height: auto;
+  }
+
+  .sign-up .card {
+    width: 250px;
+  }
 }
