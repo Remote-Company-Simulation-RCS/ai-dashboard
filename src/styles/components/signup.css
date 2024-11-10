@@ -1,0 +1,71 @@
+.dark {
+  background: url(../../assets/icons/SignIn-dark.svg);
+  color: var(--white);
+}
+
+.light {
+  background: url(../../assets/icons/SignIn-light.svg);
+  color: var(--black);
+}
+
+.sign-up {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+  }
+
+.sign-up input,
+.sign-up span {
+    backdrop-filter: blur(5px);
+}
+
+.sign-up .title-signup {
+  font-size: 3.25rem;
+  margin-top: -8rem;
+  font-weight: 900;
+}
+
+.sign-up .desc-signup {
+  font-size: 1.25rem;
+  margin-top: -3rem;
+}
+
+.sign-up .next-btn {
+    padding: 16px;
+}
+
+.sign-up .card {
+    background-color: var(--card-color);
+    border-color: var(--card-color);
+    backdrop-filter: blur(15px);
+    width: 135px;
+    height: 135px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.sign-up .apple-icon {
+    fill: var(--white);
+}
+
+.sign-up .card-yt {
+    background: url(../../assets/images/bg-icon.jpg);
+    width: 250px;
+}
+
+.sign-up .yt-icon {
+    fill: var(--white);
+}
+
+@media screen and (max-width: 767px) {
+    .sign-up {
+        height: auto;
+    }
+    
+    .sign-up .card {
+        width: 250px;
+    }
+}
