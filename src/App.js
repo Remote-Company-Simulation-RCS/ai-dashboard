@@ -1,11 +1,8 @@
 import "./App.css";
-import SignIn from "./components/Auth/SignIn";
-
+import SignInPage from "./pages/SignInPage.jsx";
 
 function App() {
-  return (
-    <SignIn />
-  )
+  return <SignInPage />;
 }
 
 export default App;
