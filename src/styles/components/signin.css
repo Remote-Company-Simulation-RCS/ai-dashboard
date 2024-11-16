@@ -1,11 +1,60 @@
-.dark-signin {
-  background: url(../../assets/icons/SignIn-dark.svg);
-  color: var(--white);
-}
-
-.light-signin {
+.sign-in {
   background: url(../../assets/icons/SignIn-light.svg);
   color: var(--black);
+}
+
+input::placeholder {
+  color: var(--black) !important;
+}
+
+input:focus {
+  color: var(--black) !important;
+}
+
+input {
+  color: var(--black) !important;
+}
+
+.sign-in .card {
+  background-color: var(--card-color-light);
+  border-color: var(--card-color-light);
+  color: var(--black);
+  backdrop-filter: blur(15px);
+  width: 150px;
+  height: 140px;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+
+@media screen and (prefers-color-scheme: dark) {
+  .sign-in {
+    background: url(../../assets/icons/SignIn-dark.svg);
+    color: var(--white);
+  }
+
+  input {
+    color: var(--white) !important;
+  }
+
+  input::placeholder {
+    color: var(--white) !important;
+  }
+
+  input:focus {
+    color: var(--white) !important;
+  }
+
+  .sign-in .card {
+    background-color: var(--card-color-dark);
+    border-color: var(--card-color-dark);
+    color: var(--white);
+    backdrop-filter: blur(15px);
+    width: 150px;
+    height: 140px;
+    border-radius: 15px;
+    padding: 15px;
+  }
 }
 
 .sign-in {
