@@ -1,21 +1,95 @@
-import React, { useState, useEffect } from "react";
-import SignInDark from "../components/Auth/SignInDark.jsx";
-import SignInLight from "../components/Auth/SignInLight.jsx";
+import React, { useState } from "react";
+import "../styles/main.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Logo from "../assets/icons/logo.svg";
+import { AiOutlineUser, AiOutlineUnlock } from "react-icons/ai";
+import Input from "../components/Input.jsx";
+import Button from "../components/Button.jsx";
 
-function SignInComponent() {
-  const [isDarkMode, setIsDarkMode] = useState(
-    window.matchMedia("(prefers-color-scheme: dark)").matches
+function SignUpPage() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [checked, setChecked] = useState(true);
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Email:", email);
+    console.log("Password:", password);
+  };
+
+  const handleChecked = () => {
+    setChecked(!checked);
+  };
+
+  return (
+    <div className="sign-in dark-signin d-flex flex-column align-items-center text-center">
+      <img src={Logo} className="img-fluid py-4" alt="icon image" />
+      <h2 className="title-signin text-center mb-5 lh-lg ">Quickit: Sign In</h2>
+      <form
+        onSubmit={handleSubmit}
+        className="d-flex justify-content-evenly align-items-center flex-column w-40 h-25"
+      >
+        <Input
+          type="email"
+          value={email}
+          onChange={handleEmailChange}
+          placeholder="Email"
+          ariaLabel="email"
+          icon={<AiOutlineUser />}
+          className="input-group mb-3 border-3"
+          spanClassName="input-group-text border-secondary-subtle bg-white border-end-0"
+          inputClassName="form-control bg-white border-start-0 p-3 border-secondary-subtle"
+        />
+        <Input
+          type="password"
+          value={password}
+          onChange={handlePasswordChange}
+          placeholder="Password"
+          ariaLabel="password"
+          icon={<AiOutlineUnlock />}
+          className="input-group mb-3 border-3"
+          spanClassName="input-group-text border-secondary-subtle bg-white border-end-0"
+          inputClassName="form-control bg-white border-start-0 p-3 border-secondary-subtle"
+        />
+        <div className="input-group bg-transparent mb-3 d-flex justify-content-between gap-3 w-100 h-50 d-flex align-items-center">
+          <div className="input-group-text bg-transparent border-0 p-3 gap-3 ">
+            <Input
+              type="checkbox"
+              checked={checked}
+              value=""
+              onChange={handleChecked}
+              ariaLabel="Checkbox for following text input"
+              inputClassName="form-check-input mt-0"
+            />
+            <p className="m-0 text-secondary">Remember password</p>
+          </div>
+          <a href="#" className="signin-herf text-decoration-none">
+            Restore password
+          </a>
+        </div>
+        <Button
+          type="submit"
+          className="btn btn-primary w-100 py-3 rounded-4 mb-3"
+          onClick={handleChecked}
+          children="Sign in"
+        />
+        <p className="text-center">
+          Don't have an account?
+          <a href="#" className="signin-href text-decoration-none">
+            Sign up
+          </a>
+        </p>
+      </form>
+    </div>
   );
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-    const handleChange = (e) => setIsDarkMode(e.matches);
-
-    mediaQuery.addEventListener("change", handleChange);
-    return () => mediaQuery.removeEventListener("change", handleChange);
-  }, []);
-
-  return isDarkMode ? <SignInDark /> : <SignInLight />;
 }
 
-export default SignInComponent;
+export default SignUpPage;
