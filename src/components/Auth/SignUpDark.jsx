@@ -8,6 +8,7 @@ import { FaArrowRightLong, FaApple, FaCirclePlay } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
 import Button from "../Button.jsx";
 import SignUpCards from "../SignUpCards";
+import bgImage from "../../assets/images/bg-icon.jpg";
 
 function SignUp() {
   const [email, setEmail] = useState("");
@@ -83,16 +84,22 @@ function SignUp() {
           icon={<FcGoogle className="display-6" />}
           action="Sign Up"
           app="with Google"
+          width={150}
+          bgImage=""
         />
         <SignUpCards
           icon={<FaApple className="display-6" />}
           action="Sign Up"
           app="with Apple"
+          width={150}
+          bgImage=""
         />
         <SignUpCards
           icon={<FaCirclePlay className="display-6" />}
           action="Watch how Quickit"
           app="can solve your problems"
+          width={250}
+          bgImage={bgImage}
         />
       </div>
     </div>
