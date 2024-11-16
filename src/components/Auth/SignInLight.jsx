@@ -3,6 +3,7 @@ import "../../styles/main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../../assets/icons/logo.svg";
 import { AiOutlineUser, AiOutlineUnlock } from "react-icons/ai";
+import Input from "../Input.jsx";
 
 function SignIn() {
   const [email, setEmail] = useState("");
@@ -23,6 +24,10 @@ function SignIn() {
     console.log("Password:", password);
   };
 
+  const handleChecked = () => {
+    setChecked(!checked);
+  };
+
   return (
     <div className="sign-in light-signin d-flex flex-column align-items-center text-center">
       <img src={Logo} className="img-fluid py-4" alt="icon image" />
@@ -31,51 +36,37 @@ function SignIn() {
         onSubmit={handleSubmit}
         className="d-flex justify-content-evenly align-items-center flex-column w-40 h-25"
       >
-        <div className="input-group mb-3 border-3 ">
-          <span
-            className="input-group-text  text-secondary border-secondary-subtle bg-white border-end-0"
-            id="basic-addon1"
-          >
-            <AiOutlineUser className=" text-secondary" />
-          </span>
-          <input
-            type="email"
-            value={email}
-            className="form-control bg-white border-start-0 p-3 border-secondary-subtle"
-            onChange={handleEmailChange}
-            placeholder="Email"
-            required
-            aria-label="email"
-            aria-describedby="basic-addon1"
-          />
-        </div>
-        <div className="input-group mb-3 border-3 border-secondary">
-          <span
-            className="input-group-text text-secondary border-secondary-subtle bg-white border-end-0  "
-            id="basic-addon1"
-          >
-            <AiOutlineUnlock />
-          </span>
-          <input
-            type="password"
-            value={password}
-            onChange={handlePasswordChange}
-            placeholder="Password"
-            required
-            className="form-control bg-white border-start-0 border-secondary-subtle p-3"
-            aria-label="password"
-            aria-describedby="basic-addon1"
-          />
-        </div>
+        <Input
+          type="email"
+          value={email}
+          onChange={handleEmailChange}
+          placeholder="Email"
+          ariaLabel="email"
+          icon={<AiOutlineUser />}
+          className="input-group mb-3 border-3"
+          spanClassName="input-group-text text-secondary border-secondary-subtle bg-white border-end-0"
+          inputClassName="form-control bg-white border-start-0 p-3 border-secondary-subtle"
+        />
+        <Input
+          type="password"
+          value={password}
+          onChange={handlePasswordChange}
+          placeholder="Password"
+          ariaLabel="password"
+          icon={<AiOutlineUnlock />}
+          className="input-group mb-3 border-3"
+          spanClassName="input-group-text text-secondary border-secondary-subtle bg-white border-end-0"
+          inputClassName="form-control bg-white border-start-0 p-3 border-secondary-subtle"
+        />
         <div className="input-group bg-transparent mb-3 d-flex justify-content-between gap-3 w-100 h-50 d-flex align-items-center">
-          <div class="input-group-text bg-transparent border-0 p-3 gap-3 ">
-            <input
-              className="form-check-input mt-0"
+          <div className="input-group-text bg-transparent border-0 p-3 gap-3 ">
+            <Input
               type="checkbox"
-              value=""
               checked={checked}
-              onChange={() => setChecked(!checked)}
-              aria-label="Checkbox for following text input"
+              value=""
+              onChange={handleChecked}
+              ariaLabel="Checkbox for following text input"
+              inputClassName="form-check-input mt-0"
             />
             <p className="m-0 text-secondary">Remember password</p>
           </div>
