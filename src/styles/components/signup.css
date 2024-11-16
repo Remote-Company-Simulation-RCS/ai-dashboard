@@ -106,9 +106,19 @@ body {
 @media screen and (max-width: 767px) {
   .sign-up {
     height: auto;
+    padding-bottom: 20px;
   }
-
   .sign-up .card {
-    width: 250px;
+    width: 250px !important;
+  }
+  .sign-up .title-signup {
+    font-size: 2.25rem;
+    margin-top: -8rem;
+    font-weight: 900;
+  }
+  
+  .sign-up .desc-signup {
+    font-size: 0.9rem;
+    margin-top: -3rem;
   }
 }

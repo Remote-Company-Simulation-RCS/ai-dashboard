@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../assets/icons/logo.svg";
 import { AiOutlineUser, AiOutlineUnlock } from "react-icons/ai";
 import Input from "../components/Input.jsx";
-import Button from "../components/Button.jsx";
+import Buttons from "../components/Button.jsx";
 
 function SignUpPage() {
   const [email, setEmail] = useState("");
@@ -43,10 +43,10 @@ function SignUpPage() {
           onChange={handleEmailChange}
           placeholder="Email"
           ariaLabel="email"
-          icon={<AiOutlineUser />}
+          icon={<AiOutlineUser className="text-secondary" />}
           className="input-group mb-3 border-3"
-          spanClassName="input-group-text border-secondary-subtle bg-white border-end-0"
-          inputClassName="form-control bg-white border-start-0 p-3 border-secondary-subtle"
+          spanClassName="input-group-text bg-transparent border-secondary  border-end-0"
+          inputClassName="form-control bg-transparent border-start-0 p-3 border-secondary"
         />
         <Input
           type="password"
@@ -54,13 +54,13 @@ function SignUpPage() {
           onChange={handlePasswordChange}
           placeholder="Password"
           ariaLabel="password"
-          icon={<AiOutlineUnlock />}
+          icon={<AiOutlineUnlock className="text-secondary" />}
           className="input-group mb-3 border-3"
-          spanClassName="input-group-text border-secondary-subtle bg-white border-end-0"
-          inputClassName="form-control bg-white border-start-0 p-3 border-secondary-subtle"
+          spanClassName="input-group-text bg-transparent border-secondary  border-end-0"
+          inputClassName="form-control bg-transparent border-start-0 p-3 border-secondary"
         />
-        <div className="input-group bg-transparent mb-3 d-flex justify-content-between gap-3 w-100 h-50 d-flex align-items-center">
-          <div className="input-group-text bg-transparent border-0 p-3 gap-3 ">
+        <div className="input-group bg-transparent mb-3 d-flex justify-content-center justify-content-md-beetween gap-2 w-100 h-50 align-items-center">
+          <div className="input-group-text bg-transparent border-0 p-3 gap-2 ">
             <Input
               type="checkbox"
               checked={checked}
@@ -71,11 +71,11 @@ function SignUpPage() {
             />
             <p className="m-0 text-secondary">Remember password</p>
           </div>
-          <a href="#" className="signin-herf text-decoration-none">
+          <a href="#" className="text-decoration-none">
             Restore password
           </a>
         </div>
-        <Button
+        <Buttons
           type="submit"
           className="btn btn-primary w-100 py-3 rounded-4 mb-3"
           onClick={handleChecked}
@@ -83,7 +83,7 @@ function SignUpPage() {
         />
         <p className="text-center">
           Don't have an account?
-          <a href="#" className="signin-href text-decoration-none">
+          <a href="#" className="text-decoration-none">
             Sign up
           </a>
         </p>
