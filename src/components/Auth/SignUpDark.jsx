@@ -4,8 +4,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../../assets/icons/logo.svg";
 import { AiOutlineUser } from "react-icons/ai";
 import { LuLuggage } from "react-icons/lu";
-import { FaArrowRightLong, FaApple, FaCirclePlay  } from "react-icons/fa6";
+import { FaArrowRightLong, FaApple, FaCirclePlay } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
+import SignUpCards from "../SignUpCards";
 
 function SignUp() {
   const [email, setEmail] = useState("");
@@ -74,33 +75,21 @@ function SignUp() {
         </a>
       </p>
       <div className="row d-flex justify-content-evenly px-2 px-md-5 flex-column align-items-center flex-md-row gap-3">
-        <div className="col-12 col-lg-4 col-xl-4 card d-flex justify-content-center">
-          <button className="text-start border-0 bg-transparent">
-            <FcGoogle className="display-6" />
-            <p className="text-secondary mb-0 mt-3">
-              Sign up <br />
-              <span className="text-white">with Google</span>
-            </p>
-          </button>
-        </div>
-        <div className="col-12 col-lg-4 col-xl-4 card d-flex justify-content-center">
-          <button className="text-start border-0 bg-transparent">
-            <FaApple className="display-6 apple-icon" />
-            <p className="text-secondary mb-0 mt-3">
-              Sign up <br />
-              <span className="text-white">with Apple ID</span>
-            </p>
-          </button>
-        </div>
-        <div className="col-12 col-lg-4 col-xl-4 card card-yt d-flex justify-content-center">
-          <button className="text-start border-0 bg-transparent">
-            <FaCirclePlay className="display-6 yt-icon" />
-            <p className="text-white-50 mb-0 mt-3">
-              Watch how Quickit <br />
-              <span className="text-white">can solve your problems</span>
-            </p>
-          </button>
-        </div>
+        <SignUpCards
+          icon={<FcGoogle className="display-6" />}
+          action="Sign Up"
+          app="with Google"
+        />
+        <SignUpCards
+          icon={<FaApple className="display-6" />}
+          action="Sign Up"
+          app="with Apple"
+        />
+        <SignUpCards
+          icon={<FaCirclePlay className="display-6" />}
+          action="Watch how Quickit"
+          app="can solve your problems"
+        />
       </div>
     </div>
   );
