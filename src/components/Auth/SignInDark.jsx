@@ -3,6 +3,8 @@ import "../../styles/main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../../assets/icons/logo.svg";
 import { AiOutlineUser, AiOutlineUnlock } from "react-icons/ai";
+// import Input from "../Input.jsx";
+import Button from "../Button.jsx";
 
 function SignIn() {
   const [email, setEmail] = useState("");
@@ -68,7 +70,7 @@ function SignIn() {
           />
         </div>
         <div className="input-group bg-transparent mb-3 d-flex justify-content-between gap-3 w-100 h-50 d-flex align-items-center">
-          <div class="input-group-text bg-transparent border-0 p-3 gap-3 ">
+          <div className="input-group-text bg-transparent border-0 p-3 gap-3 ">
             <input
               className="form-check-input mt-0"
               type="checkbox"
@@ -83,12 +85,13 @@ function SignIn() {
             Restore password
           </a>
         </div>
-        <button
+        <Button
           type="submit"
           className="btn btn-primary w-100 py-3 rounded-4 mb-3"
-        >
-          Sign In
-        </button>
+          children="Sign In"
+          onClick={handleSubmit}
+        />
+
         <p className="text-center text-secondary">
           Don't have an account?{" "}
           <a href="#" className="signin-herf text-decoration-none">

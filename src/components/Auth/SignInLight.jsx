@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../../assets/icons/logo.svg";
 import { AiOutlineUser, AiOutlineUnlock } from "react-icons/ai";
 import Input from "../Input.jsx";
+import Button from "../Button.jsx";
 
 function SignIn() {
   const [email, setEmail] = useState("");
@@ -36,8 +37,7 @@ function SignIn() {
         onSubmit={handleSubmit}
         className="d-flex justify-content-evenly align-items-center flex-column w-40 h-25"
       >
-        <Input
-          type="email"
+        <Input  type="email"
           value={email}
           onChange={handleEmailChange}
           placeholder="Email"
@@ -47,8 +47,7 @@ function SignIn() {
           spanClassName="input-group-text text-secondary border-secondary-subtle bg-white border-end-0"
           inputClassName="form-control bg-white border-start-0 p-3 border-secondary-subtle"
         />
-        <Input
-          type="password"
+        <Input  type="password"
           value={password}
           onChange={handlePasswordChange}
           placeholder="Password"
@@ -60,8 +59,7 @@ function SignIn() {
         />
         <div className="input-group bg-transparent mb-3 d-flex justify-content-between gap-3 w-100 h-50 d-flex align-items-center">
           <div className="input-group-text bg-transparent border-0 p-3 gap-3 ">
-            <Input
-              type="checkbox"
+            <Input  type="checkbox"
               checked={checked}
               value=""
               onChange={handleChecked}
@@ -74,12 +72,8 @@ function SignIn() {
             Restore password
           </a>
         </div>
-        <button
-          type="submit"
-          className="btn btn-primary w-100 py-3 rounded-4 mb-3"
-        >
-          Sign In
-        </button>
+        <Button type="submit" className="btn btn-primary w-100 py-3 rounded-4 mb-3" onClick={handleChecked} />
+
         <p className="text-center text-secondary">
           Don't have an account?
           <a href="#" className="signin-herf text-decoration-none">

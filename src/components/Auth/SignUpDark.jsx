@@ -6,6 +6,7 @@ import { AiOutlineUser } from "react-icons/ai";
 import { LuLuggage } from "react-icons/lu";
 import { FaArrowRightLong, FaApple, FaCirclePlay } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
+import Button from "../Button.jsx";
 import SignUpCards from "../SignUpCards";
 
 function SignUp() {
@@ -18,6 +19,11 @@ function SignUp() {
 
   const handleCompanyChange = (e) => {
     setCompany(e.target.value);
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Email:", email);
+    console.log("Company:", company);
   };
 
   return (
@@ -64,9 +70,7 @@ function SignUp() {
             aria-describedby="basic-addon1"
           />
         </div>
-        <button className="btn btn-primary rounded-circle next-btn d-flex justify-content-center mx-auto">
-          <FaArrowRightLong className="text-white fs-4" />
-        </button>
+        <Button type="submit" className="btn btn-primary rounded-circle next-btn d-flex justify-content-center mx-auto" onClick={handleSubmit} children={<FaArrowRightLong className="text-white fs-4"/>} />
       </form>
       <p className="text-center text-secondary">
         Have an account?
