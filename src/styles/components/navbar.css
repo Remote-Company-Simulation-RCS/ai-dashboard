@@ -1,7 +1,3 @@
-body {
-  background: var(--bg-light-color);
-}
-
 .navbar {
   height: 100px;
 }
@@ -58,8 +54,6 @@ img {
 }
 
 body[data-theme="dark-mode"] {
-  background: var(--bg-body-gradient);
-
   .logo-name {
     border: 1px solid var(--border-dark);
   }

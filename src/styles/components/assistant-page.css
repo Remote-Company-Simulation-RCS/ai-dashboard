@@ -1,0 +1,7 @@
+body {
+  background: var(--bg-light-color);
+}
+
+body[data-theme="dark-mode"] {
+  background: var(--bg-body-gradient);
+}
