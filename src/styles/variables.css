@@ -3,5 +3,7 @@
     --black: #000000;
     --card-color-dark: rgb(48, 51, 64, .5);
     --card-color-light: rgba(255, 255, 255, 0.5);
-    /* --gray: #b4b4b4b4 ; */
+    --bg-dark-color: #2a2b30;
+    --bg-secondary-color: #3f4045;
+    --bg-light-color:#f4f4f4;
 }

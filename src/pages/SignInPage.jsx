@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../assets/icons/logo.svg";
 import { AiOutlineUser, AiOutlineUnlock } from "react-icons/ai";
 import Input from "../components/Input.jsx";
-import Buttons from "../components/Button.jsx";
+import Button from "../components/Button.jsx";
 
 function SignUpPage() {
   const [email, setEmail] = useState("");
@@ -75,7 +75,7 @@ function SignUpPage() {
             Restore password
           </a>
         </div>
-        <Buttons
+        <Button
           type="submit"
           className="btn btn-primary w-100 py-3 rounded-4 mb-3"
           onClick={handleChecked}
