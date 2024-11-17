@@ -12,9 +12,9 @@
 @import "./components/signup.css";
 @import "./components/chat.css";
 @import "./components/sidebarchat.css";
-
-
-
+@import "./components/feedback-chat.css";
+@import "./components/achievements.css";
+@import "./components/assistant-page.css";
 @import "./components/navbar.css";
 
 * {
