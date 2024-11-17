@@ -25,7 +25,7 @@ img {
   height: 90%;
   white-space: nowrap;
 }
-.active{
+.active {
   background-color: var(--nav-links-bg-hover);
   color: var(--white) !important;
   cursor: pointer;
@@ -57,10 +57,8 @@ img {
   cursor: pointer;
 }
 
-@media screen and (prefers-color-scheme: dark) {
-  body {
-    background: var(--bg-body-gradient);
-  }
+body[data-theme="dark-mode"] {
+  background: var(--bg-body-gradient);
 
   .logo-name {
     border: 1px solid var(--border-dark);
@@ -73,12 +71,11 @@ img {
   .navbar .nav-links {
     background-color: var(--bg-dark-nav);
   }
-  .active{
-    background-color:var(--bg-dark-nav-hover);
-
+  .active {
+    background-color: var(--bg-dark-nav-hover);
   }
-  .nav-links a:hover{
-    background-color:var(--bg-dark-nav-hover);
+  .nav-links a:hover {
+    background-color: var(--bg-dark-nav-hover);
   }
 
   .nav-links a {

@@ -8,40 +8,43 @@ function Toggle() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    // Retrieve theme preference from localStorage
     const storedTheme = localStorage.getItem("preferredColorScheme");
-    if (storedTheme === "dark-mode") {
-      setIsDarkMode(true);
-      document.body.classList.add("dark-mode");
-      document.body.classList.remove("light-mode");
+
+    const applyTheme = (theme) => {
+      setIsDarkMode(theme === "dark-mode");
+      document.body.dataset.theme = theme;
+    };
+
+    if (storedTheme) {
+      applyTheme(storedTheme);
     } else {
-      setIsDarkMode(false);
-      document.body.classList.add("light-mode");
-      document.body.classList.remove("dark-mode");
+      const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+      applyTheme(prefersDarkScheme.matches ? "dark-mode" : "light-mode");
+
+      const themeChangeListener = (e) => {
+        applyTheme(e.matches ? "dark-mode" : "light-mode");
+      };
+
+      prefersDarkScheme.addEventListener("change", themeChangeListener);
+      return () => {
+        prefersDarkScheme.removeEventListener("change", themeChangeListener);
+      };
     }
   }, []);
 
   const toggleTheme = () => {
     const newTheme = !isDarkMode ? "dark-mode" : "light-mode";
     setIsDarkMode(!isDarkMode);
-
-    // Update body class
-    document.body.classList.add(newTheme);
-    document.body.classList.remove(isDarkMode ? "dark-mode" : "light-mode");
-
-    // Save the preference to localStorage
+    document.body.dataset.theme = newTheme;
     localStorage.setItem("preferredColorScheme", newTheme);
   };
 
   return (
-    <div
-      className="toggle position-relative d-flex align-items-center justify-content-between rounded-5"
-      onClick={toggleTheme}
-    >
+    <div className="toggle position-relative d-flex align-items-center justify-content-between rounded-5">
       {isDarkMode ? (
-        <IoSunnyOutline className="text-white tIcon" />
+        <IoSunnyOutline className="text-white tIcon" onClick={toggleTheme} />
       ) : (
-        <FaMoon className="tIcon" />
+        <FaMoon className="tIcon" onClick={toggleTheme} />
       )}
       <img src={Pfp} alt="Profile Photo" className="pfp" />
     </div>
