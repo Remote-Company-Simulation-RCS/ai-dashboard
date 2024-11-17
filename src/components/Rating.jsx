@@ -34,7 +34,7 @@ const Rating = ({ maxStars = 5 }) => {
       </div>
       <Button
         type="submit"
-        className="button py-3 rounded-5 border-0 bg-primary text-white"
+        className="button py-3 rounded-5 border-0 bg-primary"
       >
         <IoIosCheckmarkCircleOutline className="mx-1 mb-1 fs-5" />
         Finish & start new chat
