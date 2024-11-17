@@ -12,28 +12,28 @@ input:focus {
 }
 input {
   color: var(--black) !important;
-  border-radius:  30px 0 0 30px  !important;
+  border-radius: 30px 0 0 30px !important;
   font-size: larger;
   backdrop-filter: blur(5px);
 }
 .chat span {
-  border-radius:  0 30px 30px 0  !important;
+  border-radius: 0 30px 30px 0 !important;
   font-size: larger;
 }
 .chat .form-check-input {
   border-radius: 100% !important;
   padding: 10px;
 }
-.chat .btn-buttons{
-    color: var(--black) !important;
+.chat .btn-buttons {
+  color: var(--black) !important;
 }
-.absolute{
+.absolute {
   z-index: 1 !important;
   position: absolute !important;
   bottom: 45px !important;
 }
 
-@media screen and (prefers-color-scheme: dark) {
+body[data-theme="dark-mode"] {
   .chat {
     width: 60% !important;
     height: 80vh !important;
@@ -48,19 +48,19 @@ input {
   }
   input {
     color: var(--black) !important;
-    border-radius:  30px 0 0 30px  !important;
+    border-radius: 30px 0 0 30px !important;
     font-size: larger;
     backdrop-filter: blur(5px);
   }
   .chat span {
-    border-radius:  0 30px 30px 0  !important;
+    border-radius: 0 30px 30px 0 !important;
     font-size: larger;
   }
   .chat .form-check-input {
     border-radius: 100% !important;
     padding: 10px;
   }
-  .chat .btn-buttons{
+  .chat .btn-buttons {
     color: var(--white) !important;
-}
+  }
 }
