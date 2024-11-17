@@ -3,5 +3,12 @@
     --black: #000000;
     --card-color-dark: rgb(48, 51, 64, .5);
     --card-color-light: rgba(255, 255, 255, 0.5);
-    /* --gray: #b4b4b4b4 ; */
+
+
+
+    --bg-light-nav:#d8d8d8;
+    --nav-links-bg-hover:#141721;
+    --toggle-border-light:#a7a7a7;
+    --border-dark:#3c3c3c;
+
 }
