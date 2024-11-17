@@ -10,6 +10,9 @@
 
 @import "./components/signin.css";
 @import "./components/signup.css";
+@import "./components/chat.css";
+@import "./components/sidebarchat.css";
+
 
 
 @import "./components/navbar.css";

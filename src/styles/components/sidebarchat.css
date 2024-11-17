@@ -1,0 +1,61 @@
+.sidebar-chat {
+  width: 20% !important;
+  height: 80vh !important;
+  background-color: var(--white);
+}
+.sidebar-chat .buttons {
+  background: url(../../assets/images/bg-icon.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  color: var(--white);
+  &:hover {
+    color: var(--white);
+  }
+}
+.sidebar-chat .buttons p {
+  font-size: 15px;
+}
+.sidebar-chat .buttons span {
+  font-size: 12px;
+  color: var(--white);
+}
+.sidebar-chat .list-item {
+  color: var(--black) !important;
+}
+.sidebar-chat .btn-buttons {
+  color: var(--black) !important;
+  background-color: var(--bg-light-color) !important;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  .sidebar-chat {
+    background-color: var(--bg-dark-color);
+  }
+  .sidebar-chat .buttons {
+    background: url(../../assets/images/bg-icon.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    color: var(--white);
+    &:hover {
+      color: var(--white);
+    }
+  }
+  .sidebar-chat .buttons p {
+    font-size: 15px;
+  }
+  .sidebar-chat .buttons span {
+    font-size: 12px;
+    color: var(--white);
+  }
+  .sidebar-chat .list-item {
+    color: var(--white) !important;
+  }
+  .sidebar-chat .btn-buttons {
+    color: var(--white) !important;
+    background-color: var(--bg-secondary-color) !important;
+  }
+}

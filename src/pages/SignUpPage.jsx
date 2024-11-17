@@ -6,7 +6,7 @@ import { AiOutlineUser } from "react-icons/ai";
 import { LuLuggage } from "react-icons/lu";
 import { FaArrowRightLong, FaApple, FaCirclePlay } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
-import Buttons from "../components/Button.jsx";
+import Button from "../components/Button.jsx";
 import SignUpCards from "../components/SignUpCards.jsx";
 import bgImage from "../assets/images/bg-icon.jpg";
 import Input from "../components/Input.jsx";
@@ -58,7 +58,7 @@ function SignUpPage() {
           spanClassName="input-group-text border-secondary bg-transparent border-end-0"
           inputClassName="form-control bg-transparent border-start-0 p-3 border-secondary"
         />
-        <Buttons
+        <Button
           type="submit"
           className="btn btn-primary rounded-circle next-btn d-flex justify-content-center mx-auto"
           onClick={handleSubmit}
