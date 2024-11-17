@@ -1,0 +1,10 @@
+
+body{
+    margin: 50px;
+    background-color: rgb(19, 0, 65);
+}
+
+img{
+    width: 25px;
+    transform: rotate(20deg);
+}
