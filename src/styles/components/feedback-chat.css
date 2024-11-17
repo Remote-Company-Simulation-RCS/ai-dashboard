@@ -13,9 +13,9 @@
   font-size: 12px;
   color: var(--blue);
 }
-.feedback p{
+.feedback p {
   color: var(--black);
-    font-size: 13px;
+  font-size: 12px;
 }
 
 body[data-theme="dark-mode"] {
@@ -34,8 +34,8 @@ body[data-theme="dark-mode"] {
     font-size: 12px;
     color: var(--blue);
   }
-  .feedback p{
+  .feedback p {
     color: var(--white);
-      font-size: 13px;
+    font-size: 13px;
   }
 }
