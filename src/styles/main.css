@@ -16,6 +16,7 @@
 @import "./components/achievements.css";
 @import "./components/assistant-page.css";
 @import "./components/navbar.css";
+@import "./components/rating.css";
 
 * {
   font-family: "Urbanist" !important;
