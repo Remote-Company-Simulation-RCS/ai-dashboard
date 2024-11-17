@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/icons/logoNoBg.png";
 import Toggle from "./Toggle";
-import style from "../styles/components/navbar.css";
+import "../styles/components/navbar.css";
 
 function Navbar() {
   return (

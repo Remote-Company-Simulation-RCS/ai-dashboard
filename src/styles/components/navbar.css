@@ -25,7 +25,11 @@ img {
   height: 90%;
   white-space: nowrap;
 }
-
+.active{
+  background-color: var(--nav-links-bg-hover);
+  color: var(--white) !important;
+  cursor: pointer;
+}
 .nav-links a:hover {
   background-color: var(--nav-links-bg-hover);
   color: var(--white);
@@ -55,7 +59,7 @@ img {
 
 @media screen and (prefers-color-scheme: dark) {
   body {
-    background: linear-gradient(to right, #1f2025, #212b47);
+    background: var(--bg-body-gradient);
   }
 
   .logo-name {
@@ -67,15 +71,18 @@ img {
   }
 
   .navbar .nav-links {
-    background-color: #2a2d36;
+    background-color: var(--bg-dark-nav);
   }
+  .active{
+    background-color:var(--bg-dark-nav-hover);
 
-  .nav-links a:hover {
-    background-color: #55575e;
+  }
+  .nav-links a:hover{
+    background-color:var(--bg-dark-nav-hover);
   }
 
   .nav-links a {
-    color: white;
+    color: var(--white);
   }
 
   .toggle {

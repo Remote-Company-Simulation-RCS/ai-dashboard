@@ -8,7 +8,11 @@ import Chat from "./components/Chat.jsx";
 function App() {
   return (
     < >
-    
+    <Navbar />
+    <div className="d-flex">
+      <SidebarChat />
+      <Chat />
+    </div>
     </>
   );
 }
