@@ -1,10 +1,91 @@
-
-body{
-    margin: 50px;
-    background-color: rgb(19, 0, 65);
+body {
+  background: var(--bg-light-color);
 }
 
-img{
-    width: 25px;
-    transform: rotate(20deg);
+.navbar {
+  height: 100px;
+}
+
+img {
+  width: 25px;
+  transform: rotate(20deg);
+}
+
+.logo-name h3 {
+  color: var(--black);
+}
+
+.navbar .nav-links {
+  width: 550px;
+  height: 70px;
+  background-color: var(--bg-light-nav);
+}
+
+.nav-links a {
+  height: 90%;
+  white-space: nowrap;
+}
+.active{
+  background-color: var(--nav-links-bg-hover);
+  color: var(--white) !important;
+  cursor: pointer;
+}
+.nav-links a:hover {
+  background-color: var(--nav-links-bg-hover);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.nav-links a {
+  color: var(--black);
+}
+
+.toggle {
+  width: 120px;
+  height: 50px;
+  padding: 0 20px;
+  border: 1px solid var(--toggle-border-light);
+}
+
+.toggle .tIcon,
+.toggle img {
+  transform: scale(1.5);
+}
+
+.toggle .tIcon:hover,
+.toggle img:hover {
+  cursor: pointer;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background: var(--bg-body-gradient);
+  }
+
+  .logo-name {
+    border: 1px solid var(--border-dark);
+  }
+
+  .logo-name h3 {
+    color: var(--white);
+  }
+
+  .navbar .nav-links {
+    background-color: var(--bg-dark-nav);
+  }
+  .active{
+    background-color:var(--bg-dark-nav-hover);
+
+  }
+  .nav-links a:hover{
+    background-color:var(--bg-dark-nav-hover);
+  }
+
+  .nav-links a {
+    color: var(--white);
+  }
+
+  .toggle {
+    border: 1px solid var(--border-dark);
+  }
 }

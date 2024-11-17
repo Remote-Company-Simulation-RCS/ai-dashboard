@@ -1,9 +1,16 @@
-:root{
-    --white: #FFFFFF ;
-    --black: #000000;
-    --card-color-dark: rgb(48, 51, 64, .5);
-    --card-color-light: rgba(255, 255, 255, 0.5);
-    --bg-dark-color: #2a2b30;
-    --bg-secondary-color: #3f4045;
-    --bg-light-color:#f4f4f4;
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --card-color-dark: rgb(48, 51, 64, 0.5);
+  --card-color-light: rgba(255, 255, 255, 0.5);
+  --bg-dark-color: #2a2b30;
+  --bg-secondary-color: #3f4045;
+  --bg-light-color: #ebebeb;
+  --bg-light-nav: #d8d8d8;
+  --nav-links-bg-hover: #141721;
+  --toggle-border-light: #a7a7a7;
+  --border-dark: #3c3c3c;
+  --bg-dark-nav: #2a2d36;
+  --bg-dark-nav-hover: #55575e;
+  --bg-body-gradient: linear-gradient(to right, #1f2025, #212b47);
 }

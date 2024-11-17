@@ -26,7 +26,11 @@ input {
 }
 .chat .btn-buttons{
     color: var(--black) !important;
-    background-color: var(--bg-dark-color) !important;
+}
+.absolute{
+  z-index: 1 !important;
+  position: absolute !important;
+  bottom: 45px !important;
 }
 
 @media screen and (prefers-color-scheme: dark) {
