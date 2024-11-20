@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/components/achievements.css';
+import '../styles/main.css';
 
 function Achievemnets() {
     return ( 

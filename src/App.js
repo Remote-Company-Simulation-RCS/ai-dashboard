@@ -1,12 +1,16 @@
 import "./App.css";
+import AssistantPage from "./pages/AssistantPage.jsx";
 import SignInPage from "./pages/SignInPage.jsx";
 import SignUpPage from "./pages/SignUpPage.jsx";
-import AssistantPage from "./pages/AssistantPage.jsx";
+
+
 
 function App() {
   return (
-    <>
-      <AssistantPage />
+    <> 
+
+    <SignUpPage/>
+    <AssistantPage/>
     </>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/components/chat.css";
+import "../styles/main.css";
 import Input from "../components/Input.jsx";
 import Button from "../components/Button.jsx";
 import { BsArrowReturnRight } from "react-icons/bs";

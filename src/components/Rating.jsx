@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Button from "./Button";
+import Button from "./Button.jsx";
 import { RiStarSLine } from "react-icons/ri";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
-import "../styles/main.css";
+import "../styles/components/rating.css";
 
 const Rating = ({ maxStars = 5 }) => {
   const [rating, setRating] = useState(0);
