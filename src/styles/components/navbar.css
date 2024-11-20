@@ -63,10 +63,10 @@ body[data-theme="dark-mode"] {
   }
 
   .navbar .nav-links {
-    background-color: var(--bg-dark-nav);
+    background-color: var(--bg-dark-transparent);
   }
   .active {
-    background-color: var(--bg-dark-nav-hover);
+    background-color: var(--bg-dark-transparent);
   }
   .nav-links a:hover {
     background-color: var(--bg-dark-nav-hover);

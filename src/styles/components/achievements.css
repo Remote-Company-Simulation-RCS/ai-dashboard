@@ -24,6 +24,6 @@ body[data-theme="dark-mode"] {
     font-size: 15px;
   }
   .answers {
-    background-color: var(--bg-secondary-color);
+    background-color: var(--bg-dark-transparent);
   }
 }

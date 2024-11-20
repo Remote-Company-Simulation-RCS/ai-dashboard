@@ -31,7 +31,7 @@
 
 body[data-theme="dark-mode"] {
   .sidebar-chat {
-    background-color: var(--bg-dark-color);
+    background-color: var(--bg-dark-transparent);
   }
   .sidebar-chat .buttons {
     background: url(../../assets/images/bg-icon.jpg);
