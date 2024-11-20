@@ -24,7 +24,7 @@
 
 body[data-theme="dark-mode"] {
   .rating {
-    background-color: var(--bg-secondary-color);
+    background-color: var(--bg-dark-transparent);
     padding: 20px;
     border-radius: 30px;
   }
@@ -39,7 +39,7 @@ body[data-theme="dark-mode"] {
   }
 
   .rating .stars {
-    border:none;
+    border: none;
     margin: 20px 0;
   }
 

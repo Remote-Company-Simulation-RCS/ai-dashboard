@@ -37,7 +37,8 @@ body[data-theme="dark-mode"] {
   .chat {
     width: 60% !important;
     height: 80vh !important;
-    background-color: var(--bg-dark-color);
+    background-color: var(--bg-dark-transparent);
+    backdrop-filter: blur(150px);
   }
   input::placeholder {
     color: var(--white) !important;

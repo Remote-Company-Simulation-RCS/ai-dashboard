@@ -13,5 +13,13 @@
   --border-dark: #3c3c3c;
   --bg-dark-nav: #2a2d36;
   --bg-dark-nav-hover: #55575e;
-  --bg-body-gradient: linear-gradient(to right, #1f2025, #212b47);
+  --bg-dark-transparent: rgba(139, 139, 139, 0.1);
+  --bg-body-gradient: linear-gradient(
+    125deg,
+    rgba(23, 23, 27, 1) 0%,
+    rgba(31, 39, 60, 1) 50%,
+    rgba(31, 43, 76, 1) 61%,
+    rgba(33, 37, 41, 1) 100%
+  );
+  /* linear-gradient(to right, #1f2025, #212b47); */
 }
