@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles/components/signin.css";
 import "../styles/main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../assets/icons/logo.svg";

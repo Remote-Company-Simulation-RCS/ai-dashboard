@@ -1,14 +1,15 @@
 import React from "react";
 import "../styles/components/feedback-chat.css";
-import Button from "../components/Button";
-import Achievements from "../components/Achievements";
-import Rating from "./Rating";
+import "../styles/main.css";
+import Button from "../components/Button.jsx";
+import Achievements from "../components/Achievements.jsx";
+import Rating from "./Rating.jsx";
 import { CiCircleQuestion } from "react-icons/ci";
 
 export default function Feedback() {
   return (
     <>
-      <div className="feedback m-2 mt-4 rounded-5 p-2 d-flex flex-column gap-3">
+      <div className="feedback m-2 mt-4 rounded-5 p-2 d-flex flex-column gap-3  justify-content-between">
         <Button
           type="submit"
           className="btn buttons text-start w-100 py-3 px-4 rounded-pill "

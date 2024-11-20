@@ -1,8 +1,11 @@
+body{
+  height: 100vh !important;
+}
 .sign-up {
   background: url(../../assets/icons/SignIn-light.svg);
   color: var(--black);
-  width: 100vw;
-  height: 100vh;
+  width: 100vw !important;
+  height: 100vh !important;
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
@@ -37,8 +40,8 @@ input {
   .sign-up {
     background: url(../../assets/icons/SignIn-dark.svg);
     color: var(--white);
-    width: 100vw;
-    height: 100vh;
+    width: 100vw !important;
+    height: 100vh !important;
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
