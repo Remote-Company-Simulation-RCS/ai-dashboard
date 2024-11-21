@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../assets/icons/logoNoBg.png";
 import Toggle from "./Toggle";
+import logo from "../assets/icons/logoNoBg.png";
 import "../styles/components/navbar.css";
 
 function Navbar() {
@@ -24,7 +24,7 @@ function Navbar() {
           Subscription
         </a>
       </div>
-      <Toggle/>
+      <Toggle />
     </nav>
   );
 }

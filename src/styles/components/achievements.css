@@ -1,12 +1,15 @@
 .achievements {
   background-color: var(--white);
+  border: 1px solid var(--card-color-light);
 }
-.achievements span {
+.a chievements span {
   font-size: 30px;
 }
+
 .achievements p {
   font-size: 15px;
 }
+
 .answers {
   background-color: var(--bg-light-nav);
 }
@@ -17,12 +20,15 @@ body[data-theme="dark-mode"] {
     background-color: transparent;
     color: var(--white);
   }
+
   .achievements span {
     font-size: 30px;
   }
+
   .achievements p {
     font-size: 15px;
   }
+
   .answers {
     background-color: var(--bg-dark-transparent);
   }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/components/signin.css";
+import "../styles/pages/signIn.css";
 import "../styles/main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../assets/icons/logo.svg";
@@ -33,7 +33,7 @@ function SignUpPage() {
   return (
     <div className="sign-in dark-signin d-flex flex-column align-items-center text-center">
       <img src={Logo} className="img-fluid py-4" alt="icon image" />
-      <h2 className="title-signin text-center mb-5 lh-lg ">Quickit: Sign In</h2>
+      <h2 className="title-signin text-center mb-3 lh-lg ">Quickit: Sign In</h2>
       <form
         onSubmit={handleSubmit}
         className="d-flex justify-content-evenly align-items-center flex-column w-40 h-25"
@@ -68,7 +68,7 @@ function SignUpPage() {
               value=""
               onChange={handleChecked}
               ariaLabel="Checkbox for following text input"
-              inputClassName="form-check-input mt-0"
+              inputClassName="form-check-input mt-1"
             />
             <p className="m-0 text-secondary">Remember password</p>
           </div>
