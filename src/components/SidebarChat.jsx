@@ -1,13 +1,13 @@
 import React from "react";
-import "../styles/components/sidebarchat.css";
 import Button from "../components/Button.jsx";
 import { IoMdStar } from "react-icons/io";
 import { TiTick } from "react-icons/ti";
 import { FaQuestion, FaPlus } from "react-icons/fa";
+import "../styles/components/sidebarChat.css";
 
 export default function SidebarChat() {
   return (
-    <div className="sidebar-chat m-2 mt-4 rounded-5 p-3">
+    <div className="sidebar-chat ms-4 mt-4 rounded-5 p-3">
       <h6 className="fw-bold text-secondary">CURRENT</h6>
       <Button
         type="submit"

@@ -13,19 +13,21 @@
 }
 
 .rating .stars {
-  border: 1px solid var(--toggle-border-light);
   margin: 20px 0;
+  padding: 15px !important;
+  border: 1px solid var(--toggle-border-light);
 }
 
 .rating .button {
-  width: 220px;
+  margin: 0 auto;
+  width: 100%;
   color: var(--white);
 }
 
 body[data-theme="dark-mode"] {
   .rating {
-    background-color: var(--bg-dark-transparent);
     padding: 20px;
+    background-color: var(--bg-dark-transparent);
     border-radius: 30px;
   }
 
@@ -39,12 +41,14 @@ body[data-theme="dark-mode"] {
   }
 
   .rating .stars {
-    border: none;
     margin: 20px 0;
+    padding: 15px !important;
+    border: 1px solid var(--toggle-border-light);
   }
 
   .rating .button {
-    width: 220px;
+    margin: 0 auto;
+    width: 100%;
     color: var(--white);
   }
 }

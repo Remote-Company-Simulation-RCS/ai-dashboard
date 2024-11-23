@@ -1,16 +1,18 @@
 :root {
+  /* USUAL COLORS  */
   --white: #ffffff;
   --black: #000000;
   --blue: #007aff;
+
+  /* CARDS  */
   --card-color-dark: rgb(48, 51, 64, 0.5);
   --card-color-light: rgba(255, 255, 255, 0.5);
+
+  /* BACKGROUNDS  */
   --bg-dark-color: #2a2b30;
   --bg-secondary-color: #3f4045;
   --bg-light-color: #ebebeb;
   --bg-light-nav: #d8d8d8;
-  --nav-links-bg-hover: #141721;
-  --toggle-border-light: #a7a7a7;
-  --border-dark: #3c3c3c;
   --bg-dark-nav: #2a2d36;
   --bg-dark-nav-hover: #55575e;
   --bg-dark-transparent: rgba(139, 139, 139, 0.1);
@@ -21,5 +23,9 @@
     rgba(31, 43, 76, 1) 61%,
     rgba(33, 37, 41, 1) 100%
   );
-  /* linear-gradient(to right, #1f2025, #212b47); */
+
+  /* OTHER CUSTOM COLORS  */
+  --nav-links-bg-hover: #141721;
+  --toggle-border-light: #a7a7a7;
+  --border-dark: #3c3c3c;
 }

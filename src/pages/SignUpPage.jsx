@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "../styles/components/signup.css";
 import "../styles/main.css";
+import "../styles/pages/signUp.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../assets/icons/logo.svg";
 import { AiOutlineUser } from "react-icons/ai";

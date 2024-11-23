@@ -1,59 +1,62 @@
 .sign-in {
+  width: 100vw;
+  height: 100vh;
   background: url(../../assets/icons/SignIn-light.svg);
-  color: var(--black);
-  width: 100vw !important;
-  height: 100vh !important;
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
+  color: var(--black);
 }
+
 .sign-in .title-signin {
-  font-size: 3.25rem;
   margin-top: -8rem;
+  font-size: 3.25rem;
   font-weight: 900;
 }
 
 input::placeholder {
-  color: var(--black) !important;
+  color: var(--black);
 }
 
 input:focus {
-  color: var(--black) !important;
-  box-shadow: none !important;
+  color: var(--black);
+  box-shadow: none;
 }
 
 input {
-  color: var(--black) !important;
-  border-radius: 0 15px 15px 0 !important;
+  color: var(--black);
   font-size: larger;
+  border-radius: 0 15px 15px 0 !important;
   backdrop-filter: blur(5px);
 }
+
 .sign-in span {
-  border-radius: 15px 0 0 15px !important;
   font-size: larger;
+  border-radius: 15px 0 0 15px;
 }
+
 .sign-in .form-check-input {
-  border-radius: 100% !important;
   padding: 10px;
+  border-radius: 100% !important;
 }
 
 @media screen and (prefers-color-scheme: dark) {
   .sign-in {
+    width: 100vw;
+    height: 100vh;
     background: url(../../assets/icons/SignIn-dark.svg);
-    color: var(--white);
-    width: 100vw !important;
-    height: 100vh !important;
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
+    color: var(--white);
   }
 
   input {
     color: var(--white) !important;
-    border-radius: 0 15px 15px 0 !important;
     font-size: larger;
+    border-radius: 0 15px 15px 0 !important;
   }
 
   input::placeholder {
@@ -67,7 +70,7 @@ input {
 }
 
 @media screen and (max-width: 767px) {
-  form{
+  form {
     scale: 0.9;
   }
   .sign-in .title-signin {
@@ -75,8 +78,7 @@ input {
     margin-top: -5rem;
     font-weight: 900;
   }
-  .input-group{
+  .input-group {
     justify-content: center !important;
   }
-
 }

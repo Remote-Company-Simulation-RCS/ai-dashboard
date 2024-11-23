@@ -2,7 +2,7 @@
   height: 15vh !important;
 }
 
-img {
+.quickit-logo {
   width: 25px;
   transform: rotate(20deg);
 }
@@ -43,13 +43,12 @@ img {
   border: 1px solid var(--toggle-border-light);
 }
 
-.toggle .tIcon,
-.toggle img {
+.toggle .tIcon {
   transform: scale(1.5);
 }
 
 .toggle .tIcon:hover,
-.toggle img:hover {
+.toggle .pfp:hover {
   cursor: pointer;
 }
 
