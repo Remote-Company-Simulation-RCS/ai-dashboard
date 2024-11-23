@@ -7,14 +7,17 @@ function Navbar() {
   return (
     <nav className="navbar px-4 d-flex justify-content-between">
       <div className="logo-name d-flex gap-2 align-items-center px-3 py-2 rounded-5">
-        <img src={logo} alt="Quickit Logo" />
+        <img src={logo} alt="Quickit Logo" className="quickit-logo" />
         <h3 className=" fw-bold fst-italic m-0">Quickit</h3>
       </div>
       <div className="nav-links d-flex align-items-center text-white rounded-5">
         <a className="nav-item text-decoration-none d-flex align-items-center px-4 rounded-5">
           Dashboard
         </a>
-        <a className="nav-item active text-decoration-none d-flex align-items-center px-4 rounded-5">
+        <a
+          to="assistant"
+          className="nav-item active text-decoration-none d-flex align-items-center px-4 rounded-5"
+        >
           AI Assistant
         </a>
         <a className="nav-item text-decoration-none d-flex align-items-center px-4 rounded-5">

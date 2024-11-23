@@ -1,15 +1,20 @@
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AssistantPage from "./pages/AssistantPage.jsx";
 import SignUpPage from "./pages/SignUpPage.jsx";
 import SignInPage from "./pages/SignInPage.jsx";
 
 function App() {
   return (
-    <>
-      <AssistantPage />
-      {/* <SignUpPage /> */}
-      {/* <SignInPage /> */}
-    </>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<SignInPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/assistant" element={<AssistantPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

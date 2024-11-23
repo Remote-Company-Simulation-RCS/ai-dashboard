@@ -5,16 +5,16 @@
   color: black !important;
 }
 
-.chat input {
+.chat-input {
   color: black !important;
   border-radius: 30px 0 0 30px !important;
 }
 
-.chat input::placeholder {
+.chat .chat-input::placeholder {
   color: black !important;
 }
 
-input:focus {
+.chat-input:focus {
   color: var(--black) !important;
   box-shadow: none !important;
 }
@@ -47,16 +47,16 @@ body[data-theme="dark-mode"] {
     backdrop-filter: blur(150px);
   }
 
-  input::placeholder {
+  .chat-input::placeholder {
     color: var(--white) !important;
   }
 
-  input:focus {
+  .chat-input:focus {
     color: var(--white) !important;
     box-shadow: none !important;
   }
 
-  input {
+  .chat-input {
     color: var(--black) !important;
     border-radius: 30px 0 0 30px !important;
     backdrop-filter: blur(5px);
