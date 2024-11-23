@@ -1,0 +1,120 @@
+.sign-up {
+  background: url(../../assets/icons/SignIn-light.svg);
+  color: var(--black);
+  width: 100vw !important;
+  height: 100vh !important;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+
+input::placeholder {
+  color: var(--black) !important;
+}
+
+input:focus {
+  color: var(--black) !important;
+  box-shadow: none !important;
+}
+
+input {
+  color: var(--black) !important;
+}
+
+.sign-up .card {
+  background-color: var(--card-color-light);
+  border-color: var(--card-color-light);
+  color: var(--black);
+  backdrop-filter: blur(15px);
+  width: 150px;
+  height: 140px;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  .sign-up {
+    background: url(../../assets/icons/SignIn-dark.svg);
+    color: var(--white);
+    width: 100vw !important;
+    height: 100vh !important;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+  }
+
+  input {
+    color: var(--white) !important;
+  }
+
+  input::placeholder {
+    color: var(--white) !important;
+  }
+
+  input:focus {
+    color: var(--white) !important;
+  }
+
+  .sign-up .card {
+    background-color: var(--card-color-dark);
+    border-color: var(--card-color-dark);
+    color: var(--white);
+    backdrop-filter: blur(15px);
+    width: 150px;
+    height: 140px;
+    border-radius: 15px;
+    padding: 15px;
+  }
+}
+
+.sign-up input,
+.sign-up span {
+  backdrop-filter: blur(5px);
+}
+
+.sign-up .title-signup {
+  font-size: 3.25rem;
+  margin-top: -8rem;
+  font-weight: 900;
+}
+
+.sign-up .desc-signup {
+  font-size: 1.25rem;
+  margin-top: -3rem;
+}
+
+.sign-up .next-btn {
+  padding: 16px;
+}
+
+.sign-up span {
+  border-radius: 15px 0 0 15px !important;
+  font-size: larger;
+}
+
+.sign-up input {
+  border-radius: 0 15px 15px 0 !important;
+  font-size: larger;
+}
+
+@media screen and (max-width: 767px) {
+  .sign-up {
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .sign-up .card {
+    width: 250px !important;
+  }
+  .sign-up .title-signup {
+    font-size: 2.25rem;
+    margin-top: -8rem;
+    font-weight: 900;
+  }
+
+  .sign-up .desc-signup {
+    font-size: 0.9rem;
+    margin-top: -3rem;
+  }
+}
