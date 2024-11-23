@@ -56,6 +56,7 @@ export async function main(content) {
     role: "assistant",
     content: chatCompletion.choices[0]?.message?.content || "",
   });
+  chatMessages.scrollTop = chatMessages.scrollHeight;
 }
 
 export async function getGroqChatCompletion(messages) {
