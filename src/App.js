@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AssistantPage from "./pages/AssistantPage.jsx";
 import SignUpPage from "./pages/SignUpPage.jsx";
 import SignInPage from "./pages/SignInPage.jsx";
+import SubscriptionPage from "./pages/SubscriptionPage.jsx";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<SignInPage />} />
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/assistant" element={<AssistantPage />} />
+          <Route path="/subscription" element={<SubscriptionPage />} />
         </Routes>
       </div>
     </Router>
