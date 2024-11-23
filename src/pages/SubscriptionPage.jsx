@@ -1,9 +1,9 @@
-import React from 'react';
-import '../styles/pages/subscription.css';
+import React from "react";
+import SubCards from "../layouts/SubCards";
+import "../styles/pages/subscription.css";
 
-
-export default function SubscriptionPage() {
-    return ( <>
-    
-    </> );
+function SubscriptionPage() {
+  return <SubCards />;
 }
+
+export default SubscriptionPage;
