@@ -23,7 +23,7 @@ const SliderComponent = () => {
                 backgroundColor: "primary.main",
 
                 },
-          "--Slider-trackSize": "20px",
+          "--Slider-trackSize": "10px",
           "--Slider-markSize": "15px",
           "--Slider-thumbSize": "30px",
           "--Slider-valueLabelArrowSize": "20px",
