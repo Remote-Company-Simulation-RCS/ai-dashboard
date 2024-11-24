@@ -11,7 +11,7 @@ function Navbar() {
       : "nav-item text-decoration-none d-flex align-items-center px-4 rounded-5";
 
   return (
-    <nav className="navbar px-4 d-flex justify-content-between">
+    <nav className="navbar px-5 d-flex justify-content-between">
       <div className="logo-name d-flex gap-2 align-items-center px-3 py-2 rounded-5">
         <img src={logo} alt="Quickit Logo" className="quickit-logo" />
         <h3 className=" fw-bold fst-italic m-0">Quickit</h3>
