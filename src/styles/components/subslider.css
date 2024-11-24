@@ -1,0 +1,20 @@
+ .slider-container {
+    width: 80% !important;
+    height: 20vh !important;
+    margin: auto ;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px !important;
+  }
+  
+  .slider-input{
+    width: 100% !important;
+    
+   }
+  .value {
+    margin-top: -10px;
+    font-size: 14px;
+  }
+   
