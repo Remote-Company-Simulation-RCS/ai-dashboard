@@ -12,11 +12,6 @@ const regexPreformatted = /\`\`\`([^\`]+)\`\`\`/g;
 const regexInlineCode = /\`([^`]+)\`/g;
 
 export async function main(content) {
-  messageHistory.push({
-    role: "system",
-    content:
-      "Try to be as helpful as possible, reply with the best of your abilites, and don't reply with unnecessarily long answers. Always put code behin ``` ``` even if it's for a demo!",
-  });
   let chatMessages = document.getElementById("chat-messages");
 
   chatMessages.innerHTML += `<div class="user-message"><div class="user-content">${content
@@ -40,23 +35,41 @@ export async function main(content) {
     return str.replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
 
-  chatMessages.innerHTML += `<div class="assistant-message"><div class="assistant-content">
-  ${(chatCompletion.choices[0]?.message?.content || "")
-    .replace(regexPreformatted, (match, p1) => {
-      return `<pre class="code-block"><code>${escapeHTML(p1)}</code></pre>`;
-    })
-    .replace(regexBold, (match, p1) => `<strong>${p1}</strong>`)
-    .replace(regexBullet, (match, p1) => `<ul><li>${p1}</li></ul>`)
-    .replace(
-      regexInlineCode,
-      (match, p1) => `<code>${escapeHTML(p1)}</code>`
-    )}</div></div>`;
-
   messageHistory.push({
     role: "assistant",
     content: chatCompletion.choices[0]?.message?.content || "",
   });
   chatMessages.scrollTop = chatMessages.scrollHeight;
+
+  let element = document.createElement("div");
+  element.className = "assistant-message";
+  let text = (chatCompletion.choices[0]?.message?.content || "")
+    .replace(regexPreformatted, (match, p1) => {
+      return `<pre class="code-block"><code>${escapeHTML(p1)}</code></pre>`;
+    })
+    .replace(regexBold, (match, p1) => `<strong>${p1}</strong>`)
+    .replace(regexBullet, (match, p1) => `<ul><li>${p1}</li></ul>`)
+    .replace(regexInlineCode, (match, p1) => `<code>${escapeHTML(p1)}</code>`);
+  let speed = 20;
+  if (text.length > 100) {
+    speed = 1;
+  }
+
+  function typeEffect(element, text, speed) {
+    chatMessages.appendChild(element);
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        element.innerHTML = text.substring(0, i + 1);
+        i++;
+        setTimeout(type, speed);
+      }
+    }
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+    type();
+  }
+
+  typeEffect(element, text, speed);
 }
 
 export async function getGroqChatCompletion(messages) {

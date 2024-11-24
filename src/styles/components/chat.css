@@ -96,6 +96,22 @@ code {
   margin-bottom: 10px;  
 }
 
+.typing-cursor {
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 body[data-theme="dark-mode"] {
   .chat {
     width: 55% !important;
