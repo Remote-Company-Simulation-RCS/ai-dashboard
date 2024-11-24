@@ -19,13 +19,17 @@
 
 .nav-links a {
   height: 90%;
+  display: flex;
+  align-items: center;
   white-space: nowrap;
 }
+
 .active {
   background-color: var(--nav-links-bg-hover);
   color: var(--white) !important;
   cursor: pointer;
 }
+
 .nav-links a:hover {
   background-color: var(--nav-links-bg-hover);
   color: var(--white);

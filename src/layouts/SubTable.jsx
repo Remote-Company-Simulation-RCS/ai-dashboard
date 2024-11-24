@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/components/sub-table.css";
 import Button from "../components/Button.jsx";
-import SubtableCards from "./SubtableCard.jsx";
+import SubtableCards from "../components/SubtableCard.jsx";
 import { IoBagHandleOutline, IoCubeOutline } from "react-icons/io5";
 import { LuWallet, LuPencil } from "react-icons/lu";
 import { GiAlarmClock } from "react-icons/gi";

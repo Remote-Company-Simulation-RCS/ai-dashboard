@@ -1,31 +1,34 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import Toggle from "./Toggle";
 import logo from "../assets/icons/logoNoBg.png";
 import "../styles/components/navbar.css";
 
 function Navbar() {
+  const linkClass = ({ isActive }) =>
+    isActive
+      ? `active nav-item text-decoration-none d-flex align-items-center px-4 rounded-5`
+      : "nav-item text-decoration-none d-flex align-items-center px-4 rounded-5";
+
   return (
-    <nav className="navbar px-4 d-flex justify-content-between">
+    <nav className="navbar px-5 d-flex justify-content-between">
       <div className="logo-name d-flex gap-2 align-items-center px-3 py-2 rounded-5">
         <img src={logo} alt="Quickit Logo" className="quickit-logo" />
         <h3 className=" fw-bold fst-italic m-0">Quickit</h3>
       </div>
       <div className="nav-links d-flex align-items-center text-white rounded-5">
-        <a className="nav-item text-decoration-none d-flex align-items-center px-4 rounded-5">
+        <NavLink to="/" className={linkClass}>
           Dashboard
-        </a>
-        <a
-          to="assistant"
-          className="nav-item active text-decoration-none d-flex align-items-center px-4 rounded-5"
-        >
+        </NavLink>
+        <NavLink to="assistant" className={linkClass}>
           AI Assistant
-        </a>
-        <a className="nav-item text-decoration-none d-flex align-items-center px-4 rounded-5">
+        </NavLink>
+        <NavLink to="/" className={linkClass}>
           News & Updates
-        </a>
-        <a className="nav-item text-decoration-none d-flex align-items-center px-4 rounded-5">
+        </NavLink>
+        <NavLink to="/subscription" className={linkClass}>
           Subscription
-        </a>
+        </NavLink>
       </div>
       <Toggle />
     </nav>
