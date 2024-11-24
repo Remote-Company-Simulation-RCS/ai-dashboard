@@ -1,9 +1,17 @@
 import React from "react";
-import SubCards from "../layouts/SubCards";
+import PlanCards from "../layouts/PlanCards";
+import Navbar from "../components/Navbar.jsx";
+import SubTable from "../layouts/SubTable.jsx";
 import "../styles/pages/subscription.css";
 
 function SubscriptionPage() {
-  return <SubCards />;
+  return (
+    <div className="subscription-page-container">
+      <Navbar active="subscription" />
+      <SubTable />
+      <PlanCards />
+    </div>
+  );
 }
 
 export default SubscriptionPage;

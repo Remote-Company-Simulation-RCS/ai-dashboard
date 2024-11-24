@@ -1,13 +1,12 @@
 import React from "react";
 import { HiAnnotation } from "react-icons/hi";
-import SubCard from "../components/SubCard";
-import Button from "../components/Button";
-import "../styles/components/subCards.css";
+import PlanCard from "../components/PlanCard";
+import "../styles/components/planCards.css";
 
-function SubCards() {
+function PlanCards() {
   return (
-    <div className="d-flex justify-content-center gap-5 mt-5">
-      <SubCard
+    <div className="d-flex justify-content-around gap-5 mt-5">
+      <PlanCard
         plan="Basic Plan"
         price={49}
         advantage="1 user, billed annually"
@@ -18,7 +17,7 @@ function SubCards() {
         benefit4="Phone and email support"
         buttonlabel="Current Plan"
       />
-      <SubCard
+      <PlanCard
         plan="Pro Plan"
         price={99}
         advantage="up to 5 users, billed annually"
@@ -29,7 +28,7 @@ function SubCards() {
         benefit4="Advanced support"
         buttonlabel="Upgrade to Pro"
       />
-      <SubCard
+      <PlanCard
         plan="Pro Max Plan"
         price={149}
         advantage="up to 10 users, billed annually"
@@ -39,8 +38,9 @@ function SubCards() {
         benefit3="Customizable reporting"
         benefit4="Advanced support"
         buttonlabel="Upgrade to Pro Max"
+        btnStyle={{ backgroundColor: "blue", color: "white" }}
       />
-      <SubCard
+      <PlanCard
         plan="Enterprise"
         price={249}
         advantage="unlimited users, billed annually"
@@ -56,4 +56,4 @@ function SubCards() {
   );
 }
 
-export default SubCards;
+export default PlanCards;
