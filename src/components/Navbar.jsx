@@ -20,7 +20,7 @@ function Navbar() {
         <NavLink to="/" className={linkClass}>
           Dashboard
         </NavLink>
-        <NavLink to="assistant" className={linkClass}>
+        <NavLink to="/assistant" className={linkClass}>
           AI Assistant
         </NavLink>
         <NavLink to="/" className={linkClass}>
