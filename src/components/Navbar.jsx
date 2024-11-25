@@ -16,7 +16,7 @@ function Navbar() {
         <img src={logo} alt="Quickit Logo" className="quickit-logo" />
         <h3 className=" fw-bold fst-italic m-0">Quickit</h3>
       </div>
-      <div className="nav-links d-flex align-items-center text-white rounded-5">
+      <div className="nav-links d-flex justify-content-center align-items-center text-white rounded-5">
         <NavLink to="/" className={linkClass}>
           Dashboard
         </NavLink>

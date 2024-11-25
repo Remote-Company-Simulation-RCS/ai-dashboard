@@ -38,16 +38,6 @@
   font-size: 14px;
 }
 
-.btn-blue {
-  background-color: blue;
-  color: white;
-}
-
-.btn-black {
-  background-color: black;
-  color: white;
-}
-
 body[data-theme="dark-mode"] {
   .plan-card {
     position: relative;
@@ -65,7 +55,6 @@ body[data-theme="dark-mode"] {
       rgba(197, 197, 197, 0.8) 51%,
       rgba(255, 255, 255, 0) 100%
     );
-
     color: var(--white) !important;
     border-bottom: none !important;
   }
