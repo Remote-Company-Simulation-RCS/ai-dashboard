@@ -1,0 +1,86 @@
+.sub-table {
+  /* width: 100% !important; */
+  height: 25% !important;
+  background-color: var(--white);
+  color: var(--black) !important;
+}
+.title-subscription {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--black) !important;
+}
+.contact-text {
+  color: var(--black) !important;
+}
+/* SubCard css */
+.sub-card {
+  width: 250px !important;
+  border-radius: 50px !important;
+  padding: 10px;
+  background-color: var(--white);
+  backdrop-filter: blur(150px);
+  border: 1px solid var(--white);
+}
+.sub-card-image {
+  width: 45px !important;
+  height: 45px !important;
+  border-radius: 100% !important;
+  background-color: var(--bg-light-color);
+  backdrop-filter: blur(150px);
+}
+.tarif-title {
+  color: var(--bg-dark-color) !important;
+  font-size: 0.9rem !important;
+}
+.tarif-text {
+  font-size: 1rem !important;
+}
+.sub-active {
+  border: 1px solid var(--bg-light-nav);
+  backdrop-filter: blur(150px);
+}
+
+body[data-theme="dark-mode"] {
+  .sub-table {
+    /* width: 100% !important; */
+    height: 25% !important;
+    background-color: var(--bg-dark-transparent);
+    backdrop-filter: blur(150px);
+    color: var(--white) !important;
+  }
+  .title-subscription {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--white) !important;
+  }
+  .contact-text {
+    color: var(--bg-light-color) !important;
+  }
+  /* SubCard css */
+  .sub-card {
+    width: 250px !important;
+    border-radius: 50px !important;
+    padding: 10px;
+    background-color: var(--bg-dark-color);
+    backdrop-filter: blur(150px);
+    border: 1px solid var(--bg-dark-color);
+  }
+  .sub-card-image {
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 100% !important;
+    background-color: var(--bg-secondary-color);
+    backdrop-filter: blur(150px);
+  }
+  .tarif-title {
+    color: var(--bg-light-color) !important;
+    font-size: 0.9rem !important;
+  }
+  .tarif-text {
+    font-size: 1rem !important;
+  }
+  .sub-active {
+    border: 1px solid var(--bg-secondary-color);
+    backdrop-filter: blur(150px);
+  }
+}
