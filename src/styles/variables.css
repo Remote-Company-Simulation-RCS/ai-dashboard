@@ -28,4 +28,8 @@
   --nav-links-bg-hover: #141721;
   --toggle-border-light: #a7a7a7;
   --border-dark: #3c3c3c;
+
+  /* CODE BLOCKS  */
+  --code-block-color: rgb(32, 33, 36);
+  --code-text-color: var(--bg-light-nav);
 }

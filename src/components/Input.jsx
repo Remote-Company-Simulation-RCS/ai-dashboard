@@ -13,6 +13,7 @@ function Input(props) {
             value={props.value}
             className={props.inputClassName}
             onChange={props.onChange}
+            onKeyDown={props.onKeyDown}
             placeholder={props.placeholder}
             checked={props.checked} 
             aria-label={props.ariaLabel}
