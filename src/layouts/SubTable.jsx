@@ -7,7 +7,6 @@ import { LuWallet, LuPencil } from "react-icons/lu";
 import { GiAlarmClock } from "react-icons/gi";
 import { MdOutlineMessage } from "react-icons/md";
 function SubTable() {
-
   return (
     <div className="sub-table rounded-5 px-4 py-3 d-flex flex-column mx-3 justify-content-between ">
       <div className="d-flex flex-row align-items-center justify-content-between ">
@@ -28,7 +27,7 @@ function SubTable() {
           />
           <Button
             type="submit"
-            className="btn btn-primary"
+            className="btn btn-primary rounded-5 px-3"
             onClick={"#"}
             children={
               <div className="btn-primary d-flex flex-row align-items-center gap-1">

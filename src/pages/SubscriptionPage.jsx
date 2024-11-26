@@ -1,7 +1,7 @@
 import React from "react";
 import PlanCards from "../layouts/PlanCards";
 import Navbar from "../components/Navbar.jsx";
-import SubTable from "../components/SubTable.jsx";
+import SubTable from "../layouts/SubTable.jsx";
 import SubSlider from "../components/SubSlider.jsx";
 import "../styles/pages/subscription.css";
 
