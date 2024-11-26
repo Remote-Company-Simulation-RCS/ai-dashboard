@@ -1,0 +1,131 @@
+.plan-card {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  background-color: var(--white);
+  backdrop-filter: blur(15px);
+}
+
+.plan-active {
+  border: 2px solid var(--bg-dark-color);
+}
+
+.plan-name {
+  background: linear-gradient(
+    28deg,
+    rgba(220, 220, 220, 1) 0%,
+    rgba(236, 236, 236, 1) 20%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 30px 30px 0 0;
+}
+
+.bottom-card {
+  position: absolute;
+  width: 100%;
+  height: 83%;
+  border-radius: 0 0 30px 30px;
+  background-color: white !important;
+}
+
+.plan-card-btn {
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.nav-link {
+  font-size: 14px;
+}
+
+body[data-theme="dark-mode"] {
+  .plan-card {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    color: var(--white);
+    background-color: rgba(109, 109, 109, 0.1) !important;
+    backdrop-filter: blur(15px);
+  }
+
+  .plan-name {
+    background: linear-gradient(
+      40deg,
+      rgba(125, 125, 125, 1) 0%,
+      rgba(197, 197, 197, 0.8) 51%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    color: var(--white) !important;
+    border-bottom: none !important;
+  }
+
+  .plan-name-pro {
+    background: linear-gradient(
+      9deg,
+      rgba(164, 107, 23, 1) 5%,
+      rgba(31, 96, 199, 1) 89%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+
+  .plan-name-max {
+    background: linear-gradient(
+      34deg,
+      rgba(132, 135, 144, 1) 24%,
+      rgba(197, 34, 79, 1) 71%,
+      rgba(197, 34, 79, 0) 100%
+    );
+  }
+
+  .plan-enterprise {
+    background: linear-gradient(
+      217deg,
+      rgba(97, 69, 181, 1) 13%,
+      rgba(197, 34, 79, 1) 54%,
+      rgba(197, 34, 79, 0) 100%
+    );
+  }
+
+  .plan-enterprise-bottom {
+    background: linear-gradient(
+      297deg,
+      rgba(97, 69, 181, 1) 0%,
+      rgba(197, 34, 79, 0.8050070369944853) 35%,
+      rgba(197, 34, 79, 0) 76%
+    );
+  }
+
+  .bottom-card {
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    border-radius: 0 0 30px 30px;
+    background-color: rgba(27, 27, 27, 0.2) !important;
+    backdrop-filter: blur(20px);
+  }
+
+  .per-month {
+    color: rgb(190, 190, 190);
+  }
+
+  .advantage {
+    color: rgb(153, 153, 153);
+  }
+
+  .plan-card-btn {
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(82, 82, 82);
+    color: white;
+    font-size: 14px;
+  }
+
+  .checkm-icon {
+    color: white;
+  }
+
+  .nav-link {
+    color: gray;
+    font-size: 14px;
+  }
+}
