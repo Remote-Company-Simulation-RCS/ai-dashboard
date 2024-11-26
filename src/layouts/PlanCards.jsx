@@ -6,7 +6,7 @@ import "../styles/components/planCards.css";
 
 function PlanCards() {
   return (
-    <div className="d-flex justify-content-around gap-5">
+    <div className="d-flex flex-wrap justify-content-around gap-5">
       <PlanCard
         plan="Basic Plan"
         price={49}
