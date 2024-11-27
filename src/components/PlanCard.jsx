@@ -4,7 +4,7 @@ import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 
 function PlanCard(props) {
   return (
-    <div className="plan-card rounded-5">
+    <div className="plan-card mb-5 rounded-5">
       <h3
         className={`plan-name ${props.planClass} py-4 px-3 m-0 border-bottom border-dark fs-6 fw-bolder `}
       >

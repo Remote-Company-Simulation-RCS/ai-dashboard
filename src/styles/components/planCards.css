@@ -4,6 +4,7 @@
   height: 450px;
   background-color: var(--white);
   backdrop-filter: blur(15px);
+  /* flex: 0 0 ; */
 }
 
 .plan-active {
@@ -18,6 +19,45 @@
     rgba(255, 255, 255, 1) 100%
   );
   border-radius: 30px 30px 0 0;
+}
+
+.plan-name-pro {
+  color: var(--white);
+  background: linear-gradient(
+    9deg,
+    rgba(164, 107, 23, 1) 5%,
+    rgba(31, 96, 199, 1) 89%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.plan-name-max {
+  color: var(--white);
+  background: linear-gradient(
+    34deg,
+    rgba(132, 135, 144, 1) 24%,
+    rgba(197, 34, 79, 1) 71%,
+    rgba(197, 34, 79, 0) 100%
+  );
+}
+
+.plan-enterprise {
+  color: var(--white);
+  background: linear-gradient(
+    217deg,
+    rgba(97, 69, 181, 1) 13%,
+    rgba(197, 34, 79, 1) 54%,
+    rgba(197, 34, 79, 0) 100%
+  );
+}
+
+.plan-enterprise-bottom {
+  background: linear-gradient(
+    297deg,
+    rgba(97, 69, 181, 1) 0%,
+    rgba(197, 34, 79, 0.8050070369944853) 35%,
+    rgba(197, 34, 79, 0) 76%
+  );
 }
 
 .bottom-card {

@@ -8,10 +8,10 @@ import "../styles/pages/subscription.css";
 function SubscriptionPage() {
   return (
     <div className="subscription-page-container">
-      <Navbar active="subscription" />
+      <Navbar />
       <SubTable />
       <SubSlider />
-      <PlanCards />
+      <PlanCards className="mx-3" />
     </div>
   );
 }

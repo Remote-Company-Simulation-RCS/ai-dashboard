@@ -3,7 +3,7 @@ import Button from "../components/Button.jsx";
 import { IoMdStar } from "react-icons/io";
 import { TiTick } from "react-icons/ti";
 import { FaQuestion, FaPlus } from "react-icons/fa";
-import "../styles/components/sidebarchat.css";
+import "../styles/components/sidebarChat.css";
 
 export default function SidebarChat() {
   return (

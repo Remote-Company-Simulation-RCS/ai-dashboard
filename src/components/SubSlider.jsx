@@ -1,13 +1,13 @@
 import React from "react";
 import { Slider } from "@mui/material";
-import "../styles/components/subslider.css";
+import "../styles/components/subSlider.css";
 
 const SliderComponent = () => {
   return (
     <div className="slider-container mt-5">
       <h2 className="title-slider">Upgrade monthly requests limit</h2>
       <Slider
-        className="slider-input"
+        className="slider-input mt-3"
         aria-label="Always visible"
         defaultValue={12000}
         valueLabelDisplay="on"
