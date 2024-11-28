@@ -9,13 +9,13 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Urbanist" !important;
-  background: var(--bg-light-color);
+  background: var(--bg-light-color) !important;
   height: 100vh;
 }
 
 body[data-theme="dark-mode"] {
-  background-image: var(--bg-body-gradient) !important;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: var(--bg-body-gradient) !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
   height: 100vh;
 }

@@ -11,8 +11,8 @@ import "../styles/pages/assistantPage.css";
 export default function AssistantPage() {
   return (
     <div className="assistant-page-container ">
-        {/* <GoSidebarCollapse size={30} className="my-auto toggle-sidebarchat d-block d-md-none" /> */}
         <Navbar/>
+        {/* <GoSidebarCollapse size={30} className="my-auto toggle-sidebarchat d-block d-md-none text-white" /> */}
       <div className="assistant-page d-flex">
         <SidebarChat />
         <Chat />
