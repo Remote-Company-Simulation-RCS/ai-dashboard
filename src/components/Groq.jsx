@@ -1,3 +1,4 @@
+import { message } from "antd";
 import Groq from "groq-sdk";
 
 const groq = new Groq({
@@ -79,4 +80,12 @@ export async function getGroqChatCompletion(messages) {
     temperature: 0.69,
     top_p: 1,
   });
+}
+
+export async function NewChat() {
+  if (messageHistory) {
+    messageHistory = [];
+    let chatMessages = document.getElementById("chat-messages");
+    chatMessages.innerHTML = "";
+  }
 }

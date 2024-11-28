@@ -29,6 +29,21 @@
   background-color: var(--bg-light-color) !important;
 }
 
+.old-requests {
+  height: 65% !important;
+  overflow-y: auto;
+}
+
+.old-requests::-webkit-scrollbar {
+  width: 10px !important;
+}
+
+.old-requests::-webkit-scrollbar-thumb {
+  background-color: var(--bg-secondary-color) !important;
+  border-radius: 10px !important;
+  width: 10px;
+}
+
 body[data-theme="dark-mode"] {
   .sidebar-chat {
     background-color: var(--bg-dark-transparent);
@@ -57,5 +72,9 @@ body[data-theme="dark-mode"] {
   .sidebar-chat .btn-buttons {
     color: var(--white) !important;
     background-color: var(--bg-secondary-color) !important;
+  }
+  .old-requests {
+    height: 65% !important;
+    overflow-y: auto;
   }
 }

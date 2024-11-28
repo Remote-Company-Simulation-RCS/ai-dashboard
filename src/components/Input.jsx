@@ -9,13 +9,14 @@ function Input(props) {
         </span>
         {props.inputClassName && (
           <input
+            id={props.id}
             type={props.type}
             value={props.value}
             className={props.inputClassName}
             onChange={props.onChange}
             onKeyDown={props.onKeyDown}
             placeholder={props.placeholder}
-            checked={props.checked} 
+            checked={props.checked}
             aria-label={props.ariaLabel}
             aria-describedby="basic-addon1"
           />
@@ -25,4 +26,3 @@ function Input(props) {
   );
 }
 export default Input;
-

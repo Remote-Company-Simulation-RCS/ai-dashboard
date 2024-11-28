@@ -1,6 +1,6 @@
 import React from "react";
 import { Slider } from "@mui/material";
-import "../styles/components/subslider.css";
+import "../styles/components/subSlider.css";
 
 const SliderComponent = () => {
   return (
