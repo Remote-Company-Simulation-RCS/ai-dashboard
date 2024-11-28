@@ -10,7 +10,7 @@ import "../styles/pages/assistantPage.css";
 export default function AssistantPage() {
   return (
     <div className="assistant-page-container">
-      <Navbar />
+      <Navbar chatHistoryToggle={true} />
       <div className="assistant-page d-flex">
         <SidebarChat />
         <Chat />

@@ -4,10 +4,11 @@ import Toggle from "./Toggle";
 import logo from "../assets/icons/logoNoBg.png";
 import UseToggle from "../hooks/UseToggle";
 import { IoClose } from "react-icons/io5";
+import { GoSidebarCollapse } from "react-icons/go";
 import "../styles/components/navbar.css";
-import { BsCursor } from "react-icons/bs";
 
-function Navbar() {
+function Navbar({ chatHistoryToggle }) {
+  const [visibleHistory, setVisibleHistory] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleSidebar = () => {
@@ -22,6 +23,9 @@ function Navbar() {
   return (
     <>
       <header className="navbar px-3 px-sm-5 d-flex justify-content-between">
+        {chatHistoryToggle && (
+          <GoSidebarCollapse className="text-white fs-3 d-block d-lg-none" />
+        )}
         <div className="logo-name d-flex gap-2 align-items-center px-3 py-2 rounded-5">
           <img src={logo} alt="Quickit Logo" className="quickit-logo" />
           <h3 className=" fw-bold fst-italic m-0">Quickit</h3>
