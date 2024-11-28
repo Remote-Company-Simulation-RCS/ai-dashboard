@@ -5,7 +5,6 @@ import logo from "../assets/icons/logoNoBg.png";
 import UseToggle from "../hooks/UseToggle";
 import { IoClose } from "react-icons/io5";
 import "../styles/components/navbar.css";
-import { BsCursor } from "react-icons/bs";
 
 function Navbar() {
   const [isVisible, setIsVisible] = useState(false);
