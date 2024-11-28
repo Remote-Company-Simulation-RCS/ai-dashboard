@@ -4,9 +4,10 @@ import Toggle from "./Toggle";
 import logo from "../assets/icons/logoNoBg.png";
 import UseToggle from "../hooks/UseToggle";
 import { IoClose } from "react-icons/io5";
+import { FiAlignLeft } from "react-icons/fi";
 import "../styles/components/navbar.css";
 
-function Navbar() {
+function Navbar({ chatHistoryToggle, phonePadding }) {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleSidebar = () => {
@@ -20,11 +21,30 @@ function Navbar() {
 
   return (
     <>
-      <header className="navbar px-3 px-sm-5 d-flex justify-content-between">
-        <div className="logo-name d-flex gap-2 align-items-center px-3 py-2 rounded-5">
-          <img src={logo} alt="Quickit Logo" className="quickit-logo" />
-          <h3 className=" fw-bold fst-italic m-0">Quickit</h3>
-        </div>
+      <header
+        className={` navbar px-3 ${
+          phonePadding === "px-md-5" ? "px-md-5" : "px-sm-5"
+        }  d-flex justify-content-between`}
+      >
+        {chatHistoryToggle && (
+          <FiAlignLeft className="bars fs-3 d-block d-md-none" />
+        )}
+        {chatHistoryToggle ? (
+          <div className={`logo-name d-flex gap-2 align-items-center px-3 py-2 rounded-5  `}
+          style={window.innerWidth < 576 ? { borderRadius: "0px", border: "none" } : {}}>
+            <img src={logo} alt="Quickit Logo" className="quickit-logo" />
+            <h3 className=" fw-bold fst-italic m-0 d-none d-sm-block">
+              Quickit
+            </h3>
+          </div>
+        ) : (
+          <div className="logo-name d-flex gap-2 align-items-center px-3 py-2 rounded-5">
+            <img src={logo} alt="Quickit Logo" className="quickit-logo" />
+            <h3 className=" fw-bold fst-italic m-0">
+              Quickit
+            </h3>
+          </div>
+        )}
         <nav className="nav-links d-none d-lg-flex justify-content-center align-items-center text-white rounded-5">
           <NavLink to="/" className={linkClass}>
             Dashboard
