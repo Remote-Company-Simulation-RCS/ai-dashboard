@@ -5,6 +5,8 @@ import SignUpPage from "./pages/SignUpPage.jsx";
 import SignInPage from "./pages/SignInPage.jsx";
 import SubscriptionPage from "./pages/SubscriptionPage.jsx";
 
+import ProfilePage from "./pages/ProfilePage.jsx";
+
 function App() {
   return (
     <Router>
@@ -14,6 +16,7 @@ function App() {
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/subscription" element={<SubscriptionPage />} />
           <Route path="/assistant" element={<AssistantPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
         </Routes>
       </div>
     </Router>
