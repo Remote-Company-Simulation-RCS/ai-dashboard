@@ -9,7 +9,7 @@ import "../styles/components/feedbackChat.css";
 export default function Feedback() {
   return (
     <>
-      <div className="feedback mt-4 me-4 rounded-5 d-flex flex-column justify-content-between">
+      <div className="feedback mt-4 me-4 rounded-5 d-flex flex-column justify-content-between d-none d-xl-flex">
         <Button
           type="submit"
           className="btn buttons text-start w-100 py-3 px-4 rounded-pill "

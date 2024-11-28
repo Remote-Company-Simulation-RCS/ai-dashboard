@@ -4,11 +4,10 @@ import Toggle from "./Toggle";
 import logo from "../assets/icons/logoNoBg.png";
 import UseToggle from "../hooks/UseToggle";
 import { IoClose } from "react-icons/io5";
-import { GoSidebarCollapse } from "react-icons/go";
+import { FiAlignLeft } from "react-icons/fi";
 import "../styles/components/navbar.css";
 
-function Navbar({ chatHistoryToggle }) {
-  const [visibleHistory, setVisibleHistory] = useState(false);
+function Navbar({ chatHistoryToggle, phonePadding }) {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleSidebar = () => {
@@ -22,14 +21,30 @@ function Navbar({ chatHistoryToggle }) {
 
   return (
     <>
-      <header className="navbar px-3 px-sm-5 d-flex justify-content-between">
+      <header
+        className={` navbar px-3 ${
+          phonePadding === "px-md-5" ? "px-md-5" : "px-sm-5"
+        }  d-flex justify-content-between`}
+      >
         {chatHistoryToggle && (
-          <GoSidebarCollapse className="text-white fs-3 d-block d-lg-none" />
+          <FiAlignLeft className="bars fs-3 d-block d-md-none" />
         )}
-        <div className="logo-name d-flex gap-2 align-items-center px-3 py-2 rounded-5">
-          <img src={logo} alt="Quickit Logo" className="quickit-logo" />
-          <h3 className=" fw-bold fst-italic m-0">Quickit</h3>
-        </div>
+        {chatHistoryToggle ? (
+          <div className={`logo-name d-flex gap-2 align-items-center px-3 py-2 rounded-5  `}
+          style={window.innerWidth < 576 ? { borderRadius: "0px", border: "none" } : {}}>
+            <img src={logo} alt="Quickit Logo" className="quickit-logo" />
+            <h3 className=" fw-bold fst-italic m-0 d-none d-sm-block">
+              Quickit
+            </h3>
+          </div>
+        ) : (
+          <div className="logo-name d-flex gap-2 align-items-center px-3 py-2 rounded-5">
+            <img src={logo} alt="Quickit Logo" className="quickit-logo" />
+            <h3 className=" fw-bold fst-italic m-0">
+              Quickit
+            </h3>
+          </div>
+        )}
         <nav className="nav-links d-none d-lg-flex justify-content-center align-items-center text-white rounded-5">
           <NavLink to="/" className={linkClass}>
             Dashboard

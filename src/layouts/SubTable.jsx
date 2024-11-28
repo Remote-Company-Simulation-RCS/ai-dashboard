@@ -32,7 +32,7 @@ function SubTable() {
             children={
               <div className="btn-primary d-flex flex-row align-items-center gap-1">
                 <LuPencil size={20} className="text-white" />
-                <span className="text-white">Contact us</span>
+                <span className="text-white">Change Plan</span>
               </div>
             }
           />

@@ -1,9 +1,14 @@
 .feedback {
-  width: 20% !important;
+  width: 25% !important;
   height: 100% !important;
 }
 
 .feedback .buttons {
+  background-color: var(--white);
+  border: 1px solid var(--white);
+  color: var(--black);
+}
+.feedback .buttons:hover {
   background-color: var(--white);
   border: 1px solid var(--white);
   color: var(--black);

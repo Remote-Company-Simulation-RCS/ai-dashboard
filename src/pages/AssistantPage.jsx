@@ -10,7 +10,7 @@ import "../styles/pages/assistantPage.css";
 export default function AssistantPage() {
   return (
     <div className="assistant-page-container">
-      <Navbar chatHistoryToggle={true} />
+      <Navbar chatHistoryToggle={true} phonePadding={"px-md-5"} />
       <div className="assistant-page d-flex">
         <SidebarChat />
         <Chat />
