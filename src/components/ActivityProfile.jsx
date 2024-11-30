@@ -15,7 +15,7 @@ import {Provider} from "./ui/provider";
 const ActivityProfile = () => {
   return (
     <Provider>
-        <StepsRoot orientation="vertical" defaultValue={1} count={3}>
+        <StepsRoot orientation="vertical" defaultValue={1} count={3} className="w-100 h-100">
       <StepsList>
         <StepsItem index={0} icon={<LuUser />} />
         <StepsItem index={1} icon={<LuWallet />} />

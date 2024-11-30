@@ -5,7 +5,7 @@ import { TiTick } from "react-icons/ti";
 import { FaQuestion, FaPlus } from "react-icons/fa";
 import "../styles/components/sidebarChat.css";
 import { FiAlignLeft } from "react-icons/fi";
-import "../styles/components/sidebarchat.css";
+import "../styles/components/sidebarChat.css";
 import { NewChat } from "./Groq.jsx";
 
 export default function SidebarChat({ visibility, hideChat }) {
