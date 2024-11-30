@@ -7,7 +7,7 @@ import { IoClose } from "react-icons/io5";
 import { FiAlignLeft } from "react-icons/fi";
 import "../styles/components/navbar.css";
 
-function Navbar({ chatHistoryToggle, phonePadding, toggleChat }) {
+function Navbar({ chatHistoryToggle, phonePadding, toggleChat, background }) {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleSidebar = () => {
@@ -22,7 +22,7 @@ function Navbar({ chatHistoryToggle, phonePadding, toggleChat }) {
   return (
     <>
       <header
-        className={` navbar px-3 ${
+        className={`navbar px-3 ${
           phonePadding === "px-md-5" ? "px-md-5" : "px-sm-5"
         }  d-flex justify-content-between`}
       >
@@ -58,7 +58,11 @@ function Navbar({ chatHistoryToggle, phonePadding, toggleChat }) {
           </NavLink>
         </nav>
         <div className="d-flex align-items-center gap-3 py-2">
-          <Toggle className="d-none d-lg-flex" toggleSidebar={toggleSidebar} />
+          <Toggle
+            className="d-none d-lg-flex"
+            toggleSidebar={toggleSidebar}
+            background={background}
+          />
         </div>
       </header>
       <nav

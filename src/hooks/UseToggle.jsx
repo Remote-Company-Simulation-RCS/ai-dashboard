@@ -49,7 +49,7 @@ function ToggleHook(props) {
         </div>
       ) : (
         <div style={props.styleM} onClick={toggleTheme}>
-          <span>{props.moon}</span> <FaMoon className="tIcon mb-1" />
+          <span>{props.moon}</span> <FaMoon className={`tIcon mb-1`} />
         </div>
       )}
     </div>
