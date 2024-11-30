@@ -13,6 +13,7 @@ export default function AssistantPage() {
   const toggleSidebarChat = () => {
     setIsChatVisible((prevState) => !prevState);
   };
+
   return (
     <div className="assistant-page-container">
       <Navbar
@@ -22,7 +23,7 @@ export default function AssistantPage() {
         toggleChat={toggleSidebarChat}
       />
       <div className="assistant-page d-flex">
-        <SidebarChat visibility={isChatVisible} />
+        <SidebarChat visibility={isChatVisible} hideChat={toggleSidebarChat} />
         <Chat />
         <FeedbackChat />
       </div>

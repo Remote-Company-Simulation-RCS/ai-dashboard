@@ -18,12 +18,18 @@ body[data-theme="dark-mode"] {
 }
 
 @media (max-width: 768px) {
+  .bars {
+    display: block !important;
+  }
+
   .sidebar-chat {
-    height: 80vh !important;
-    width: 300px !important;
+    margin-top: 0 !important;
+    height: 100vh !important;
+    width: 320px !important;
+    border-radius: 0 20px 10px 0 !important;
     position: absolute;
-    left: -100%;
-    bottom: 15px;
+    left: -120%;
+    top: 0;
     opacity: 1;
     z-index: 1;
 
@@ -31,8 +37,8 @@ body[data-theme="dark-mode"] {
   }
 
   .sidebar-chat.show {
-    bottom: 15px;
-    left: -7px !important;
+    left: -24px !important;
+    top: 0;
     opacity: 1;
   }
 
