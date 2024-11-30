@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import Button from "../components/Button.jsx";
-import Navbar from "./Navbar.jsx";
 import { IoMdStar } from "react-icons/io";
 import { TiTick } from "react-icons/ti";
 import { FaQuestion, FaPlus } from "react-icons/fa";
-import "../styles/components/sidebarchat.css";
+import "../styles/components/sidebarChat.css";
 import { NewChat } from "./Groq.jsx";
 
 export default function SidebarChat({ visibility }) {
@@ -16,8 +15,14 @@ export default function SidebarChat({ visibility }) {
 
   function handleNewChat() {
     const chatBox = document.getElementById("chat-messages");
-    if(chatBox && chatBox.firstChild && chatBox.firstChild.textContent) {
-      setOldRequest((r) => [...r, {id: oldRequest.length, name: capitalizeFirstLetter(chatBox.firstChild.textContent)}]);
+    if (chatBox && chatBox.firstChild && chatBox.firstChild.textContent) {
+      setOldRequest((r) => [
+        ...r,
+        {
+          id: oldRequest.length,
+          name: capitalizeFirstLetter(chatBox.firstChild.textContent),
+        },
+      ]);
     }
     NewChat();
   }

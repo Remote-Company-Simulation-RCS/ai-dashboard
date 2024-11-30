@@ -1,5 +1,5 @@
 import React from "react";
-import PlanCards from "../layouts/PlanCards";
+import PlanCards from "../layouts/PlanCards.jsx";
 import Navbar from "../components/Navbar.jsx";
 import SubTable from "../layouts/SubTable.jsx";
 import SubSlider from "../components/SubSlider.jsx";

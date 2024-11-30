@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import "../styles/main.css";
-import "../styles/pages/signUp.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../assets/icons/logo.svg";
 import { AiOutlineUser } from "react-icons/ai";
 import { LuLuggage } from "react-icons/lu";
@@ -11,6 +8,9 @@ import Button from "../components/Button.jsx";
 import SignUpCards from "../components/SignUpCards.jsx";
 import bgImage from "../assets/images/bg-icon.jpg";
 import Input from "../components/Input.jsx";
+import "../styles/main.css";
+import "../styles/pages/signUp.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function SignUpPage() {
   const [email, setEmail] = useState("");

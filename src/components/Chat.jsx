@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Input from "../components/Input.jsx";
 import Button from "../components/Button.jsx";
 import { BsArrowReturnRight } from "react-icons/bs";
+import { main } from "../components/Groq.jsx";
 import "../styles/main.css";
 import "../styles/components/chat.css";
-import { main } from "../components/Groq.jsx";
 
 export default function Chat() {
   const [userMessage, setUserMessage] = useState("");

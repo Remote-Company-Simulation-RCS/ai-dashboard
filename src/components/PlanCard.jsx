@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "./Button";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 
 function PlanCard(props) {
