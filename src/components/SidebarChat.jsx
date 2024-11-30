@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import Button from "../components/Button.jsx";
+import Navbar from "./Navbar.jsx";
 import { IoMdStar } from "react-icons/io";
 import { TiTick } from "react-icons/ti";
 import { FaQuestion, FaPlus } from "react-icons/fa";
-import "../styles/components/sidebarChat.css";
+import "../styles/components/sidebarchat.css";
 import { NewChat } from "./Groq.jsx";
 
-export default function SidebarChat() {
+export default function SidebarChat({ visibility }) {
   const [oldRequest, setOldRequest] = useState([]);
 
   function capitalizeFirstLetter(string) {
@@ -22,7 +23,11 @@ export default function SidebarChat() {
   }
 
   return (
-    <div className="sidebar-chat ms-4 mt-4 rounded-5 p-3 d-none d-md-block">
+    <div
+      className={`sidebar-chat ${
+        visibility && "show"
+      } ms-4 mt-4 rounded-5 p-3 d-block`}
+    >
       <h6 className="fw-bold text-secondary">CURRENT</h6>
       <Button
         type="submit"

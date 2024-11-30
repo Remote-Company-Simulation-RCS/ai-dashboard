@@ -2,6 +2,10 @@
   height: 15vh !important;
 }
 
+.logo-name {
+  padding: 5px 25px !important;
+}
+
 .quickit-logo {
   width: 25px;
   transform: rotate(20deg);
@@ -30,6 +34,10 @@
   cursor: pointer;
 }
 
+.active-p {
+  background-color: var(--nav-links-bg-hover);
+}
+
 .nav-links a:hover {
   background-color: var(--nav-links-bg-hover);
   color: var(--white);
@@ -48,6 +56,10 @@
 
 .toggle .tIcon {
   transform: scale(1.5);
+}
+
+.toggle .pfp {
+  border-radius: 50%;
 }
 
 .toggle .tIcon:hover,
@@ -127,6 +139,7 @@
   transform: translateX(0);
   transition-delay: 1s;
 }
+/* VERTICAL NAV - TOGGLE SIDEBAR - END*/
 
 body[data-theme="dark-mode"] {
   .logo-name {
@@ -140,9 +153,11 @@ body[data-theme="dark-mode"] {
   .navbar .nav-links {
     background-color: var(--bg-dark-transparent);
   }
+
   .active {
     background-color: var(--bg-dark-transparent);
   }
+
   .nav-links a:hover {
     background-color: var(--bg-dark-nav-hover);
   }
@@ -153,6 +168,10 @@ body[data-theme="dark-mode"] {
 
   .toggle {
     border: 1px solid var(--border-dark);
+  }
+
+  .active-p {
+    background-color: var(--bg-dark-transparent) !important;
   }
 
   .bars {

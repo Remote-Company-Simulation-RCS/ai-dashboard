@@ -7,7 +7,7 @@ import { IoClose } from "react-icons/io5";
 import { FiAlignLeft } from "react-icons/fi";
 import "../styles/components/navbar.css";
 
-function Navbar({ chatHistoryToggle, phonePadding }) {
+function Navbar({ chatHistoryToggle, phonePadding, toggleChat, background }) {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleSidebar = () => {
@@ -22,27 +22,25 @@ function Navbar({ chatHistoryToggle, phonePadding }) {
   return (
     <>
       <header
-        className={` navbar px-3 ${
+        className={`navbar px-3 ${
           phonePadding === "px-md-5" ? "px-md-5" : "px-sm-5"
         }  d-flex justify-content-between`}
       >
-        {chatHistoryToggle && (
-          <FiAlignLeft className="bars fs-3 d-block d-md-none" />
-        )}
         {chatHistoryToggle ? (
-          <div className={`logo-name d-flex gap-2 align-items-center px-3 py-2 rounded-5  `}
-          style={window.innerWidth < 576 ? { borderRadius: "0px", border: "none" } : {}}>
+          <div className="logo-name d-flex gap-3 align-items-center rounded-5">
+            <FiAlignLeft
+              className="bars fs-3 d-block d-md-none"
+              onClick={toggleChat}
+            />
             <img src={logo} alt="Quickit Logo" className="quickit-logo" />
-            <h3 className=" fw-bold fst-italic m-0 d-none d-sm-block">
+            <h3 className="fw-bold fst-italic m-0 d-none d-md-block">
               Quickit
             </h3>
           </div>
         ) : (
-          <div className="logo-name d-flex gap-2 align-items-center px-3 py-2 rounded-5">
+          <div className="logo-name d-flex gap-2 align-items-center px-3 py-2 py-md-2 rounded-5">
             <img src={logo} alt="Quickit Logo" className="quickit-logo" />
-            <h3 className=" fw-bold fst-italic m-0">
-              Quickit
-            </h3>
+            <h3 className="fw-bold fst-italic m-0">Quickit</h3>
           </div>
         )}
         <nav className="nav-links d-none d-lg-flex justify-content-center align-items-center text-white rounded-5">
@@ -59,8 +57,12 @@ function Navbar({ chatHistoryToggle, phonePadding }) {
             Subscription
           </NavLink>
         </nav>
-        <div className="d-flex align-items-center gap-3">
-          <Toggle className="d-none d-lg-flex" toggleSidebar={toggleSidebar} />
+        <div className="d-flex align-items-center gap-3 py-2">
+          <Toggle
+            className="d-none d-lg-flex"
+            toggleSidebar={toggleSidebar}
+            background={background}
+          />
         </div>
       </header>
       <nav

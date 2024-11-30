@@ -4,7 +4,6 @@ import AssistantPage from "./pages/AssistantPage.jsx";
 import SignUpPage from "./pages/SignUpPage.jsx";
 import SignInPage from "./pages/SignInPage.jsx";
 import SubscriptionPage from "./pages/SubscriptionPage.jsx";
-
 import ProfilePage from "./pages/ProfilePage.jsx";
 
 function App() {

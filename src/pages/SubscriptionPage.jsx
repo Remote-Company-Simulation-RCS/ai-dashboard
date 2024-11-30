@@ -8,7 +8,7 @@ import "../styles/pages/subscription.css";
 function SubscriptionPage() {
   return (
     <div className="subscription-page-container">
-      <Navbar  />
+      <Navbar />
       <SubTable />
       <SubSlider />
       <PlanCards className="mx-3" />
