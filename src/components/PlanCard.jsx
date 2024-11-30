@@ -5,14 +5,14 @@ function PlanCard(props) {
   return (
     <div className="plan-card mb-5 rounded-5">
       <h3
-        className={`plan-name ${props.planClass} py-4 px-3 m-0 border-bottom border-dark fs-6 fw-bolder `}
+        className={`plan-name ${props.planClass} py-4 px-3 m-0 fs-6 fw-bolder `}
       >
         {props.plan}
       </h3>
       <div className={`bottom-card ${props.bottomClass}`}>
         <div className="price px-3 py-2 fs-3">
-          ${props.price}
-          <span className="per-month fs-6">/ month</span>
+           {props.price}
+          <span className="per-month fs-6">{props.perMonth}</span>
         </div>
         <p className="advantage px-3">{props.advantage}</p>
         {props.button}
