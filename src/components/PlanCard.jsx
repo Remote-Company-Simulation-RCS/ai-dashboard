@@ -5,7 +5,7 @@ function PlanCard(props) {
   return (
     <div className="plan-card mb-5 rounded-5">
       <h3
-        className={`plan-name ${props.planClass} py-4 px-3 m-0 border-bottom border-dark fs-6 fw-bolder `}
+        className={`plan-name ${props.planClass} py-4 px-3 m-0 fs-6 fw-bolder `}
       >
         {props.plan}
       </h3>

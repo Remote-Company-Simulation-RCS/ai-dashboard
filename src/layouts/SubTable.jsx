@@ -10,6 +10,7 @@ import { MdOutlineMessage } from "react-icons/md";
 import "../styles/components/subTable.css";
 
 function SubTable() {
+
   const [open, setOpen] = React.useState(false);
   const [loading, setLoading] = React.useState(true);
   const showLoading = () => {
@@ -21,6 +22,12 @@ function SubTable() {
     }, 500);
   };
 
+
+  function handleContactUs() {
+    window.location.href = "https://mail.google.com/mail/?view=cm&fs=1&to=coding.hangouts@gmail.com&su=Hello, I am contacting to tell you...&body=Enter your issue/info here...";
+  }
+
+
   return (
     <div className="sub-table rounded-5 px-1 px-sm-5 py-3 d-flex flex-column mx-4 mt-4 justify-content-between ">
       <div className="d-flex flew-wrap flex-column flex-sm-row align-items-center justify-content-between gap-2">
@@ -31,7 +38,7 @@ function SubTable() {
           <Buttons
             type="submit"
             className="btn"
-            onClick={"#"}
+            onClick={handleContactUs}
             children={
               <div className="d-flex flex-row align-items-center gap-1">
                 <MdOutlineMessage size={20} className="contact-text" />
@@ -66,19 +73,19 @@ function SubTable() {
       </div>
       <div className="d-flex flex-wrap align-items-center justify-content-around">
         <SubtableCards
-          text="Basic Plan"
+          text="Free Plan"
           title="Tariff"
           subIcon={<IoBagHandleOutline size={20} />}
         />
 
         <SubtableCards
-          text="$49/m"
+          text="Free"
           title="Tariff Cost"
           subIcon={<LuWallet size={20} />}
         />
 
         <SubtableCards
-          text="12,000"
+          text="10"
           title="Monthly Requests Limit"
           subIcon={<IoCubeOutline size={20} />}
         />
