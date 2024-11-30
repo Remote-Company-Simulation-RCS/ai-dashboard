@@ -2,7 +2,6 @@ import React from "react";
 import PlanCards from "../layouts/PlanCards.jsx";
 import Navbar from "../components/Navbar.jsx";
 import SubTable from "../layouts/SubTable.jsx";
-import SubSlider from "../components/SubSlider.jsx";
 import "../styles/pages/subscription.css";
 
 function SubscriptionPage() {
@@ -10,8 +9,7 @@ function SubscriptionPage() {
     <div className="subscription-page-container">
       <Navbar />
       <SubTable />
-      <SubSlider />
-      <PlanCards className="mx-3" />
+      <PlanCards />
     </div>
   );
 }

@@ -44,7 +44,7 @@ function ToggleHook(props) {
     <div className={props.className}>
       {isDarkMode ? (
         <div style={props.styleS} onClick={toggleTheme}>
-          <IoSunnyOutline className="text-white tIcon mb-1" />{" "}
+          <IoSunnyOutline className="tIcon mb-1" />{" "}
           <span>{props.sun}</span>
         </div>
       ) : (

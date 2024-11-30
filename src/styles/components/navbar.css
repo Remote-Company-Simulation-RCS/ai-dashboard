@@ -34,9 +34,7 @@
   cursor: pointer;
 }
 
-.active-p {
-  background-color: var(--nav-links-bg-hover);
-}
+
 
 .nav-links a:hover {
   background-color: var(--nav-links-bg-hover);
@@ -56,6 +54,11 @@
 
 .toggle .tIcon {
   transform: scale(1.5);
+}
+
+.active-p {
+  background-color: var(--nav-links-bg-hover);
+  color: var(--white) !important;
 }
 
 .toggle .pfp {
@@ -157,6 +160,9 @@ body[data-theme="dark-mode"] {
   .active {
     background-color: var(--bg-dark-transparent);
   }
+  .toggle .tIcon {
+    color: var(--white);
+  }
 
   .nav-links a:hover {
     background-color: var(--bg-dark-nav-hover);
@@ -171,11 +177,15 @@ body[data-theme="dark-mode"] {
   }
 
   .active-p {
-    background-color: var(--bg-dark-transparent) !important;
+    background-color: var(--white);
+    color: var(--black) !important;
+  }
+  .active-p .tIcon {
+    color: var(--black) !important;
   }
 
   .bars {
-    color: var(--white);
+    color: var(--white) !important;
   }
 
   .vertical-nav {
