@@ -4,9 +4,11 @@ import { IoMdStar } from "react-icons/io";
 import { TiTick } from "react-icons/ti";
 import { FaQuestion, FaPlus } from "react-icons/fa";
 import "../styles/components/sidebarChat.css";
+import { FiAlignLeft } from "react-icons/fi";
+import "../styles/components/sidebarchat.css";
 import { NewChat } from "./Groq.jsx";
 
-export default function SidebarChat({ visibility }) {
+export default function SidebarChat({ visibility, hideChat }) {
   const [oldRequest, setOldRequest] = useState([]);
 
   function capitalizeFirstLetter(string) {
@@ -33,7 +35,11 @@ export default function SidebarChat({ visibility }) {
         visibility && "show"
       } ms-4 mt-4 rounded-5 p-3 d-flex flex-column justify-content-between d-block `}
     >
-      <h6 className="fw-bold text-secondary">CURRENT</h6>
+      <div className="d-flex justify-content-between px-2">
+        <h6 className="fw-bold text-secondary">CURRENT</h6>
+        <FiAlignLeft className="bars fs-3 d-none" onClick={hideChat} />
+      </div>
+
       <Button
         type="submit"
         className="btn buttons text-start my-4 w-100 rounded-pill"

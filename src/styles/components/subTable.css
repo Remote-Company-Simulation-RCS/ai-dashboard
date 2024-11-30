@@ -3,7 +3,12 @@
   background-color: var(--white);
   color: var(--black) !important;
 }
-
+.ant-modal-content,
+.ant-modal-title,
+.ant-modal-close{
+  background-color: var(--bg-light-color) !important;
+  color: var(--black) !important;
+}
 .title-subscription {
   font-size: 2rem;
   font-weight: 900;
@@ -57,7 +62,12 @@ body[data-theme="dark-mode"] {
     backdrop-filter: blur(150px);
     color: var(--white) !important;
   }
-
+  .ant-modal-content,
+  .ant-modal-title,
+  .ant-modal-close{
+    background-color: var(--bg-dark-color) !important;
+    color: var(--white) !important;
+  }
   .title-subscription {
     font-size: 2rem;
     font-weight: 900;
