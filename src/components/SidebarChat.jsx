@@ -31,7 +31,7 @@ export default function SidebarChat({ visibility }) {
     <div
       className={`sidebar-chat ${
         visibility && "show"
-      } ms-4 mt-4 rounded-5 p-3 d-block`}
+      } ms-4 mt-4 rounded-5 p-3 d-flex flex-column justify-content-between d-block `}
     >
       <h6 className="fw-bold text-secondary">CURRENT</h6>
       <Button
@@ -48,7 +48,7 @@ export default function SidebarChat({ visibility }) {
       />
       <h6 className="fw-bold text-secondary">OLD REQUESTS</h6>
       <div className="old-requests">
-        <ul className="list-unstyled h-100">
+        <ul className="list-unstyled">
           {oldRequest.map((request) => (
             <li
               key={request.id}
@@ -64,11 +64,11 @@ export default function SidebarChat({ visibility }) {
       </div>
       <Button
         type="submit"
-        className="btn btn-buttons text-start my-4 w-100 rounded-pill"
+        className="btn btn-buttons text-start  w-100 rounded-pill"
         onClick={handleNewChat}
         children={
           <div className="d-flex flex-row py-2 gap-2">
-            <FaPlus className="pt-1" size={23} />
+            <FaPlus className="pt-1" size={20} />
             <p className="fw-bold mb-0">New Chat</p>
           </div>
         }
