@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import "../styles/pages/signIn.css";
-import "../styles/main.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../assets/icons/logo.svg";
 import { AiOutlineUser, AiOutlineUnlock } from "react-icons/ai";
 import Input from "../components/Input.jsx";
 import Button from "../components/Button.jsx";
+import "../styles/pages/signIn.css";
+import "../styles/main.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function SignUpPage() {
   const [email, setEmail] = useState("");

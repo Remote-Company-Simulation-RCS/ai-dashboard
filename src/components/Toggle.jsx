@@ -2,7 +2,7 @@ import React from "react";
 import Pfp from "../assets/images/pfp.svg";
 import { NavLink } from "react-router-dom";
 import { FiAlignRight } from "react-icons/fi";
-import UseToggle from "../hooks/UseToggle";
+import UseToggle from "../hooks/UseToggle.jsx";
 import "../styles/components/navbar.css";
 
 function Toggle({ toggleSidebar, background }) {

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import Toggle from "./Toggle";
+import Toggle from "./Toggle.jsx";
 import logo from "../assets/icons/logoNoBg.png";
-import UseToggle from "../hooks/UseToggle";
+import UseToggle from "../hooks/UseToggle.jsx";
 import { IoClose } from "react-icons/io5";
 import { FiAlignLeft } from "react-icons/fi";
 import "../styles/components/navbar.css";
