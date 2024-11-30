@@ -8,13 +8,13 @@ function PlanCards() {
   return (
     <div className="plan-cards d-flex flex-wrap justify-content-around mx-3 mt-4">
       <PlanCard
-        plan="Basic Plan"
-        price={49}
+        plan="Free Plan"
+        price={"Free"}
         advantage="1 user, billed annually"
-        for="For small company"
+        for="For Personal Use"
         benefit1="Only 1 user"
-        benefit2="Monthly limit of 12,000 requests"
-        benefit3="Basic features and tools with AI"
+        benefit2="Monthly limit of 10 requests"
+        benefit3="Only the Base Model"
         benefit4="Phone and email support"
         button={
           <Button
@@ -27,7 +27,8 @@ function PlanCards() {
       />
       <PlanCard
         plan="Pro Plan"
-        price={99}
+        price={`$ 99 `}
+        perMonth="/ month"
         planClass="plan-name-pro"
         advantage="up to 5 users, billed annually"
         for="For scaling business"
@@ -46,7 +47,8 @@ function PlanCards() {
       />
       <PlanCard
         plan="Pro Max Plan"
-        price={149}
+        price={ `$ 149`}
+        perMonth="/ month"
         planClass="plan-name-max"
         advantage="up to 10 users, billed annually"
         for="For scaling business"
@@ -65,7 +67,8 @@ function PlanCards() {
       />
       <PlanCard
         plan="Enterprise"
-        price={249}
+        price={`$ 249`}
+        perMonth="/ month"
         planClass="plan-enterprise"
         bottomClass="plan-enterprise-bottom"
         advantage="unlimited users, billed annually"
