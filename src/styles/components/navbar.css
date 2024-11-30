@@ -34,8 +34,6 @@
   cursor: pointer;
 }
 
-
-
 .nav-links a:hover {
   background-color: var(--nav-links-bg-hover);
   color: var(--white);
