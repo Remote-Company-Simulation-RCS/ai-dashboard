@@ -5,15 +5,22 @@ import Rating from "./Rating.jsx";
 import { CiCircleQuestion } from "react-icons/ci";
 import "../styles/main.css";
 import "../styles/components/feedbackChat.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Feedback() {
+  const navigate = useNavigate();
+
+  function handleSubscription() {
+    navigate("/subscription")
+  }
+  
   return (
     <>
       <div className="feedback mt-4 me-4 rounded-5 d-flex flex-column justify-content-between d-none d-xl-flex">
         <Button
           type="submit"
           className="btn buttons text-start w-100 py-3 px-4 rounded-pill "
-          onClick={"#"}
+          onClick={handleSubscription}
           children={
             <div className="d-flex flex-row py-2 gap-2">
               <p className="fw-bold mb-0">

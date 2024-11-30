@@ -7,6 +7,7 @@ import "../styles/pages/signIn.css";
 import "../styles/main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
 function SignUpPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -83,8 +84,8 @@ function SignUpPage() {
           children="Sign in"
         />
         <p className="text-center">
-          Don't have an account?
-          <a href="#" className="text-decoration-none">
+          Don't have an account?&nbsp;
+          <a href="/signup" className="text-decoration-none">
             Sign up
           </a>
         </p>
