@@ -1,12 +1,26 @@
 import React from "react";
-import Button from "../components/Button.jsx";
+import Buttons from "../components/Button.jsx";
+import PlanCards from "../layouts/PlanCards.jsx";
+import { Button, Modal } from 'antd';
 import SubtableCards from "../components/SubtableCard.jsx";
 import { IoBagHandleOutline, IoCubeOutline } from "react-icons/io5";
 import { LuWallet, LuPencil } from "react-icons/lu";
 import { GiAlarmClock } from "react-icons/gi";
 import { MdOutlineMessage } from "react-icons/md";
 import "../styles/components/subTable.css";
+
 function SubTable() {
+  const [open, setOpen] = React.useState(false);
+  const [loading, setLoading] = React.useState(true);
+  const showLoading = () => {
+    setOpen(true);
+    setLoading(true);
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 500);
+  };
+
   return (
     <div className="sub-table rounded-5 px-1 px-sm-5 py-3 d-flex flex-column mx-4 mt-4 justify-content-between ">
       <div className="d-flex flew-wrap flex-column flex-sm-row align-items-center justify-content-between gap-2">
@@ -14,7 +28,7 @@ function SubTable() {
           Subscription
         </h2>
         <div className="d-flex flex-row justify-content-between gap-3 mt-1 mb-5 m-sm-0 mb-sm-3">
-          <Button
+          <Buttons
             type="submit"
             className="btn"
             onClick={"#"}
@@ -25,10 +39,10 @@ function SubTable() {
               </div>
             }
           />
-          <Button
+          <Buttons
             type="submit"
             className="btn btn-primary rounded-5 px-3"
-            onClick={"#"}
+            onClick={showLoading}
             children={
               <div className="btn-primary d-flex flex-row align-items-center gap-1">
                 <LuPencil size={20} className="text-white" />
@@ -36,6 +50,18 @@ function SubTable() {
               </div>
             }
           />
+          <Modal
+            width={1350}
+            title={<p>Change Plan</p>}
+            footer={
+              <div className="d-flex justify-content-center w-100 fs-3"> </div>
+            }
+            loading={loading}
+            open={open}
+            onCancel={() => setOpen(false)}
+          >
+            <PlanCards />
+          </Modal>
         </div>
       </div>
       <div className="d-flex flex-wrap align-items-center justify-content-around">
