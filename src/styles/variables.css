@@ -3,6 +3,7 @@
   --white: #ffffff;
   --black: #000000;
   --blue: #007aff;
+  --orange: #ffa500;
 
   /* CARDS  */
   --card-color-dark: rgb(48, 51, 64, 0.5);
@@ -28,6 +29,7 @@
   --nav-links-bg-hover: #141721;
   --toggle-border-light: #a7a7a7;
   --border-dark: #3c3c3c;
+  --light-blue-btn: rgba(0, 153, 255, 0.2);
 
   /* CODE BLOCKS  */
   --code-block-color: rgb(32, 33, 36);
