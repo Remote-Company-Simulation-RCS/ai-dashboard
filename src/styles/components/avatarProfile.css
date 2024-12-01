@@ -3,9 +3,9 @@
   width: 98%;
   display: grid;
   place-self: center;
-  height: fit-content;
-  /* padding-bottom: 50px; */
-  margin-bottom: 20px;
+  height: 320px;
+  margin-bottom: 10px;
+  margin-top: -10px;
 }
 
 .avatar-profile-header {

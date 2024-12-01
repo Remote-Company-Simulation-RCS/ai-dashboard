@@ -1,12 +1,13 @@
 import React from "react";
 import Navbar from "../components/Navbar.jsx";
+import AvatarProfile from "../components/AvatarProfile.jsx";
 import CustomerDetails from "../components/CustomerDetails.jsx";
 import CustomerSecurity from "../components/CustomerSecurity.jsx";
 import ActivityProfile from "../components/ActivityProfile.jsx";
 import OverviewProfile from "../components/OverviewProfile.jsx";
 import "../styles/pages/profilePage.css";
 import "../styles/main.css";
-import AvatarProfile from "../components/AvatarProfile.jsx";
+
 
 export default function ProfilePage() {
   return (

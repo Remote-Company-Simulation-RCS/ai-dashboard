@@ -1,12 +1,6 @@
-import { Group } from "@chakra-ui/react";
-import { Button } from "./ui/button";
 import {
-  StepsCompletedContent,
-  StepsContent,
   StepsItem,
   StepsList,
-  StepsNextTrigger,
-  StepsPrevTrigger,
   StepsRoot,
 } from "./ui/steps";
 import { LuCalendar, LuUser, LuWallet } from "react-icons/lu";

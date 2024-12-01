@@ -28,7 +28,7 @@ export default function OverviewProfile() {
         <p className="overview-name mt-3">requests</p>
       </div>
     </div>
-    <div className="w-100 h-100 d-flex column justify-content-center gap-2">
+    <div className="w-100 h-50 d-flex column justify-content-center gap-2">
     <Button 
       className="button-overview"
       type="submit"

@@ -10,12 +10,12 @@ body {
   box-sizing: border-box;
   font-family: "Urbanist" !important;
   background: var(--bg-light-color) !important;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 body[data-theme="dark-mode"] {
   background: var(--bg-body-gradient) !important;
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
-  height: 100vh;
+  /* height: 100vh; */
 }

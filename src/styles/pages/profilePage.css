@@ -1,15 +1,19 @@
-
-.profile-page-container{  
+.profile-page{
   width: 100% !important;
   height: auto !important;
+}
+.profile-page-container {
+  width: 100% !important;
+  height: 50% !important;
   gap: 10px;
 }
-.customer-info{
+
+.customer-info {
   width: 25% !important;
-  
-.profile-page {
-  background-color: color-mix(in srgb, var(--bg-light-color) 96%, var(--bg-dark-color) 4%) !important;
+  height: 50%;
 }
-.overview-info{
+.overview-info {
   width: 30% !important;
+  height: 50%;
 }
+
