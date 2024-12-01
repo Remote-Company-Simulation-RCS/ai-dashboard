@@ -62,7 +62,7 @@
 
 body[data-theme="dark-mode"] {
     .activity-profile{
-        border: 1px solid #c3c3c3;
+        border: 1px solid var(--bg-dark-transparent);
         background-color: var(--bg-dark-transparent);
         color: var(--white);
         padding: 15px;

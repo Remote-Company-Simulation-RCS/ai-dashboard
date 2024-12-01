@@ -1,10 +1,11 @@
 .profile-page-container{  
   width: 100% !important;
   height: auto !important;
+  gap: 10px;
 }
 .customer-info{
   width: 25% !important;
 }
 .overview-info{
-  width: 25% !important;
+  width: 30% !important;
 }

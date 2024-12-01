@@ -38,6 +38,7 @@
     .customer-details {
       background: transparent;
       color: var(--white);
+      border: 1px solid var(--bg-secondary-color);
     }
   
     .bg-blue-icon {

@@ -19,8 +19,6 @@ const ActivityProfile = () => {
       <StepsRoot
         className="activity-profile"
         orientation="vertical"
-        defaultValue={1}
-        count={5}
       >
         <h3 className="activity-title">Last Activity</h3>
         <div className="activity-steps d-flex flex-row align-items-center">
