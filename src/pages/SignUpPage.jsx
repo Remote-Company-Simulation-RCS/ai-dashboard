@@ -68,7 +68,7 @@ function SignUpPage() {
       </form>
       <p className="text-center text-secondary">
         Have an account?
-        <a href="#" className="signin-herf text-decoration-none">
+        <a href="/" className="signin-herf text-decoration-none">
           &nbsp; Try to sign in
         </a>
       </p>
