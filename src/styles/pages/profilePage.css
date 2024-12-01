@@ -1,3 +1,4 @@
+
 .profile-page-container{  
   width: 100% !important;
   height: auto !important;
@@ -5,6 +6,9 @@
 }
 .customer-info{
   width: 25% !important;
+  
+.profile-page {
+  background-color: color-mix(in srgb, var(--bg-light-color) 96%, var(--bg-dark-color) 4%) !important;
 }
 .overview-info{
   width: 30% !important;

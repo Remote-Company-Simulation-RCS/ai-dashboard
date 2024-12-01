@@ -1,0 +1,74 @@
+.avatar-profile {
+  background-color: var(--bg-light-color);
+  width: 98%;
+  display: grid;
+  place-self: center;
+  height: fit-content;
+  /* padding-bottom: 50px; */
+  margin-bottom: 20px;
+}
+
+.avatar-profile-header {
+  color: var(--white);
+  background-color: var(--blue);
+  height: 100px;
+}
+
+.avatar-profile-image {
+  position: relative;
+  top: -50px;
+}
+
+.avatar-profile-image img {
+  border: 3px solid var(--white);
+
+}
+
+.avatar-profile-body {
+  position: relative;
+  top: -25px;
+}
+
+.avatar-btn {
+  background-color: var(--bg-light-nav);
+  color: var(--blue);
+  &:hover {
+    background-color: color-mix(in srgb, var(--bg-light-nav) 80%, var(--black) 20%);
+    color: var(--black);
+  }
+}
+.vertical-divider {
+  width: 1px;
+  height: 80%;
+  margin-inline: 40px;
+  margin-bottom: 20px;
+  background-color: color-mix(in srgb, var(--bg-light-nav) 80%, var(--black) 20%);
+}
+
+.avatar-cube {
+  color: var(--bg-dark-nav);
+}
+
+body[data-theme="dark-mode"] {
+  .avatar-profile {
+    background-color: var(--bg-dark-nav);
+    color: var(--white);
+  }
+
+  .avatar-profile-header {
+    background-color: var(--blue);
+  }
+
+  .avatar-btn {
+    background-color: color-mix(in srgb, var(--bg-dark-nav) 90%, var(--white) 10%);
+    color: var(--white);
+    &:hover {
+      background-color: color-mix(in srgb, var(--bg-dark-nav) 95%, var(--white) 5%);
+      color: var(--white);
+    }
+  }
+
+  .avatar-cube {
+    color: var(--bg-light-nav);
+  }
+}
