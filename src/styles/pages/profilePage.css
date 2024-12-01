@@ -1,3 +1,7 @@
+.profile-page {
+  background-color: color-mix(in srgb, var(--bg-light-color) 96%, var(--bg-dark-color) 4%) !important;
+}
+
 .customer-details {
   background-color: #fff;
   color: var(--black);
@@ -35,6 +39,10 @@
 }
 
 body[data-theme="dark-mode"] {
+  .profile-page {
+    background-color: color-mix(in srgb, var(--bg-dark-color) 96%, var(--bg-light-color) 4%) !important;
+  }
+  
   .customer-details {
     background: transparent;
     color: var(--white);

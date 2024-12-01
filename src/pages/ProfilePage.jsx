@@ -5,13 +5,15 @@ import CustomerDetails from "../components/CustomerDetails.jsx";
 import CustomerSecurity from "../components/CustomerSecurity.jsx";
 import "../styles/pages/profilePage.css";
 import "../styles/main.css";
+import AvatarProfile from "../components/AvatarProfile.jsx";
 
 export default function ProfilePage() {
   return (
-    <div className="profile-page px-4">
+    <div className="profile-page">
       <Navbar background={true} />
+      <AvatarProfile />
       <ActivityProfile />
-      <CustomerDetails />
+      <CustomerDetails  />
       <CustomerSecurity />
     </div>
   );
