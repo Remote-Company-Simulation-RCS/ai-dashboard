@@ -1,6 +1,6 @@
 import React from "react";
 import { MdOutlineModeEdit } from "react-icons/md";
-import "../styles/pages/profilePage.css";
+import "../styles/components/customer.css";
 
 const CustomerDetails = () => {
   return (

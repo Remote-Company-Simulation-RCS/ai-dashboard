@@ -1,7 +1,7 @@
 import React from "react";
 import { MdOutlineModeEdit } from "react-icons/md";
 import Button from "./Button";
-import "../styles/pages/profilePage.css";
+import "../styles/components/customer.css";
 
 const CustomerSecurity = () => {
   return (
