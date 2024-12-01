@@ -8,11 +8,18 @@ import "../styles/main.css";
 
 export default function ProfilePage() {
   return (
-    <div className="profile-page px-4">
+    <div className="profile-page">
       <Navbar background={true} />
-      <ActivityProfile />
-      <CustomerDetails />
-      <CustomerSecurity />
+      <div className="profile-page-container d-flex justify-content-between align-content-center px-4">
+        <div className="customer-info">
+          <CustomerDetails />
+          <CustomerSecurity />
+        </div>
+        <div className="overview-info">
+          <h2 className="fw-bold fs-5">Activity</h2>
+        </div>
+        <ActivityProfile />
+      </div>
     </div>
   );
 }
