@@ -1,17 +1,17 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/components/avatarProfile.css";
 import pfpImage from "../assets/images/pfp.svg";
 import { IoCubeOutline } from "react-icons/io5";
 import Button from "./Button";
 import { LuReceipt } from "react-icons/lu";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/components/avatarProfile.css";
 
 function AvatarProfile(props) {
   return (
     <div className="avatar-profile rounded-5">
-      <div className="avatar-profile-header rounded-top-5 text-end py-2 d-flex flex-column justify-content-center align-items-end px-3">
+      <div className="avatar-profile-header h-100 py-3 px-3 d-flex flex-column justify-content-center align-items-end text-end rounded-top-5">
         <h5>Free Subscription</h5>
-        <p className="m-0">
+        <p className="w-75">
           <strong>1,350 remaining requests</strong> out of 1,500
         </p>
       </div>
@@ -23,8 +23,8 @@ function AvatarProfile(props) {
           className="rounded-circle ms-3"
         />
       </div>
-      <div className="avatar-profile-body d-flex justify-content-between">
-        <div className="d-flex">
+      <div className="avatar-profile-body d-flex flex-column flex-sm-row justify-content-between h-auto">
+        <div className="d-flex flex-column flex-lg-row">
           <div className="ms-3">
             <div className="d-flex">
               <h1 className="fw-bold">Nicole Fridman</h1>
@@ -35,15 +35,15 @@ function AvatarProfile(props) {
             <p className="lead">Registered at January 10, 2023</p>
           </div>
           <div className="vertical-divider"></div>
-          <div className="d-flex flex-column justify-content-between avatar-cube">
-            <IoCubeOutline className="fs-4 mt-3" />
+          <div className="d-flex flex-column justify-content-between ms-3 ms-lg-0 avatar-cube">
+            <IoCubeOutline className="fs-4 mt-0 mb-2 mb-lg-0 ms-lg-3" />
             <p className="fs-6">Last login at March 11, 2023</p>
           </div>
         </div>
         <div className="d-grid justift-content-center text-end me-3">
           <small className="text-secondary">Next invoice will be at</small>
           <p className="fw-semibold">July 10, 2023 of $50</p>
-          <Button className="btn btn-primary d-flex align-items-center rounded-pill">
+          <Button className="btn btn-primary mx-3 me-0 py-3 py-sm-0 d-flex align-items-center justify-content-center rounded-pill">
             <LuReceipt className="me-2" /> Manage Subscription
           </Button>
         </div>

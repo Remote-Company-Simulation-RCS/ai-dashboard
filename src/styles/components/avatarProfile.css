@@ -3,7 +3,6 @@
   width: 98%;
   display: grid;
   place-self: center;
-  height: 320px;
   margin-bottom: 10px;
   margin-top: -10px;
 }
@@ -37,6 +36,7 @@
     color: var(--black);
   }
 }
+
 .vertical-divider {
   width: 1px;
   height: 80%;

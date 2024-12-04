@@ -1,19 +1,9 @@
-.profile-page{
+.profile-page {
   width: 100% !important;
   height: auto !important;
 }
+
 .profile-page-container {
-  width: 100% !important;
+  width: 100w !important;
   height: 50% !important;
-  gap: 10px;
 }
-
-.customer-info {
-  width: 25% !important;
-  height: 50%;
-}
-.overview-info {
-  width: 30% !important;
-  height: 50%;
-}
-

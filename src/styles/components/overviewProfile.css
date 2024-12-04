@@ -1,6 +1,4 @@
 .overview-details {
-  width: 90%;
-  height: 50%;
   background-color: #fff;
   color: var(--black);
   border: 1px solid #c3c3c3;
@@ -8,43 +6,49 @@
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .overview-title {
   color: var(--black);
 }
+
 .overview-items {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: space-around;
   height: 50%;
   border-bottom: 1px solid var(--black);
 }
+
 .overview-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .overview-number {
   font-weight: bold;
   font-size: 30px;
 }
+
 .overview-name {
   font-size: 13px;
   color: var(--black);
 }
-.button-overview{
-background-color: var(--light-blue-btn);
-width: 45%;
-height: 30%;
-border: 1px solid var(--light-blue-btn);
-padding: 10px;
-border-radius: 30px;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction:row;
-font-size: 15px;
+
+.button-overview {
+  background-color: var(--light-blue-btn);
+  width: 48%;
+  height: 30%;
+  border: 1px solid var(--light-blue-btn);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 14px;
+  font-weight: bold;
 }
+
 .overview-icon {
   background-color: var(--light-blue-btn);
   color: var(--blue);
@@ -52,15 +56,17 @@ font-size: 15px;
   height: 40px;
   cursor: pointer;
 }
-.button-tittle{
+
+.button-tittle {
   color: var(--blue);
 }
-.button-tittle:hover{
+
+.button-tittle:hover {
   color: var(--bg-dark-color);
 }
+
 body[data-theme="dark-mode"] {
   .overview-details {
-    width: 90%;
     height: 50%;
     background-color: var(--bg-dark-transparent);
     color: var(--black);
@@ -69,9 +75,11 @@ body[data-theme="dark-mode"] {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
+
   .overview-title {
     color: var(--white);
   }
+
   .overview-items {
     display: flex;
     flex-direction: row;
@@ -80,21 +88,25 @@ body[data-theme="dark-mode"] {
     height: 50%;
     border-bottom: 1px solid var(--white);
   }
+
   .overview-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 5px;
   }
+
   .overview-number {
     font-weight: bold;
     font-size: 30px;
     color: var(--white);
   }
+
   .overview-name {
     font-size: 13px;
     color: var(--white);
   }
+
   .overview-icon {
     background-color: var(--light-blue-btn);
     color: var(--white);
@@ -102,7 +114,8 @@ body[data-theme="dark-mode"] {
     height: 40px;
     cursor: pointer;
   }
-  .button-tittle{
+
+  .button-tittle {
     color: var(--white);
   }
 }
