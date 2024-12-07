@@ -4,7 +4,6 @@
   --black: #000000;
   --blue: #007aff;
   --orange: #ffa500;
-  
 
   /* BUTTON COLORS */
   --translucent-button: rgba(255, 255, 255, 0.2);
@@ -36,6 +35,7 @@
   --border-dark: #3c3c3c;
   --light-blue-btn: rgba(0, 153, 255, 0.2);
   --orange-light: rgba(255, 166, 0, 0.4);
+  --black-translucent: rgba(34, 34, 34, 0);
 
   /* CODE BLOCKS  */
   --code-block-color: rgb(32, 33, 36);
@@ -47,4 +47,32 @@
   --blue-chart-stick-color-2: #93a9e1;
   --blue-chart-stick-color-3: #b3c3eb;
   --blue-chart-stick-color-4: #d3def4;
+
+  /* NEWS COLORS */
+  --news-yellow-color: #b88245;
+  --news-pink-color: #ed698c;
+  --news-blue-color: #8de7ec;
+  --news-purple-color: #5e41b9;
+  --news-gradient: linear-gradient(
+    125deg,
+    var(--blue) 0%,
+    var(--news-yellow-color) 40%,
+    var(--news-pink-color) 50%,
+    var(--news-blue-color) 65%,
+    var(--blue) 100%
+  );
+
+  --news-card-1-gradient: linear-gradient(
+    140deg,
+    var(--black-translucent) 60%,
+    var(--news-blue-color) 75%,
+    color-mix(in srgb, var(--news-blue-color) 40%, var(--news-yellow-color) 60%)
+      100%
+  );
+  --news-card-2-gradient: linear-gradient(
+    140deg,
+    var(--black-translucent) 60%,
+    var(--news-pink-color) 75%,
+    var(--news-purple-color) 100%
+  );
 }
