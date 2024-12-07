@@ -37,14 +37,15 @@
 
 .button-overview {
   background-color: var(--light-blue-btn);
-  width: 48%;
-  height: 30%;
+  width: 50%;
+  height: 100%;
   border: 1px solid var(--light-blue-btn);
   border-radius: 30px;
+  padding: 20px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: row ;
   font-size: 14px;
   font-weight: bold;
 }
