@@ -44,7 +44,7 @@ function Navbar({ chatHistoryToggle, phonePadding, toggleChat, background }) {
           </div>
         )}
         <nav className="nav-links d-none d-lg-flex justify-content-center align-items-center text-white rounded-5">
-          <NavLink to="/" className={linkClass}>
+          <NavLink to="/dashboard" className={linkClass}>
             Dashboard
           </NavLink>
           <NavLink to="/assistant" className={linkClass}>

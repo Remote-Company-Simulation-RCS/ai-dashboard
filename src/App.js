@@ -5,6 +5,7 @@ import SignUpPage from "./pages/SignUpPage.jsx";
 import SignInPage from "./pages/SignInPage.jsx";
 import SubscriptionPage from "./pages/SubscriptionPage.jsx";
 import ProfilePage from "./pages/ProfilePage.jsx";
+import DashboardPage from "./pages/DashboardPage.jsx";
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
         <Routes>
           <Route path="/" element={<SignInPage />} />
           <Route path="/signup" element={<SignUpPage />} />
-          <Route path="/subscription" element={<SubscriptionPage />} />
+          <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/assistant" element={<AssistantPage />} />
+          <Route path="/subscription" element={<SubscriptionPage />} />
           <Route path="/profile" element={<ProfilePage />} />
         </Routes>
       </div>

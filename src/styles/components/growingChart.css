@@ -1,0 +1,75 @@
+.chart-container {
+  height: 290px;
+  background-color: var(--white);
+}
+
+.chart-container .average .lh-1 {
+  color: #979797;
+  font-size: 14px;
+}
+
+.progress-data {
+  color: #979797;
+}
+
+/* FILL BAR */
+.outer-bar {
+  position: relative;
+  width: 35px;
+  height: 120px;
+  background-color: var(--bg-light-color);
+  border-radius: 25px;
+}
+
+.inner-bar {
+  position: absolute;
+  width: 35px;
+  bottom: 0;
+  border-radius: 25px;
+  background-color: var(--orange-light);
+  border: 1px solid var(--orange);
+}
+
+.last-bar {
+  background-color: transparent;
+  background: url("../../assets/backgrounds/barsBackground.png");
+  background-size: cover;
+  background-position: center;
+  border: none;
+  box-shadow: none;
+}
+/* FILL BAR - END*/
+
+body[data-theme="dark-mode"] {
+  .chart-container {
+    height: 290px;
+    background-color: var(--bg-dark-color);
+    color: #fff;
+  }
+
+  /* FILL BAR */
+  .outer-bar {
+    position: relative;
+    width: 35px;
+    height: 120px;
+    background-color: #393a3f;
+    border: none;
+    border-radius: 25px;
+  }
+
+  .inner-bar {
+    position: absolute;
+    width: 35px;
+    bottom: 0;
+    border-radius: 25px;
+    box-shadow: 0px 0px 2px 0px rgba(255, 255, 255, 0.9);
+    background-color: var(--white);
+    border: none;
+  }
+
+  .last-bar {
+    box-shadow: none;
+  }
+
+  /* FILL BAR - END*/
+}
