@@ -5,3 +5,7 @@
 .dashboard-right{
     width: 22%;    
 }
+
+.dashboard-center {
+    width: 100%;
+}
