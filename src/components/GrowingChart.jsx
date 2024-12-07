@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/components/growingChart.css";
 import FillBar from "./FillBar";
+import "../styles/components/growingChart.css";
 
 const Chart = () => {
   return (

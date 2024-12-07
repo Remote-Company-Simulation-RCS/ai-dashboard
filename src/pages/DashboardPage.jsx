@@ -1,15 +1,20 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import GrowingChart from "../components/GrowingChart";
+import DashboardRight from "../layouts/DashboardRight";
+import DashboardLeft from "../layouts/DashboardLeft";
+
 import "../styles/main.css";
 import "../styles/pages/dashboardPage.css";
 
 function DashboardPage() {
   return (
-    <div className="px-3">
+    <>
       <Navbar />
-      <GrowingChart />
+    <div className="px-3 w-100 d-flex">
+      <DashboardLeft />
+      <DashboardRight />
     </div>
+    </>
   );
 }
 
