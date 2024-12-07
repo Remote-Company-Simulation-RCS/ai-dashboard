@@ -3,9 +3,9 @@ import Button from "./Button.jsx";
 import Achievements from "./Achievements.jsx";
 import Rating from "./Rating.jsx";
 import { CiCircleQuestion } from "react-icons/ci";
+import { useNavigate } from "react-router-dom";
 import "../styles/main.css";
 import "../styles/components/feedbackChat.css";
-import { useNavigate } from "react-router-dom";
 
 export default function Feedback() {
   const navigate = useNavigate();

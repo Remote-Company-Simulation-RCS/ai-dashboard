@@ -1,0 +1,16 @@
+.new-updates {
+  border-radius: 25px;
+  background-color: #dedede;
+}
+
+.check-link {
+  cursor: pointer;
+}
+
+body[data-theme="dark-mode"] {
+  .new-updates {
+      color: var(--white);
+      background-color: transparent;
+    border: 1px solid var(--bg-dark-color);
+  }
+}
