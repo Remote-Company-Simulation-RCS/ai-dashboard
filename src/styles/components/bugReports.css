@@ -1,0 +1,12 @@
+.bug-reports {
+  background-color: var(--white);
+  height: 180px;
+}
+
+body[data-theme="dark-mode"] {
+  .bug-reports {
+    background-color: var(--bg-dark-transparent);
+    height: 180px;
+    color: var(--white);
+  }
+}
