@@ -4,6 +4,11 @@
   --black: #000000;
   --blue: #007aff;
   --orange: #ffa500;
+  
+
+  /* BUTTON COLORS */
+  --translucent-button: rgba(255, 255, 255, 0.2);
+  --translucent-button-hover: rgba(255, 255, 255, 0.35);
 
   /* CARDS  */
   --card-color-dark: rgb(48, 51, 64, 0.5);
@@ -35,4 +40,11 @@
   /* CODE BLOCKS  */
   --code-block-color: rgb(32, 33, 36);
   --code-text-color: var(--bg-light-nav);
+
+  /* CHART COLORS */
+  --blue-chart: #2c55c6;
+  --blue-chart-stick-color-1: #738fd8;
+  --blue-chart-stick-color-2: #93a9e1;
+  --blue-chart-stick-color-3: #b3c3eb;
+  --blue-chart-stick-color-4: #d3def4;
 }

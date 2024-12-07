@@ -1,0 +1,62 @@
+.blue-chart {
+  background-color: var(--blue-chart);
+  color: var(--white);
+  border-radius: 35px;
+  height: fit-content;
+}
+
+.chart-btn {
+  background-color: var(--translucent-button) !important;
+  border: none;
+  color: var(--white);
+  padding: 8px 15px;
+  &:hover {
+    background-color: var(--translucent-button-hover) !important;
+  }
+}
+
+.chart-btn.active-button {
+  background-color: var(--white) !important;
+  color: var(--black);
+  &:hover {
+    background-color: var(--bg-light-color) !important;
+  }
+}
+
+.blue-chart-stick {
+    height: 250px;
+    width: 150px;
+}
+
+.blue-chart-info {
+    height: fit-content;
+}
+
+.blue-chart-info p {
+    font-size: 15px !important;
+}
+
+.blue-chart-stick-background {
+    border-radius: 30px;
+    width: 100%;
+}
+
+.blue-chart-stick-background.order-1 {
+    background-color: var(--blue-chart-stick-color-1);
+}
+
+.blue-chart-stick-background.order-2 {
+    background-color: var(--blue-chart-stick-color-2);
+}
+
+.blue-chart-stick-background.order-3 {
+    background-color: var(--blue-chart-stick-color-3);
+}
+
+.blue-chart-stick-background.order-4 {
+    background-color: var(--blue-chart-stick-color-4);
+}
+
+p {
+    font-size: 15px !important;
+}
