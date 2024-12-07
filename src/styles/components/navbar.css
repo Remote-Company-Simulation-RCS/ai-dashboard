@@ -183,7 +183,7 @@ body[data-theme="dark-mode"] {
   }
 
   .bars {
-    color: var(--white) !important;
+    color: var(--white);
   }
 
   .vertical-nav {

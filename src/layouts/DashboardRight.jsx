@@ -13,7 +13,7 @@ function DashboardRight() {
   }
 
   return (
-    <div className="dashboard-right">
+    <div className="dashboard-right d-none d-xl-block">
       <Button
         type="submit"
         className="btn buttons text-start py-3 px-5 rounded-pill"

@@ -6,6 +6,10 @@
   width: 22%;
 }
 
+.dashboard-center {
+    width: 100%;
+}
+
 .dashboard-right .buttons {
   background-color: var(--white);
   border: 1px solid var(--white);

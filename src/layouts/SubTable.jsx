@@ -1,7 +1,7 @@
 import React from "react";
 import Buttons from "../components/Button.jsx";
 import PlanCards from "../layouts/PlanCards.jsx";
-import { Button, Modal } from 'antd';
+import { Modal } from 'antd';
 import SubtableCards from "../components/SubtableCard.jsx";
 import { IoBagHandleOutline, IoCubeOutline } from "react-icons/io5";
 import { LuWallet, LuPencil } from "react-icons/lu";

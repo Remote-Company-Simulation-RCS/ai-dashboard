@@ -5,7 +5,7 @@ import "../styles/components/customer.css";
 
 const CustomerData = ({ col }) => {
   return (
-    <div className={`customer-info mb-3 ${col}`}>
+    <div className="customer-info">
       <CustomerDetails />
       <CustomerSecurity />
     </div>
