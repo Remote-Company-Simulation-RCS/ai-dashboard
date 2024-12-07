@@ -17,7 +17,7 @@ function Toggle({ toggleSidebar, background }) {
         <img src={Pfp} alt="Profile Photo" className="pfp" />
       </NavLink>
       <FiAlignRight
-        className="bars d-sm-block d-lg-none fs-3"
+        className="bars d-sm-block active-p d-lg-none fs-3"
         onClick={toggleSidebar}
       />
     </div>
