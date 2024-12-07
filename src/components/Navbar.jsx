@@ -50,7 +50,7 @@ function Navbar({ chatHistoryToggle, phonePadding, toggleChat, background }) {
           <NavLink to="/assistant" className={linkClass}>
             AI Assistant
           </NavLink>
-          <NavLink to="/" className={linkClass}>
+          <NavLink to="/news" className={linkClass}>
             News & Updates
           </NavLink>
           <NavLink to="/subscription" className={linkClass}>
@@ -72,7 +72,7 @@ function Navbar({ chatHistoryToggle, phonePadding, toggleChat, background }) {
       >
         <IoClose className={`x-icon fs-3`} onClick={toggleSidebar} />
         <NavLink
-          to="/"
+          to="/dashboard"
           className="fs-5 nav-item py-2 text-black text-decoration-none bg-transparent"
         >
           Dashboard
@@ -84,7 +84,7 @@ function Navbar({ chatHistoryToggle, phonePadding, toggleChat, background }) {
           AI Assistant
         </NavLink>
         <NavLink
-          to="/"
+          to="/news"
           className="fs-5 nav-item py-2 text-black text-decoration-none bg-transparent"
         >
           News & Updates
