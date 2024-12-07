@@ -12,10 +12,16 @@ export default function ProfilePage() {
     <div className="profile-page">
       <Navbar background={true} />
       <AvatarProfile />
-      <div className="profile-page-container row px-3">
-        <CustomerData col="col-12 col-md-6 col-xl-3" />
-        <OverviewProfile col="col-12 col-md-6 col-xl-3" />
-        <ActivityProfile col="col-12 col-xl-6" />
+      <div className="row mx-3 my-2">
+        <div className="col-xl-3 col-lg-6 ">
+        <CustomerData     />
+        </div>
+        <div className="col-xl-3 col-lg-6">
+        <OverviewProfile  />
+       </div>
+        <div className="col-xl-6 col-lg-12">
+        <ActivityProfile  />
+        </div>
       </div>
     </div>
   );

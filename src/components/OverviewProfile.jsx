@@ -2,14 +2,19 @@ import React from "react";
 import { HiChartBar } from "react-icons/hi";
 import { IoMdChatboxes } from "react-icons/io";
 import { FaFileImage } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import Button from "./Button.jsx";
 import "../styles/components/overviewProfile.css";
 
-export default function OverviewProfile({ col }) {
+export default function OverviewProfile()
+ {
+  const navigate = useNavigate();
+
+  function handleSubscription() {
+    navigate("/assistant")
+  }
   return (
-    <div
-      className={`d-flex flex-column align-items-center h-100 gap-2 mb-3 ${col}`}
-    >
+    <div className="w-100 h-100 mb-3  d-flex flex-column align-items-center gap-4">
       <div className="overview-details w-100 px-4 rounded-5 d-flex flex-column justify-content-center">
         <div className="d-flex align-items-center justify-content-between">
           <h3 className="fs-5 fw-bold overview-title">Overview</h3>
@@ -30,30 +35,34 @@ export default function OverviewProfile({ col }) {
           <p className="overview-name mt-3">requests</p>
         </div>
       </div>
-      <div className="w-100 h-50 mt-3 d-flex justify-content-between">
-        <Button
-          className="button-overview"
-          type="submit"
-          onClick={"#"}
-          children={
-            <div className="d-flex w-100 h-100 align-items-center justify-content-start row px-3 gap-2">
-              <IoMdChatboxes className="p-2 rounded-5 overview-icon" />
-              <p className="button-tittle">Start new chat</p>
-            </div>
-          }
-        />
-        <Button
-          className="button-overview"
-          type="submit"
-          onClick={"#"}
-          children={
-            <div className="d-flex w-100 h-100 align-items-center justify-content-start row px-3 gap-2">
-              <FaFileImage className="p-2 rounded-5 overview-icon" />
-              <p className="button-tittle">Generate Image</p>
-            </div>
-          }
-        />
+      <div className="w-100 rounded-5 d-flex flex-column justify-content-center">
+        <div className="d-flex flex-row gap-2  w-100 h-100 justify-content-between align-items-center">
+          <Button
+            className="button-overview"
+            type="submit"
+            onClick={handleSubscription}
+            children={
+              <div className="d-flex w-100 h-100 flex-column align-items-center">
+                <IoMdChatboxes className="p-2 rounded-5 overview-icon" />
+                <p className="button-tittle">Start new chat</p>
+              </div>
+            }
+          />
+            <Button
+            className="button-overview"
+            type="submit"
+            onClick={handleSubscription}
+            children={
+              <div className="d-flex w-190 h-100 flex-column align-items-center">
+             <FaFileImage className="p-2 rounded-5 overview-icon" />
+             <p className="button-tittle">Generate Image</p>
+              </div>
+            }
+          />
+        </div>
       </div>
     </div>
   );
 }
+
+ 
