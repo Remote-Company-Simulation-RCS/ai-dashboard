@@ -62,7 +62,7 @@ function BlueChart() {
           <div className="col-lg-6 d-flex flex-row gap-2 align-items-center">
             <h1 className="fw-bold mb-0 display-5">+4.5%</h1>
             <p className="mb-0">
-              successfully resolved <br/> issues growth
+              successfully resolved <br /> issues growth
             </p>
           </div>
         </div>

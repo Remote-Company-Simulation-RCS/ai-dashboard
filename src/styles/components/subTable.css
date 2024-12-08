@@ -5,7 +5,7 @@
 }
 .ant-modal-content,
 .ant-modal-title,
-.ant-modal-close{
+.ant-modal-close {
   background-color: var(--bg-light-color) !important;
   color: var(--black) !important;
 }
@@ -64,7 +64,7 @@ body[data-theme="dark-mode"] {
   }
   .ant-modal-content,
   .ant-modal-title,
-  .ant-modal-close{
+  .ant-modal-close {
     background-color: var(--bg-dark-color) !important;
     color: var(--white) !important;
   }
