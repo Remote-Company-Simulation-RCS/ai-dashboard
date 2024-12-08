@@ -4,8 +4,8 @@ import { AiOutlineUnlock } from "react-icons/ai";
 import Button from "./Button";
 import { Modal } from "antd";
 import Input from "./Input";
-import "../styles/components/customer.css";
 import "../styles/pages/signIn.css";
+import "../styles/components/customer.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const CustomerSecurity = () => {
@@ -72,7 +72,7 @@ const CustomerSecurity = () => {
           icon={<AiOutlineUnlock className="text-secondary" />}
           className="input-group mb-3 border-3"
           spanClassName="input-group-text bg-transparent border-secondary border-end-0"
-          inputClassName="form-control bg-transparent border-start-0 p-3 border-secondary"
+          inputClassName="form-control bg-transparent border-start-0 p-3 border-secondary form-control-security"
         />
         <Input
           type="password"
@@ -83,7 +83,7 @@ const CustomerSecurity = () => {
           icon={<AiOutlineUnlock className="text-secondary" />}
           className="input-group mb-3 border-3"
           spanClassName="input-group-text bg-transparent border-secondary  border-end-0"
-          inputClassName="form-control bg-transparent border-start-0 p-3 border-secondary"
+          inputClassName="form-control bg-transparent border-start-0 p-3 border-secondary form-control-security"
         />
          <Button
           type="submit"

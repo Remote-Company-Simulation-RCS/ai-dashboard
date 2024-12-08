@@ -6,12 +6,16 @@ import Button from "../components/Button.jsx";
 import "../styles/pages/signIn.css";
 import "../styles/main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 function SignUpPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [checked, setChecked] = useState(true);
+  let emailRegex =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const navigate = useNavigate();
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -23,8 +27,71 @@ function SignUpPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Email:", email);
-    console.log("Password:", password);
+    if (email && password && emailRegex.test(email)) {
+      console.log("Email:", email);
+      console.log("Password:", password);
+      Swal.fire({
+        icon: "success",
+        title: "Success!",
+        text: "You have been signed in successfully.",
+        customClass: {
+          popup: "my-swal-container"
+        },
+        showConfirmButton: false,
+        timer: 1999
+      })
+      setTimeout(() => {
+        navigate("/profile");
+      }, 2000)
+    } else if (email && password && !emailRegex.test(email)) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Please enter a valid email",
+        customClass: {
+          popup: "my-swal-container"
+        },
+        showConfirmButton: false,
+        timer: 1500,
+        timerProgressBar: true
+      });
+    } else if (email) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Please enter a password",
+        customClass: {
+          popup: "my-swal-container"
+        },
+        showConfirmButton: false,
+        timer: 1500,
+        timerProgressBar: true
+      });
+    } else if (password) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Please enter an email",
+        customClass: {
+          popup: "my-swal-container"
+        },
+        showConfirmButton: false,
+        timer: 1500,
+        timerProgressBar: true
+      });
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Please enter a password and an emai",
+        customClass: {
+          popup: "my-swal-container"
+        },
+        showConfirmButton: false,
+        timer: 1500,
+        timerProgressBar: true
+      });
+    }
   };
 
   const handleChecked = () => {
@@ -80,7 +147,7 @@ function SignUpPage() {
         <Button
           type="submit"
           className="btn btn-primary w-100 py-3 rounded-4 mb-3"
-          onClick={handleChecked}
+          onClick={handleSubmit}
           children="Sign in"
         />
         <p className="text-center">
