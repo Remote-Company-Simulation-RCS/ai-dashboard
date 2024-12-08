@@ -1,4 +1,4 @@
-import {  LuUser } from "react-icons/lu";
+import { LuUser } from "react-icons/lu";
 import "../styles/components/activityProfile.css";
 
 const ActivityProfile = () => {
@@ -77,4 +77,3 @@ const ActivityProfile = () => {
   );
 };
 export default ActivityProfile;
-

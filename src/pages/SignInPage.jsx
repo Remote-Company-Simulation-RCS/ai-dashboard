@@ -7,7 +7,6 @@ import "../styles/pages/signIn.css";
 import "../styles/main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
 function SignUpPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
