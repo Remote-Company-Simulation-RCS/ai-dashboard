@@ -8,6 +8,7 @@
   border: 1px solid var(--white);
   color: var(--black);
 }
+
 .feedback .buttons:hover {
   background-color: var(--white);
   border: 1px solid var(--white);
@@ -34,16 +35,16 @@ body[data-theme="dark-mode"] {
     color: var(--white);
   }
 
-  .buttons p {
+  .feedback .buttons p {
     font-size: 12px;
   }
 
-  .buttons span {
+  .feedback .buttons span {
     font-size: 12px;
     color: var(--blue);
   }
 
-  p {
+  .feedback p {
     color: var(--white);
     font-size: 12px;
   }

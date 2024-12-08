@@ -1,0 +1,11 @@
+.pie {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+.pie-chart {
+  position: absolute;
+  top: -50px;
+  display: flex;
+  align-items: start;
+}

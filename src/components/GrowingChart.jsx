@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Chart = () => {
   return (
-    <div className="chart-container rounded-5 p-4">
+    <div className="chart-container rounded-5 p-4 mb-2">
       <h6 className="">Successfully resolved issues</h6>
       <div className="progress-data"></div>
       <div className="average d-flex align-items-center gap-3">
