@@ -36,18 +36,31 @@
 }
 
 .button-overview {
-  background-color: var(--light-blue-btn);
   width: 50%;
   height: 100%;
-  border: 1px solid var(--light-blue-btn);
-  border-radius: 30px;
+  border: none;
+  border-radius: 50px;
   padding: 20px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row ;
+  flex-direction: row;
   font-size: 14px;
   font-weight: bold;
+}
+
+.chat-btn {
+  background: linear-gradient(
+    274deg,
+    rgba(28, 143, 185, 1) 0%,
+    rgba(31, 74, 161, 1) 26%,
+    rgba(32, 34, 44, 1) 100%
+  );
+  background-repeat: no-repeat;
+}
+
+.img-btn {
+  background-color: var(--bg-dark-transparent);
 }
 
 .overview-icon {

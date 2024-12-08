@@ -1,9 +1,9 @@
-import {  LuUser } from "react-icons/lu";
+import { LuUser } from "react-icons/lu";
 import "../styles/components/activityProfile.css";
 
 const ActivityProfile = () => {
   return (
-    <div className="activity-profile mb-3 w-100 d-flex flex-column gap-1 p-3">
+    <div className="activity-profile mb-3 mt-2 w-100 d-flex flex-column gap-1 p-3">
       <h3 className="activity-title">Last Activity</h3>
       <div className="activity-content">
         <div className="activity-item">
@@ -77,4 +77,3 @@ const ActivityProfile = () => {
   );
 };
 export default ActivityProfile;
-
