@@ -41,6 +41,11 @@ input {
   border-radius: 100% !important;
 }
 
+.my-swal-container {
+  background: var(--bg-light-color) !important;
+  color: var(--black) !important;
+}
+
 @media screen and (prefers-color-scheme: dark) {
   .sign-in {
     width: 100vw;
@@ -66,6 +71,11 @@ input {
   input:focus {
     color: var(--white) !important;
     box-shadow: none !important;
+  }
+
+  .my-swal-container {
+    background: var(--bg-dark-color) !important;
+    color: var(--white) !important;
   }
 }
 
