@@ -24,39 +24,39 @@
 }
 
 .blue-chart-stick {
-  height: 250px;
-  width: 150px;
+    height: 250px;
+    width: 150px;
 }
 
 .blue-chart-info {
-  height: fit-content;
+    height: fit-content;
 }
 
 .blue-chart-info p {
-  font-size: 15px !important;
+    font-size: 15px !important;
 }
 
 .blue-chart-stick-background {
-  border-radius: 30px;
-  width: 100%;
+    border-radius: 30px;
+    width: 100%;
 }
 
 .blue-chart-stick-background.order-1 {
-  background-color: var(--blue-chart-stick-color-1);
+    background-color: var(--blue-chart-stick-color-1);
 }
 
 .blue-chart-stick-background.order-2 {
-  background-color: var(--blue-chart-stick-color-2);
+    background-color: var(--blue-chart-stick-color-2);
 }
 
 .blue-chart-stick-background.order-3 {
-  background-color: var(--blue-chart-stick-color-3);
+    background-color: var(--blue-chart-stick-color-3);
 }
 
 .blue-chart-stick-background.order-4 {
-  background-color: var(--blue-chart-stick-color-4);
+    background-color: var(--blue-chart-stick-color-4);
 }
 
 p {
-  font-size: 15px !important;
+    font-size: 15px !important;
 }

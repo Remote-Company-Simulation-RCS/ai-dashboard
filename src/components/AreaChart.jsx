@@ -1,5 +1,10 @@
 import React, { PureComponent } from "react";
-import { AreaChart, Area,ResponsiveContainer } from "recharts";
+import {
+  AreaChart,
+  Area,
+  XAxis,
+  ResponsiveContainer,
+} from "recharts";
 
 const data = [
   {
@@ -39,6 +44,7 @@ const data = [
     amt: 2500,
   },
   {
+    
     uv: 3490,
     pv: 4300,
     amt: 2100,
@@ -52,8 +58,7 @@ export default class Example extends PureComponent {
     return (
       <div style={{ width: "100%", height: "180px" }}>
         <ResponsiveContainer>
-          <AreaChart data={data}>
-            S
+          <AreaChart data={data}>S
             <Area
               type="monotone"
               dataKey="uv"

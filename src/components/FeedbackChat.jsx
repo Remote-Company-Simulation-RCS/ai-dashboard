@@ -11,9 +11,9 @@ export default function Feedback() {
   const navigate = useNavigate();
 
   function handleSubscription() {
-    navigate("/subscription");
+    navigate("/subscription")
   }
-
+  
   return (
     <>
       <div className="feedback mt-4 me-4 rounded-5 d-flex flex-column justify-content-between d-none d-xl-flex">

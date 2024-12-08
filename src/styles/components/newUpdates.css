@@ -9,8 +9,8 @@
 
 body[data-theme="dark-mode"] {
   .new-updates {
-    color: var(--white);
-    background-color: transparent;
+      color: var(--white);
+      background-color: transparent;
     border: 1px solid var(--bg-dark-color);
   }
 }

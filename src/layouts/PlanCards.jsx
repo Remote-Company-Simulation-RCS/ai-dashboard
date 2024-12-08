@@ -47,7 +47,7 @@ function PlanCards() {
       />
       <PlanCard
         plan="Pro Max Plan"
-        price={`$ 149`}
+        price={ `$ 149`}
         perMonth="/ month"
         planClass="plan-name-max"
         advantage="up to 10 users, billed annually"

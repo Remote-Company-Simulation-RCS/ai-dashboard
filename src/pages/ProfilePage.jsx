@@ -11,18 +11,18 @@ export default function ProfilePage() {
   return (
     <div className="profile-page">
       <Navbar background={true} />
-      <div className="mx-3">
-        <AvatarProfile />
+      <div className="mx-3" >
+      <AvatarProfile />
       </div>
       <div className="row mx-3 my-2">
         <div className="col-xl-3 col-lg-6 ">
-          <CustomerData />
+        <CustomerData     />
         </div>
         <div className="col-xl-3 col-lg-6">
-          <OverviewProfile />
-        </div>
+        <OverviewProfile  />
+       </div>
         <div className="col-xl-6 col-lg-12">
-          <ActivityProfile />
+        <ActivityProfile  />
         </div>
       </div>
     </div>

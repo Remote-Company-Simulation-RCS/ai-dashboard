@@ -93,7 +93,7 @@ code {
   color: var(--code-text-color) !important;
   border-radius: 5px;
   padding: 2px;
-  margin-bottom: 10px;
+  margin-bottom: 10px;  
 }
 
 .typing-cursor {
@@ -125,7 +125,7 @@ body[data-theme="dark-mode"] {
   }
 
   .user-content {
-    background-color: var(--bg-secondary-color) !important;
+  background-color: var(--bg-secondary-color) !important;
     color: var(--white);
   }
 
