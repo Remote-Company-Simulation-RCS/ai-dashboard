@@ -4,10 +4,11 @@
 
 .dashboard-right {
   width: 22%;
+  justify-content: space-between !important;
 }
 
 .dashboard-center {
-    width: 100%;
+    width: 56%;
 }
 
 .dashboard-right .buttons {

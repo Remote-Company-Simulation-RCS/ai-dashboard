@@ -17,12 +17,12 @@ const Chart = () => {
         </span>
       </div>
       <div className="progress-bars d-flex gap-3">
-        <FillBar fillHeight="50%" extraClass="d-none d-xl-flex" />
-        <FillBar fillHeight="55%" extraClass="d-none d-xl-flex" />
-        <FillBar fillHeight="65%" extraClass="d-none d-lg-flex" />
-        <FillBar fillHeight="75%" extraClass="d-none d-lg-flex" />
-        <FillBar fillHeight="80%" extraClass="d-flex" />
-        <FillBar fillHeight="100%" background={true} extraClass="d-flex" />
+        <FillBar fillHeight="50%" extraClass={"d-none d-sm-flex"}  />
+        <FillBar fillHeight="55%"  />
+        <FillBar fillHeight="65%"  />
+        <FillBar fillHeight="75%"  />
+        <FillBar fillHeight="80%"  />
+        <FillBar fillHeight="100%" background={true}  />
       </div>
       <div className="progress-data d-flex justify-content-between mt-3 fw-bold fs-6">
         <span className="d-none d-xl-block">Oct 2023</span>
