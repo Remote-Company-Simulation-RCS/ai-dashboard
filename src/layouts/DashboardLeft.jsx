@@ -5,7 +5,7 @@ import DashAcievements from "../components/DashAcievements";
 
 function DashboardLeft() {
   return (
-    <div className="dashboard-left">
+    <div className="dashboard-left d-flex flex-column justify-content-between">
       <GrowingChart />
       <NewUpdates />
       <DashAcievements />
