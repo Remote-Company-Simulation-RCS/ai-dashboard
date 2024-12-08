@@ -1,67 +1,69 @@
 .customer-details {
-  background-color: #fff;
-  color: var(--black);
-  border: 1px solid #c3c3c3;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.text-orange {
-  color: var(--orange);
-}
-
-.bg-blue-icon {
-  background-color: var(--light-blue-btn);
-  color: var(--blue);
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
-
-.details-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.label {
-  font-weight: 600;
-  width: 120px;
-}
-
-.value {
-  margin-left: 10px;
-}
-input::placeholder {
-  color: var(--black) !important;
-}
-
-input:focus {
-  color: var(--black) !important;
-  box-shadow: none;
-}
-
-body[data-theme="dark-mode"] {
-  .customer-details {
-    background: transparent;
-    color: var(--white);
-    border: 1px solid var(--bg-secondary-color);
+    background-color: #fff;
+    color: var(--black);
+    border: 1px solid #c3c3c3;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-
+  
+  .text-orange {
+    color: var(--orange);
+  }
+  
   .bg-blue-icon {
-    background-color: var(--bg-secondary-color);
-    color: var(--white);
+    background-color: var(--light-blue-btn);
+    color: var(--blue);
     width: 40px;
     height: 40px;
     cursor: pointer;
   }
-  input::placeholder {
-    color: var(--white) !important;
+  
+  .details-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
   }
-
+  
+  .label {
+    font-weight: 600;
+    width: 120px;
+  }
+  
+  .value {
+    margin-left: 10px;
+  }
+  input::placeholder {
+    color: var(--black) !important;
+  }
+  
   input:focus {
-    color: var(--white) !important;
+    color: var(--black) !important;
     box-shadow: none;
   }
-}
+  
+  
+  body[data-theme="dark-mode"] {
+    .customer-details {
+      background: transparent;
+      color: var(--white);
+      border: 1px solid var(--bg-secondary-color);
+    }
+  
+    .bg-blue-icon {
+      background-color: var(--bg-secondary-color);
+      color: var(--white);
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
+    input::placeholder {
+      color: var(--white) !important;
+    }
+    
+    input:focus {
+      color: var(--white) !important;
+      box-shadow: none;
+    }
+  }
+  

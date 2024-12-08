@@ -83,9 +83,7 @@
   background-color: var(--white);
   z-index: 100;
 
-  transition:
-    all 500ms ease-out,
-    opacity 300ms ease-out;
+  transition: all 500ms ease-out, opacity 300ms ease-out;
 }
 
 .vertical-nav.show {
@@ -198,9 +196,7 @@ body[data-theme="dark-mode"] {
     color: var(--white) !important;
     z-index: 100;
 
-    transition:
-      all 500ms ease-out,
-      opacity 300ms ease-out;
+    transition: all 500ms ease-out, opacity 300ms ease-out;
   }
 
   .vertical-nav.show {

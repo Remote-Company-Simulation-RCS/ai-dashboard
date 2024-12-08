@@ -20,6 +20,7 @@
 
 .avatar-profile-image img {
   border: 3px solid var(--white);
+
 }
 
 .avatar-profile-body {
@@ -31,11 +32,7 @@
   background-color: var(--bg-light-nav);
   color: var(--blue);
   &:hover {
-    background-color: color-mix(
-      in srgb,
-      var(--bg-light-nav) 80%,
-      var(--black) 20%
-    );
+    background-color: color-mix(in srgb, var(--bg-light-nav) 80%, var(--black) 20%);
     color: var(--black);
   }
 }
@@ -45,11 +42,7 @@
   height: 80%;
   margin-inline: 40px;
   margin-bottom: 20px;
-  background-color: color-mix(
-    in srgb,
-    var(--bg-light-nav) 80%,
-    var(--black) 20%
-  );
+  background-color: color-mix(in srgb, var(--bg-light-nav) 80%, var(--black) 20%);
 }
 
 .avatar-cube {
@@ -67,18 +60,10 @@ body[data-theme="dark-mode"] {
   }
 
   .avatar-btn {
-    background-color: color-mix(
-      in srgb,
-      var(--bg-dark-nav) 90%,
-      var(--white) 10%
-    );
+    background-color: color-mix(in srgb, var(--bg-dark-nav) 90%, var(--white) 10%);
     color: var(--white);
     &:hover {
-      background-color: color-mix(
-        in srgb,
-        var(--bg-dark-nav) 95%,
-        var(--white) 5%
-      );
+      background-color: color-mix(in srgb, var(--bg-dark-nav) 95%, var(--white) 5%);
       color: var(--white);
     }
   }

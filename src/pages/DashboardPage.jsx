@@ -11,11 +11,11 @@ function DashboardPage() {
   return (
     <>
       <Navbar />
-      <div className="px-3 w-100 d-flex">
-        <DashboardLeft />
-        <DashboardCenter />
-        <DashboardRight />
-      </div>
+    <div className="px-3 w-100 d-flex">
+      <DashboardLeft />
+      <DashboardCenter />
+      <DashboardRight />
+    </div>
     </>
   );
 }
