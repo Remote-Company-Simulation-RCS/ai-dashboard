@@ -50,17 +50,11 @@
 }
 
 .chat-btn {
-  background: linear-gradient(
-    274deg,
-    rgba(28, 143, 185, 1) 0%,
-    rgba(31, 74, 161, 1) 26%,
-    rgba(32, 34, 44, 1) 100%
-  );
-  background-repeat: no-repeat;
+  background-color: var(--white);
 }
 
 .img-btn {
-  background-color: var(--bg-dark-transparent);
+  background-color: var(--light-blue-btn);
 }
 
 .overview-icon {
@@ -131,5 +125,19 @@ body[data-theme="dark-mode"] {
 
   .button-tittle {
     color: var(--white);
+  }
+
+  .chat-btn {
+    background: linear-gradient(
+      274deg,
+      rgba(28, 143, 185, 1) 0%,
+      rgba(31, 74, 161, 1) 26%,
+      rgba(32, 34, 44, 1) 100%
+    );
+    background-repeat: no-repeat;
+  }
+
+  .img-btn {
+    background-color: var(--bg-dark-transparent);
   }
 }

@@ -86,7 +86,7 @@ const CustomerSecurity = () => {
           />
           <Button
             type="submit"
-            className="btn btn-primary w-100 py-3 rounded-4 mb-3 mt-3"
+            className="btn btn-primary w-100 py-3 rounded-4 mb-3 mt-5"
             children="Added New Password"
           />
         </form>
