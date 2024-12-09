@@ -6,7 +6,7 @@ import BlueChartStick from "./BlueChartStick.jsx";
 
 function BlueChart() {
   return (
-    <div className="blue-chart p-4 mx-4">
+    <div className="blue-chart p-4">
       <div className="blue-chart-top">
         <h6>Main topics of questions</h6>
         <div className="blue-chart-questions d-flex gap-3 flex-wrap mt-3">
@@ -16,7 +16,7 @@ function BlueChart() {
           <Button className="btn rounded-pill chart-btn active-button">
             Last quarter
           </Button>
-          <Button className="btn rounded-pill chart-btn">Custom</Button>
+          <Button className="btn rounded-pill chart-btn d-md-flex d-lg-none d-xxl-flex">Custom</Button>
         </div>
       </div>
       <div className="blue-chart-middle mt-3">
@@ -33,21 +33,21 @@ function BlueChart() {
             subject="default chat with AI"
             height="60"
             order="2"
-            extraClass="d-none d-md-flex"
+            extraClass="d-flex"
           />
           <BlueChartStick
             quantity="18,905"
             subject="other questions"
             height="40"
             order="3"
-            extraClass="d-none d-lg-flex"
+            extraClass="d-none d-sm-flex "
           />
           <BlueChartStick
             quantity="12,203"
             subject="questions about future"
             height="20"
             order="4"
-            extraClass="d-none d-xl-flex"
+            extraClass="d-none d-md-flex d-lg-none d-xxl-flex"
           />
         </div>
       </div>

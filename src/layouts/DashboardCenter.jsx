@@ -4,7 +4,7 @@ import Statistic from '../components/Statistic';
 
 function DashboardCenter() {
     return (
-        <div className="dashboard-center d-flex justify-content-between flex-column">
+        <div className="w-100 h-100 m-0 d-flex justify-content-between flex-column gap-3 ">
             <BlueChart />
             <Statistic />
         </div>

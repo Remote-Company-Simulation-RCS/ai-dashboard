@@ -9,14 +9,14 @@ import "../styles/pages/dashboardPage.css";
 
 function DashboardPage() {
   return (
-    <>
+    <div className="overflow-hidden ">
       <Navbar />
-    <div className="px-3 w-100 d-flex">
+    <div className="px-3 mb-3 gap-3 d-flex flex-column flex-lg-row  overflow-hidden">
       <DashboardLeft />
       <DashboardCenter />
       <DashboardRight />
     </div>
-    </>
+    </div>
   );
 }
 

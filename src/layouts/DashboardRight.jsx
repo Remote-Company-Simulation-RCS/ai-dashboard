@@ -13,7 +13,7 @@ function DashboardRight() {
   }
 
   return (
-    <div className="dashboard-right d-none d-xl-block">
+    <div className="dashboard-right d-flex flex-column justify-content-between d-none d-xl-block">
       <Button
         type="submit"
         className="btn buttons text-start py-3 px-5 rounded-pill"
@@ -30,8 +30,10 @@ function DashboardRight() {
           </div>
         }
       />
+      <div className="d-flex flex-column justify-content-between gap-4">
       <BugReports />
       <CountriesStats />
+      </div>
     </div>
   );
 }

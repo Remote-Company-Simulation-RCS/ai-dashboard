@@ -9,7 +9,7 @@ import "../styles/components/statistic.css";
 const formatter = (value) => <CountUp end={value} separator="," />;
 export default function Satatistic() {
   return (
-    <div className="statistic p-3 mx-4 gap-3 d-flex flex-column ">
+    <div className="statistic p-3 gap-3 d-flex flex-column ">
       <div className="statistic-top d-flex flex-column gap-1">
         <div className="d-flex justify-content-between align-items-center">
           <h3 className="fw-bold fs-5">Statistics of API requests</h3>
