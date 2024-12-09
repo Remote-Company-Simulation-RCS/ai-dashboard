@@ -4,8 +4,8 @@ import { AiOutlineUnlock } from "react-icons/ai";
 import Button from "./Button";
 import { Modal } from "antd";
 import Input from "./Input";
-import "../styles/components/customer.css";
 import "../styles/pages/signIn.css";
+import "../styles/components/customer.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const CustomerSecurity = () => {
@@ -59,6 +59,7 @@ const CustomerSecurity = () => {
         }
       >
         <form
+
           onSubmit={handleSubmit}
           className="d-flex justify-content-evenly align-items-center flex-column w-40 h-25"
         >
@@ -89,6 +90,38 @@ const CustomerSecurity = () => {
             className="btn btn-primary w-100 py-3 rounded-4 mb-3 mt-5"
             children="Added New Password"
           />
+
+        onSubmit={handleSubmit}
+        className="d-flex justify-content-evenly align-items-center flex-column w-40 h-25"
+      >
+        <Input
+          type="password"
+          value={oldPassword}
+          onChange={handleOldPasswordChange}
+          placeholder="Old Password"
+          ariaLabel="Oldpassword"
+          icon={<AiOutlineUnlock className="text-secondary" />}
+          className="input-group mb-3 border-3"
+          spanClassName="input-group-text bg-transparent border-secondary border-end-0"
+          inputClassName="form-control bg-transparent border-start-0 p-3 border-secondary form-control-security"
+        />
+        <Input
+          type="password"
+          value={password}
+          onChange={handlePasswordChange}
+          placeholder="New Password"
+          ariaLabel="password"
+          icon={<AiOutlineUnlock className="text-secondary" />}
+          className="input-group mb-3 border-3"
+          spanClassName="input-group-text bg-transparent border-secondary  border-end-0"
+          inputClassName="form-control bg-transparent border-start-0 p-3 border-secondary form-control-security"
+        />
+         <Button
+          type="submit"
+          className="btn btn-primary w-100 py-3 rounded-4 mb-3"
+          children="Added New Password"
+        />
+
         </form>
       </Modal>
     </div>

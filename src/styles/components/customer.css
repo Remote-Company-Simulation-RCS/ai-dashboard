@@ -23,6 +23,7 @@
   display: flex;
   align-items: center;
   margin: 20px 0;
+  margin-bottom: 10px;
 }
 
 .label {
@@ -33,11 +34,17 @@
 .value {
   margin-left: 10px;
 }
+
 input::placeholder {
   color: var(--black) !important;
 }
 
 input:focus {
+.form-control-security::placeholder {
+  color: var(--black) !important;
+}
+
+.form-control-security:focus {
   color: var(--black) !important;
   box-shadow: none;
 }
