@@ -11,7 +11,7 @@ function AvatarProfile(props) {
     <div className="avatar-profile rounded-5">
       <div className="avatar-profile-header h-100 py-3 px-3 d-flex flex-column justify-content-center align-items-end text-end rounded-top-5">
         <h5>Free Subscription</h5>
-        <p className="w-75">
+        <p className="w-75 pb-2 pb-sm-0">
           <strong>1,350 remaining requests</strong> out of 1,500
         </p>
       </div>
@@ -28,7 +28,7 @@ function AvatarProfile(props) {
           <div className="ms-3">
             <div className="d-flex">
               <h1 className="fw-bold">Nicole Fridman</h1>
-              <Button className="btn avatar-btn ms-3 h-50 align-self-center rounded-5">
+              <Button className="btn avatar-btn  mx-3 h-50 align-self-center rounded-5">
                 Change
               </Button>
             </div>
@@ -43,7 +43,7 @@ function AvatarProfile(props) {
         <div className="d-grid justift-content-center text-end me-3">
           <small className="text-secondary">Next invoice will be at</small>
           <p className="fw-semibold">July 10, 2023 of $50</p>
-          <Button className="btn btn-primary mx-3 me-0 py-3 py-sm-0 d-flex align-items-center justify-content-center rounded-pill">
+          <Button className="btn btn-primary mx-3 me-0 py-2 px-sm-5 py-sm-0 px-md-4 py-md-1 p-lg-3 d-flex align-items-center justify-content-center rounded-pill">
             <LuReceipt className="me-2" /> Manage Subscription
           </Button>
         </div>

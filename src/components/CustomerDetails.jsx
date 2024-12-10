@@ -4,7 +4,7 @@ import "../styles/components/customer.css";
 
 const CustomerDetails = () => {
   return (
-    <div className="customer-details w-100 mb-4 px-4 rounded-5">
+    <div className="customer-details w-100 mb-2 mt-2 px-4 pt-4 rounded-5">
       <div className="d-flex align-items-center justify-content-between">
         <h2 className="fs-5 fw-bold">Customer Details</h2>
         <MdOutlineModeEdit className="p-2 rounded-5 bg-blue-icon" />

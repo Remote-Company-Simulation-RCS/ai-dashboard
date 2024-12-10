@@ -22,6 +22,7 @@
 .details-item {
   display: flex;
   align-items: center;
+  margin: 20px 0;
   margin-bottom: 10px;
 }
 
@@ -34,6 +35,11 @@
   margin-left: 10px;
 }
 
+input::placeholder {
+  color: var(--black) !important;
+}
+
+input:focus {
 .form-control-security::placeholder {
   color: var(--black) !important;
 }

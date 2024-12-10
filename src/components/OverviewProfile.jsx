@@ -6,15 +6,14 @@ import { useNavigate } from "react-router-dom";
 import Button from "./Button.jsx";
 import "../styles/components/overviewProfile.css";
 
-export default function OverviewProfile()
- {
+export default function OverviewProfile() {
   const navigate = useNavigate();
 
   function handleSubscription() {
-    navigate("/assistant")
+    navigate("/assistant");
   }
   return (
-    <div className="w-100 h-100 mb-3  d-flex flex-column align-items-center gap-4">
+    <div className="w-100 h-100 mb-3 mt-2 d-flex flex-column align-items-center gap-4">
       <div className="overview-details w-100 px-4 rounded-5 d-flex flex-column justify-content-center">
         <div className="d-flex align-items-center justify-content-between">
           <h3 className="fs-5 fw-bold overview-title">Overview</h3>
@@ -30,7 +29,7 @@ export default function OverviewProfile()
             <p className="overview-name">generated images</p>
           </div>
         </div>
-        <div className="d-flex justify-content-center gap-2">
+        <div className="d-flex justify-content-start gap-2">
           <span className="fw-bold overview-number">186.059</span>{" "}
           <p className="overview-name mt-3">requests</p>
         </div>
@@ -38,7 +37,7 @@ export default function OverviewProfile()
       <div className="w-100 rounded-5 d-flex flex-column justify-content-center">
         <div className="d-flex flex-row gap-2  w-100 h-100 justify-content-between align-items-center">
           <Button
-            className="button-overview"
+            className="button-overview chat-btn"
             type="submit"
             onClick={handleSubscription}
             children={
@@ -48,14 +47,14 @@ export default function OverviewProfile()
               </div>
             }
           />
-            <Button
-            className="button-overview"
+          <Button
+            className="button-overview img-btn"
             type="submit"
             onClick={handleSubscription}
             children={
               <div className="d-flex w-190 h-100 flex-column align-items-center">
-             <FaFileImage className="p-2 rounded-5 overview-icon" />
-             <p className="button-tittle">Generate Image</p>
+                <FaFileImage className="p-2 rounded-5 overview-icon" />
+                <p className="button-tittle">Generate Image</p>
               </div>
             }
           />
@@ -64,5 +63,3 @@ export default function OverviewProfile()
     </div>
   );
 }
-
- 
