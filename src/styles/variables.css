@@ -1,9 +1,10 @@
-:root {
+  :root {
   /* USUAL COLORS  */
   --white: #ffffff;
   --black: #000000;
   --blue: #007aff;
   --orange: #ffa500;
+  --gray: #c3c3c3;
 
   /* BUTTON COLORS */
   --translucent-button: rgba(255, 255, 255, 0.2);

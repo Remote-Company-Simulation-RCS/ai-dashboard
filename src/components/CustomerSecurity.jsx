@@ -59,7 +59,6 @@ const CustomerSecurity = () => {
         }
       >
         <form
-
           onSubmit={handleSubmit}
           className="d-flex justify-content-evenly align-items-center flex-column w-40 h-25"
         >
@@ -71,8 +70,8 @@ const CustomerSecurity = () => {
             ariaLabel="Oldpassword"
             icon={<AiOutlineUnlock className="text-secondary" />}
             className="input-group mb-3 border-3"
-            spanClassName="input-group-text bg-transparent border-secondary border-end-0"
-            inputClassName="form-control bg-transparent border-start-0 p-3 border-secondary"
+            spanClassName="input-group-text bg-transparent customer-security-span border-secondary border-end-0"
+            inputClassName="form-control bg-transparent border-start-0 p-3 customer-security-input border-secondary"
           />
           <Input
             type="password"
@@ -82,46 +81,14 @@ const CustomerSecurity = () => {
             ariaLabel="password"
             icon={<AiOutlineUnlock className="text-secondary" />}
             className="input-group mb-3 border-3"
-            spanClassName="input-group-text bg-transparent border-secondary  border-end-0"
-            inputClassName="form-control bg-transparent border-start-0 p-3 border-secondary"
+            spanClassName="input-group-text bg-transparent border-secondary customer-security-span border-end-0"
+            inputClassName="form-control bg-transparent border-start-0 p-3 customer-security-input border-secondary"
           />
           <Button
             type="submit"
-            className="btn btn-primary w-100 py-3 rounded-4 mb-3 mt-5"
+            className="btn btn-primary w-100 py-3 rounded-4 mb-3 mt-2"
             children="Added New Password"
           />
-
-        onSubmit={handleSubmit}
-        className="d-flex justify-content-evenly align-items-center flex-column w-40 h-25"
-      >
-        <Input
-          type="password"
-          value={oldPassword}
-          onChange={handleOldPasswordChange}
-          placeholder="Old Password"
-          ariaLabel="Oldpassword"
-          icon={<AiOutlineUnlock className="text-secondary" />}
-          className="input-group mb-3 border-3"
-          spanClassName="input-group-text bg-transparent border-secondary border-end-0"
-          inputClassName="form-control bg-transparent border-start-0 p-3 border-secondary form-control-security"
-        />
-        <Input
-          type="password"
-          value={password}
-          onChange={handlePasswordChange}
-          placeholder="New Password"
-          ariaLabel="password"
-          icon={<AiOutlineUnlock className="text-secondary" />}
-          className="input-group mb-3 border-3"
-          spanClassName="input-group-text bg-transparent border-secondary  border-end-0"
-          inputClassName="form-control bg-transparent border-start-0 p-3 border-secondary form-control-security"
-        />
-         <Button
-          type="submit"
-          className="btn btn-primary w-100 py-3 rounded-4 mb-3"
-          children="Added New Password"
-        />
-
         </form>
       </Modal>
     </div>

@@ -1,9 +1,9 @@
 .activity-profile {
   border: 1px solid #c3c3c3;
   background-color: #fff;
-  height: 100%;
+  height: 100% !important;
   border-radius: 30px;
-  margin-bottom: 20px !important;
+  margin-bottom: 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .activity-title {
@@ -71,7 +71,7 @@ body[data-theme="dark-mode"] {
     background-color: var(--bg-dark-transparent);
     height: 100%;
     border-radius: 30px;
-    margin-bottom: 20px !important;
+    margin-bottom: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   .activity-profile .activity-title {

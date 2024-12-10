@@ -15,13 +15,13 @@ export default function ProfilePage() {
         <AvatarProfile />
       </div>
       <div className="row mx-3 my-2">
-        <div className="col-xl-3 col-lg-6 ">
+        <div className="col-xl-3 col-lg-6 mb-3">
           <CustomerData />
         </div>
         <div className="col-xl-3 col-lg-6">
           <OverviewProfile />
         </div>
-        <div className="col-xl-6 col-lg-12">
+        <div className="col-xl-6 col-lg-12 mb-5">
           <ActivityProfile />
         </div>
       </div>
