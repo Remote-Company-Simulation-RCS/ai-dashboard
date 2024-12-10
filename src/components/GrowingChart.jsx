@@ -2,6 +2,7 @@ import React from "react";
 import FillBar from "./FillBar";
 import "../styles/components/growingChart.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import CountUp from "react-countup";
 
 
 const Chart = () => {
@@ -10,7 +11,7 @@ const Chart = () => {
       <h6 className="">Successfully resolved issues</h6>
       <div className="progress-data"></div>
       <div className="average d-flex align-items-center gap-3">
-        <span className="fs-1 fw-bolder">81%</span>
+        <span className="fs-1 fw-bolder"><CountUp end={81} separator="," />%</span>
         <span className="lh-1 fw-bold">
           average
           <br /> last year

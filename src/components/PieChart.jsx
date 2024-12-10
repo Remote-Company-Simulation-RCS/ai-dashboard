@@ -1,5 +1,6 @@
 import * as React from "react";
 import { PieChart } from "@mui/x-charts/PieChart";
+import CountUp from "react-countup";
 import "../styles/components/pieChart.css";
 
 function Chart({ country, percentage }) {
@@ -7,7 +8,7 @@ function Chart({ country, percentage }) {
     <div className="stat d-flex justify-content-between ">
       <div>
         <h4>{country}</h4>
-        <span>{percentage}%</span>
+        <span><CountUp end={percentage} separator="," />%</span>
       </div>
       <div className="pie">
         {" "}

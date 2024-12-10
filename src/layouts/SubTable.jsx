@@ -24,9 +24,11 @@ function SubTable() {
 
 
   function handleContactUs() {
-    window.location.href = "https://mail.google.com/mail/?view=cm&fs=1&to=coding.hangouts@gmail.com&su=Hello, I am contacting to tell you...&body=Enter your issue/info here...";
-  }
-
+    window.open(
+        "https://mail.google.com/mail/?view=cm&fs=1&to=coding.hangouts@gmail.com&su=Hello, I am contacting to tell you...&body=Enter your issue/info here...", 
+        "_blank"
+    );
+}
 
   return (
     <div className="sub-table rounded-5 px-1 px-sm-5 py-3 d-flex flex-column mx-4 mt-4 justify-content-between ">
@@ -34,7 +36,7 @@ function SubTable() {
         <h2 className="title-subscription text-center mt-3 mb-0 mt-sm-0 mb-sm-4 lh-lg ">
           Subscription
         </h2>
-        <div className="d-flex flex-row justify-content-between gap-3 mt-1 mb-5 m-sm-0 mb-sm-3">
+        <div className="d-flex flex-row justify-content-center align-items-center justify-content-md-between flex-wrap flex-md-nowrap gap-3 mt-1 mb-5 m-sm-0 mb-sm-3">
           <Buttons
             type="submit"
             className="btn"

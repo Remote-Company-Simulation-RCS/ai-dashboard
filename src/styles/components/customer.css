@@ -43,6 +43,7 @@ input:focus {
 .form-control-security::placeholder {
   color: var(--black) !important;
 }
+}
 
 .form-control-security:focus {
   color: var(--black) !important;
