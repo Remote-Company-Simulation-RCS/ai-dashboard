@@ -3,6 +3,7 @@ import pfpImage from "../assets/images/pfp.svg";
 import { IoCubeOutline } from "react-icons/io5";
 import Button from "./Button";
 import { LuReceipt } from "react-icons/lu";
+import CountUp from "react-countup";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/components/avatarProfile.css";
 
@@ -12,7 +13,7 @@ function AvatarProfile(props) {
       <div className="avatar-profile-header h-100 py-3 px-3 d-flex flex-column justify-content-center align-items-end text-end rounded-top-5">
         <h5>Free Subscription</h5>
         <p className="w-75 pb-2 pb-sm-0">
-          <strong>1,350 remaining requests</strong> out of 1,500
+          <strong><CountUp end={1350} separator="," /> remaining requests</strong> out of <CountUp end={1500} separator="," />
         </p>
       </div>
       <div className="avatar-profile-image">

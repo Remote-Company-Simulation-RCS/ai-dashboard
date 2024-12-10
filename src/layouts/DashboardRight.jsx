@@ -16,7 +16,7 @@ function DashboardRight() {
     <div className="dashboard-right d-flex flex-column justify-content-between d-none d-xl-block">
       <Button
         type="submit"
-        className="btn buttons text-start py-3 px-5 rounded-pill"
+        className="btn buttons text-start w-100 py-3 px-4 rounded-pill "
         onClick={handleSubscription}
         children={
           <div className="d-flex flex-row py-2 px-2 gap-2">

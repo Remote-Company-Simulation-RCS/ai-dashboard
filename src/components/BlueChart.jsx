@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/components/blueChart.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "./Button.jsx";
+import CountUp from "react-countup";
 import BlueChartStick from "./BlueChartStick.jsx";
 
 function BlueChart() {
@@ -22,28 +23,28 @@ function BlueChart() {
       <div className="blue-chart-middle mt-3">
         <div className="blue-chart-container d-flex justify-content-between flex-wrap">
           <BlueChartStick
-            quantity="42,000"
+            quantity={42000}
             subject="economic questions"
             height="80"
             order="1"
             extraClass="d-flex"
           />
           <BlueChartStick
-            quantity="31,650"
+            quantity={31650}
             subject="default chat with AI"
             height="60"
             order="2"
             extraClass="d-flex"
           />
           <BlueChartStick
-            quantity="18,905"
+            quantity={18905}
             subject="other questions"
             height="40"
             order="3"
             extraClass="d-none d-sm-flex "
           />
           <BlueChartStick
-            quantity="12,203"
+            quantity={12203}
             subject="questions about future"
             height="20"
             order="4"
@@ -54,13 +55,13 @@ function BlueChart() {
       <div className="blue-chart-bottom mt-3">
         <div className="row">
           <div className="col-lg-6 d-flex flex-row gap-2 align-items-center">
-            <h1 className="fw-bold mb-0 display-5">+14%</h1>
+            <h1 className="fw-bold mb-0 display-5">+<CountUp end={14} separator="," />%</h1>
             <p className="mb-0">
               overall issues <br /> growth
             </p>
           </div>
           <div className="col-lg-6 d-flex flex-row gap-2 align-items-center">
-            <h1 className="fw-bold mb-0 display-5">+4.5%</h1>
+            <h1 className="fw-bold mb-0 display-5">+<CountUp end={4.5} decimal="." decimals={1}  />%</h1>
             <p className="mb-0">
               successfully resolved <br/> issues growth
             </p>

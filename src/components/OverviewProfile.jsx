@@ -3,6 +3,7 @@ import { HiChartBar } from "react-icons/hi";
 import { IoMdChatboxes } from "react-icons/io";
 import { FaFileImage } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import CountUp from "react-countup";
 import Button from "./Button.jsx";
 import "../styles/components/overviewProfile.css";
 
@@ -21,16 +22,16 @@ export default function OverviewProfile() {
         </div>
         <div className="overview-items">
           <div className="overview-item">
-            <span className="fw-bold overview-number">153</span>
+            <span className="fw-bold overview-number"><CountUp end={153} separator="," /></span>
             <p className="overview-name">topics in chat</p>
           </div>
           <div className="overview-item">
-            <span className="fw-bold overview-number">1.589</span>
+            <span className="fw-bold overview-number"><CountUp end={1589} separator="," /></span>
             <p className="overview-name">generated images</p>
           </div>
         </div>
         <div className="d-flex justify-content-start gap-2">
-          <span className="fw-bold overview-number">186.059</span>{" "}
+          <span className="fw-bold overview-number"><CountUp end={156800} separator="," /></span>{" "}
           <p className="overview-name mt-3">requests</p>
         </div>
       </div>
