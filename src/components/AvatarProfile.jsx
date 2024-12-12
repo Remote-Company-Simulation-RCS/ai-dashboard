@@ -36,12 +36,12 @@ function AvatarProfile(props) {
             <p className="lead">Registered at January 10, 2023</p>
           </div>
           <div className="vertical-divider"></div>
-          <div className="d-flex flex-column justify-content-between ms-3 ms-lg-0 avatar-cube">
+          <div className="d-flex flex-column justify-content-evenly align-items-center align-items-sm-start ms-3 ms-lg-0 avatar-cube">
             <IoCubeOutline className="fs-4 mt-0 mb-2 mb-lg-0 ms-lg-3" />
             <p className="fs-6">Last login at March 11, 2023</p>
           </div>
         </div>
-        <div className="d-grid justift-content-center text-end me-3">
+        <div className="d-grid  text-end me-3">
           <small className="text-secondary">Next invoice will be at</small>
           <p className="fw-semibold">July 10, 2023 of $50</p>
           <Button className="btn btn-primary mx-3 me-0 py-2 px-sm-5 py-sm-0 px-md-4 py-md-1 p-lg-3 d-flex align-items-center justify-content-center rounded-pill">

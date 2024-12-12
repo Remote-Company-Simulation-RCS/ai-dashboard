@@ -1,7 +1,7 @@
 .overview-details {
-  background-color: #fff;
+  background-color: var(--white);
   color: var(--black);
-  border: 1px solid #c3c3c3;
+  border: 1px solid var(--gray);
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -14,7 +14,7 @@
 .overview-items {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 50%;
   border-bottom: 1px solid var(--black);
 }
@@ -38,7 +38,7 @@
 .button-overview {
   width: 50%;
   height: 100%;
-  border: none;
+  border: 1px solid var(--gray);
   border-radius: 50px;
   padding: 20px 10px;
   display: flex;
@@ -47,6 +47,7 @@
   flex-direction: row;
   font-size: 14px;
   font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
 .chat-btn {
@@ -125,6 +126,11 @@ body[data-theme="dark-mode"] {
 
   .button-tittle {
     color: var(--white);
+  }
+
+  .button-overview {
+    border: 1px solid var(--bg-dark-transparent) !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
   }
 
   .chat-btn {
