@@ -1,9 +1,7 @@
 import React from "react";
 import "../styles/components/growingChart.css";
 
-
 function FillBar({ fillHeight, background, extraClass }) {
-
   return (
     <div className={`outer-bar ${extraClass}`}>
       <div

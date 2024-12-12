@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { AreaChart, Area,ResponsiveContainer } from "recharts";
+import { AreaChart, Area, ResponsiveContainer } from "recharts";
 
 const data = [
   {

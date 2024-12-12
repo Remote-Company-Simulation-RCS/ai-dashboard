@@ -8,7 +8,9 @@ function Chart({ country, percentage }) {
     <div className="stat d-flex justify-content-between ">
       <div>
         <h4>{country}</h4>
-        <span><CountUp end={percentage} separator="," />%</span>
+        <span>
+          <CountUp end={percentage} separator="," />%
+        </span>
       </div>
       <div className="pie">
         {" "}

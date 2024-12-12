@@ -6,7 +6,7 @@ import "../styles/components/planCards.css";
 
 function PlanCards() {
   return (
-    <div className="plan-cards d-flex flex-wrap justify-content-around mx-3 mt-4">
+    <div className="plan-cards d-flex flex-wrap justify-content-around mx-3 mt-5">
       <PlanCard
         plan="Free Plan"
         price={"Free"}
@@ -47,7 +47,7 @@ function PlanCards() {
       />
       <PlanCard
         plan="Pro Max Plan"
-        price={ `$ 149`}
+        price={`$ 149`}
         perMonth="/ month"
         planClass="plan-name-max"
         advantage="up to 10 users, billed annually"

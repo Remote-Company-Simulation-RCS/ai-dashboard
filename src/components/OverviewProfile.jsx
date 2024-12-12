@@ -22,16 +22,22 @@ export default function OverviewProfile() {
         </div>
         <div className="overview-items">
           <div className="overview-item">
-            <span className="fw-bold overview-number"><CountUp end={153} separator="," /></span>
+            <span className="fw-bold overview-number">
+              <CountUp end={153} separator="," />
+            </span>
             <p className="overview-name">topics in chat</p>
           </div>
           <div className="overview-item">
-            <span className="fw-bold overview-number"><CountUp end={1589} separator="," /></span>
+            <span className="fw-bold overview-number">
+              <CountUp end={1589} separator="," />
+            </span>
             <p className="overview-name">generated images</p>
           </div>
         </div>
         <div className="d-flex justify-content-start gap-2">
-          <span className="fw-bold overview-number"><CountUp end={156800} separator="," /></span>{" "}
+          <span className="fw-bold overview-number">
+            <CountUp end={156800} separator="," />
+          </span>{" "}
           <p className="overview-name mt-3">requests</p>
         </div>
       </div>

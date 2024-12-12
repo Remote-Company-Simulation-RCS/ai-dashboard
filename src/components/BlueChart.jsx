@@ -17,7 +17,9 @@ function BlueChart() {
           <Button className="btn rounded-pill chart-btn active-button">
             Last quarter
           </Button>
-          <Button className="btn rounded-pill chart-btn d-md-flex d-lg-none d-xxl-flex">Custom</Button>
+          <Button className="btn rounded-pill chart-btn d-md-flex d-lg-none d-xxl-flex">
+            Custom
+          </Button>
         </div>
       </div>
       <div className="blue-chart-middle mt-3">
@@ -55,15 +57,19 @@ function BlueChart() {
       <div className="blue-chart-bottom mt-3">
         <div className="row">
           <div className="col-lg-6 d-flex flex-row gap-2 align-items-center">
-            <h1 className="fw-bold mb-0 display-5">+<CountUp end={14} separator="," />%</h1>
+            <h1 className="fw-bold mb-0 display-5">
+              +<CountUp end={14} separator="," />%
+            </h1>
             <p className="mb-0">
               overall issues <br /> growth
             </p>
           </div>
           <div className="col-lg-6 d-flex flex-row gap-2 align-items-center">
-            <h1 className="fw-bold mb-0 display-5">+<CountUp end={4.5} decimal="." decimals={1}  />%</h1>
+            <h1 className="fw-bold mb-0 display-5">
+              +<CountUp end={4.5} decimal="." decimals={1} />%
+            </h1>
             <p className="mb-0">
-              successfully resolved <br/> issues growth
+              successfully resolved <br /> issues growth
             </p>
           </div>
         </div>

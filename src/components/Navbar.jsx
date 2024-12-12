@@ -28,10 +28,7 @@ function Navbar({ chatHistoryToggle, phonePadding, toggleChat, background }) {
       >
         {chatHistoryToggle ? (
           <div className="logo-name d-flex gap-3 align-items-center rounded-5">
-            <FiAlignLeft
-              className="bars fs-3 d-none"
-              onClick={toggleChat}
-            />
+            <FiAlignLeft className="bars fs-3 d-none" onClick={toggleChat} />
             <img src={logo} alt="Quickit Logo" className="quickit-logo" />
             <h3 className="fw-bold fst-italic m-0 d-none d-md-block">
               Quickit

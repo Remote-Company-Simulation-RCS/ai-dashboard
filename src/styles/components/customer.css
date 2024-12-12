@@ -42,7 +42,7 @@
 .customer-security-input::placeholder {
   color: var(--black) !important;
 }
-}
+
 
 .customer-security-input:focus {
   .form-control-security::placeholder {

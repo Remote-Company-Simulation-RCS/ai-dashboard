@@ -17,7 +17,9 @@ const ActivityProfile = () => {
               chat{" "}
               <span className="asc-item-activity">The Big Bang Theory</span>
             </p>
-            <span className="asc-item-line"><CountUp end={1} separator="," /> day ago</span>
+            <span className="asc-item-line">
+              <CountUp end={1} separator="," /> day ago
+            </span>
           </div>
         </div>
         <div className="activity-item">
@@ -32,7 +34,9 @@ const ActivityProfile = () => {
                 Small village in anime style
               </span>
             </p>
-            <span className="asc-item-line"><CountUp end={3} separator="," /> days ago</span>
+            <span className="asc-item-line">
+              <CountUp end={3} separator="," /> days ago
+            </span>
           </div>
         </div>
         <div className="activity-item">
@@ -45,7 +49,9 @@ const ActivityProfile = () => {
               chat
               <span className="asc-item-activity">Anime Styled images</span>
             </p>
-            <span className="asc-item-line"><CountUp end={3} separator="," /> days ago</span>
+            <span className="asc-item-line">
+              <CountUp end={3} separator="," /> days ago
+            </span>
           </div>
         </div>
         <div className="activity-item">
@@ -58,7 +64,9 @@ const ActivityProfile = () => {
               name and other profile{" "}
               <span className="asc-item-activity">settings</span>
             </p>
-            <span className="asc-item-line"><CountUp end={2} separator="," /> weeks ago</span>
+            <span className="asc-item-line">
+              <CountUp end={2} separator="," /> weeks ago
+            </span>
           </div>
         </div>
         <div className="activity-item">
@@ -70,7 +78,9 @@ const ActivityProfile = () => {
               <span className="asc-item-name">Quickit </span> was updated to the
               new <span className="asc-item-activity">3.08 version</span>
             </p>
-            <span className="asc-item-line"><CountUp end={2} separator="," /> weeks ago</span>
+            <span className="asc-item-line">
+              <CountUp end={2} separator="," /> weeks ago
+            </span>
           </div>
         </div>
       </div>

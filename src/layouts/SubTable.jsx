@@ -1,7 +1,7 @@
 import React from "react";
 import Buttons from "../components/Button.jsx";
 import PlanCards from "../layouts/PlanCards.jsx";
-import { Modal } from 'antd';
+import { Modal } from "antd";
 import SubtableCards from "../components/SubtableCard.jsx";
 import { IoBagHandleOutline, IoCubeOutline } from "react-icons/io5";
 import { LuWallet, LuPencil } from "react-icons/lu";
@@ -10,7 +10,6 @@ import { MdOutlineMessage } from "react-icons/md";
 import "../styles/components/subTable.css";
 
 function SubTable() {
-
   const [open, setOpen] = React.useState(false);
   const [loading, setLoading] = React.useState(true);
   const showLoading = () => {
@@ -22,13 +21,12 @@ function SubTable() {
     }, 500);
   };
 
-
   function handleContactUs() {
     window.open(
-        "https://mail.google.com/mail/?view=cm&fs=1&to=coding.hangouts@gmail.com&su=Hello, I am contacting to tell you...&body=Enter your issue/info here...", 
-        "_blank"
+      "https://mail.google.com/mail/?view=cm&fs=1&to=coding.hangouts@gmail.com&su=Hello, I am contacting to tell you...&body=Enter your issue/info here...",
+      "_blank"
     );
-}
+  }
 
   return (
     <div className="sub-table rounded-5 px-1 px-sm-5 py-3 d-flex flex-column mx-4 mt-4 justify-content-between ">
