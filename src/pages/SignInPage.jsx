@@ -3,7 +3,7 @@ import Logo from "../assets/icons/logo.svg";
 import { AiOutlineUser, AiOutlineUnlock } from "react-icons/ai";
 import Input from "../components/Input.jsx";
 import Button from "../components/Button.jsx";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import "../styles/pages/signIn.css";
 import "../styles/main.css";
@@ -152,9 +152,9 @@ function SignUpPage() {
         />
         <p className="text-center">
           Don't have an account?&nbsp;
-          <a href="/signup" className="text-decoration-none">
+          <Link to="/signup" className="text-decoration-none">
             Sign up
-          </a>
+          </Link>
         </p>
       </form>
     </div>
