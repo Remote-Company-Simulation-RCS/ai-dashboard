@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import Button from "../components/Button.jsx";
 import { IoMdStar } from "react-icons/io";
 import { TiTick } from "react-icons/ti";
-import { FaQuestion, FaPlus } from "react-icons/fa";
-import "../styles/components/sidebarChat.css";
+import { FaPlus } from "react-icons/fa";
 import { FiAlignLeft } from "react-icons/fi";
-import "../styles/components/sidebarChat.css";
 import { NewChat } from "./Groq.jsx";
+import "../styles/components/sidebarChat.css";
 
 export default function SidebarChat({ visibility, hideChat }) {
   const [oldRequest, setOldRequest] = useState([]);
@@ -27,6 +26,10 @@ export default function SidebarChat({ visibility, hideChat }) {
       ]);
     }
     NewChat();
+  }
+
+  function truncate(string, n) {
+    return string.length > n ? string.substr(0, n - 1) + "..." : string;
   }
 
   return (
@@ -61,13 +64,26 @@ export default function SidebarChat({ visibility, hideChat }) {
               className="list-item p-2 d-flex flex-row justify-content-between"
             >
               <div className="d-flex flex-column align-items-start">
-                <p className="fw-bold mb-0">{request.name}</p>
+                <p className="fw-bold mb-0">
+                  {truncate(
+                    request.name,
+                    window.innerWidth < 768
+                      ? 35
+                      : window.innerWidth > 1300
+                        ? 17
+                        : 15
+                  )}
+                </p>
               </div>
-              <TiTick size={25} className="text-secondary" />
+              <TiTick
+                size={25}
+                className="text-secondary d-block d-md-none d-lg-block"
+              />
             </li>
           ))}
         </ul>
       </div>
+
       <Button
         type="submit"
         className="btn btn-buttons text-start  w-100 rounded-pill"

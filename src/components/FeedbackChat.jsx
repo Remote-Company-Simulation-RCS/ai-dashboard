@@ -3,7 +3,7 @@ import Button from "./Button.jsx";
 import Achievements from "./Achievements.jsx";
 import Rating from "./Rating.jsx";
 import { CiCircleQuestion } from "react-icons/ci";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "../styles/main.css";
 import "../styles/components/feedbackChat.css";
 
@@ -37,7 +37,7 @@ export default function Feedback() {
         <p className="mb-0 px-3">
           Check out{" "}
           <span className="fw-bold " style={{ color: "var(--blue)" }}>
-            the new updates{" "}
+          <Link to="/news" className="text-decoration-none">the new updates</Link>
           </span>
           that were
           <pre className="mb-0">implemented on December 15, 2024 </pre>

@@ -22,7 +22,7 @@ function Navbar({ chatHistoryToggle, phonePadding, toggleChat, background }) {
   return (
     <>
       <header
-        className={`navbar px-3 ${
+        className={`navbar px-1 ${
           phonePadding === "px-md-5" ? "px-md-5" : "px-sm-5"
         }  d-flex justify-content-between`}
       >

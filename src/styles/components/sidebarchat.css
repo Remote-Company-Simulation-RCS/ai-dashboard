@@ -4,7 +4,7 @@
   background-color: var(--white);
 }
 .sidebar-chat .buttons {
-  background: url(../../assets/images/bg-icon.jpg);
+  background: url(../../assets/backgrounds/bgBtn.png);
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
@@ -49,7 +49,7 @@ body[data-theme="dark-mode"] {
     background-color: var(--bg-dark-transparent);
   }
   .sidebar-chat .buttons {
-    background: url(../../assets/images/bg-icon.jpg);
+    background: url(../../assets/backgrounds/bgBtn.png);
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
