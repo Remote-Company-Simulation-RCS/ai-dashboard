@@ -6,7 +6,7 @@ const ActivityProfile = () => {
   return (
     <div className="activity-profile mt-2 w-100 d-flex flex-column gap-1 p-4">
       <h3 className="activity-title">Last Activity</h3>
-      <div className="activity-content">
+      <div className="activity-content gap-5">
         <div className="activity-item">
           <div className="circle">
             <LuUser />
