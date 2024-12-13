@@ -1,7 +1,6 @@
 import React from "react";
 import PieChart from "./PieChart.jsx";
 
-
 function CountriesStats() {
   return (
     <div className="countries-stats mt-3 px-3 d-flex flex-column gap-2 rounded-5">

@@ -11,7 +11,7 @@ function PlanCard(props) {
       </h3>
       <div className={`bottom-card ${props.bottomClass}`}>
         <div className="price px-3 py-2 fs-3">
-           {props.price}
+          {props.price}
           <span className="per-month fs-6">{props.perMonth}</span>
         </div>
         <p className="advantage px-3">{props.advantage}</p>

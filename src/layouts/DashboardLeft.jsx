@@ -7,8 +7,8 @@ function DashboardLeft() {
   return (
     <div className="d-flex flex-column justify-content-lg-between ">
       <div className="d-flex flex-column flex-sm-row flex-lg-column   gap-3">
-      <GrowingChart />
-      <NewUpdates />
+        <GrowingChart />
+        <NewUpdates />
       </div>
       <DashAcievements />
     </div>

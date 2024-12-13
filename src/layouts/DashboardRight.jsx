@@ -31,8 +31,8 @@ function DashboardRight() {
         }
       />
       <div className="d-flex flex-column justify-content-between gap-4">
-      <BugReports />
-      <CountriesStats />
+        <BugReports />
+        <CountriesStats />
       </div>
     </div>
   );

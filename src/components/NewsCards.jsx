@@ -16,10 +16,10 @@ function NewsCards() {
       />
       <NewsCard
         version="Version 2.0"
-        improvments={["Added the ability to flexibly configure subscriptopn managment."]}
-        bugfixes={[
-          "Reduced data loading and updating time."
+        improvments={[
+          "Added the ability to flexibly configure subscriptopn managment.",
         ]}
+        bugfixes={["Reduced data loading and updating time."]}
         cardNumber={2}
       />
     </div>

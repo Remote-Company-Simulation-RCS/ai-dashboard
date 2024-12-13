@@ -14,11 +14,11 @@ export default function Satatistic() {
         <div className="d-flex justify-content-between align-items-center">
           <h3 className="fw-bold fs-5">Statistics of API requests</h3>
           <Button type="submit" className="btn rounded-pill btn-primary">
-            <FaPencilRuler />{" "} Setting
+            <FaPencilRuler /> Setting
           </Button>
         </div>
         <div>
-          <Row  className="d-flex gap-5" >
+          <Row className="d-flex gap-5">
             <Col className="p-1">
               <Statistic
                 title="the months"
@@ -45,8 +45,8 @@ export default function Satatistic() {
           </Row>
         </div>
       </div>
-      <div className="statistic-bottom d-flex flex-column   " >
-            <AreaChart />
+      <div className="statistic-bottom d-flex flex-column   ">
+        <AreaChart />
       </div>
     </div>
   );

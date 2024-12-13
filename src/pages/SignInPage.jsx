@@ -35,25 +35,25 @@ function SignUpPage() {
         title: "Success!",
         text: "You have been signed in successfully.",
         customClass: {
-          popup: "my-swal-container"
+          popup: "my-swal-container",
         },
         showConfirmButton: false,
-        timer: 1999
-      })
+        timer: 1999,
+      });
       setTimeout(() => {
         navigate("/profile");
-      }, 2000)
+      }, 2000);
     } else if (email && password && !emailRegex.test(email)) {
       Swal.fire({
         icon: "error",
         title: "Oops...",
         text: "Please enter a valid email",
         customClass: {
-          popup: "my-swal-container"
+          popup: "my-swal-container",
         },
         showConfirmButton: false,
         timer: 1500,
-        timerProgressBar: true
+        timerProgressBar: true,
       });
     } else if (email) {
       Swal.fire({
@@ -61,11 +61,11 @@ function SignUpPage() {
         title: "Oops...",
         text: "Please enter a password",
         customClass: {
-          popup: "my-swal-container"
+          popup: "my-swal-container",
         },
         showConfirmButton: false,
         timer: 1500,
-        timerProgressBar: true
+        timerProgressBar: true,
       });
     } else if (password) {
       Swal.fire({
@@ -73,11 +73,11 @@ function SignUpPage() {
         title: "Oops...",
         text: "Please enter an email",
         customClass: {
-          popup: "my-swal-container"
+          popup: "my-swal-container",
         },
         showConfirmButton: false,
         timer: 1500,
-        timerProgressBar: true
+        timerProgressBar: true,
       });
     } else {
       Swal.fire({
@@ -85,11 +85,11 @@ function SignUpPage() {
         title: "Oops...",
         text: "Please enter a password and an emai",
         customClass: {
-          popup: "my-swal-container"
+          popup: "my-swal-container",
         },
         showConfirmButton: false,
         timer: 1500,
-        timerProgressBar: true
+        timerProgressBar: true,
       });
     }
   };

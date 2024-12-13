@@ -11,11 +11,11 @@ function DashboardPage() {
   return (
     <div className="overflow-hidden ">
       <Navbar />
-    <div className="px-3 mb-3 gap-3 d-flex flex-column flex-lg-row  overflow-hidden">
-      <DashboardLeft />
-      <DashboardCenter />
-      <DashboardRight />
-    </div>
+      <div className="px-3 mb-3 gap-3 d-flex flex-column flex-lg-row  overflow-hidden">
+        <DashboardLeft />
+        <DashboardCenter />
+        <DashboardRight />
+      </div>
     </div>
   );
 }
