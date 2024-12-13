@@ -9,7 +9,7 @@ function SubscriptionPage() {
     <div className="subscription-page-container">
       <Navbar />
       <SubTable />
-      <PlanCards />
+      <PlanCards id="changelog" />
     </div>
   );
 }

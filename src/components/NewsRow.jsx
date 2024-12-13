@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/components/newsRow.css";
 
@@ -19,9 +20,9 @@ function NewsRow() {
             </p>
           </div>
           <div className="col-12 col-md-6 d-flex justify-content-end align-items-center justify-content-center justify-content-sm-end">
-            <div className="changelog rounded-pill me-3 mt-sm-0 mt-3">
+            <Button className="changelog rounded-pill me-3 mt-sm-0 mt-3 border-0">
               Changelog in 2023
-            </div>
+            </Button>
           </div>
         </div>
       </div>

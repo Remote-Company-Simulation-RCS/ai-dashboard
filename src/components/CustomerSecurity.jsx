@@ -4,18 +4,22 @@ import { AiOutlineUnlock } from "react-icons/ai";
 import Button from "./Button";
 import { Modal } from "antd";
 import Input from "./Input";
+import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 import "../styles/pages/signIn.css";
 import "../styles/components/customer.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const CustomerSecurity = () => {
   const [open, setOpen] = React.useState(false);
+
   const showLoading = () => {
     setOpen(true);
   };
 
   const [oldPassword, setOldPassword] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
@@ -26,8 +30,57 @@ const CustomerSecurity = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Old Password:", oldPassword);
-    console.log("New Password:", password);
+    if (oldPassword && password && oldPassword !== password) {
+      Swal.fire({
+        icon: "success",
+        title: "Success!",
+        text: "You have changed your password successfully.",
+        customClass: {
+          popup: "my-swal-container",
+        },
+        showConfirmButton: false,
+        timer: 1999,
+      });
+      setTimeout(() => {
+        navigate("/");
+      }, 2000);
+    } else if (oldPassword || oldPassword === password) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Please enter a new password",
+        customClass: {
+          popup: "my-swal-container",
+        },
+        showConfirmButton: false,
+        timer: 2000,
+        timerProgressBar: true,
+      });
+    } else if (password) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Please enter old password",
+        customClass: {
+          popup: "my-swal-container",
+        },
+        showConfirmButton: false,
+        timer: 2000,
+        timerProgressBar: true,
+      });
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Please enter your old password and new password",
+        customClass: {
+          popup: "my-swal-container",
+        },
+        showConfirmButton: false,
+        timer: 2000,
+        timerProgressBar: true,
+      });
+    }
   };
 
   return (

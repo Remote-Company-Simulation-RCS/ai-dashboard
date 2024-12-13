@@ -1,4 +1,4 @@
-  :root {
+:root {
   /* USUAL COLORS  */
   --white: #ffffff;
   --black: #000000;
@@ -65,14 +65,14 @@
 
   --news-card-1-gradient: linear-gradient(
     140deg,
-    var(--black-translucent) 60%,
+    var(--black-translucent) 20%,
     var(--news-blue-color) 75%,
     color-mix(in srgb, var(--news-blue-color) 40%, var(--news-yellow-color) 60%)
       100%
   );
   --news-card-2-gradient: linear-gradient(
     140deg,
-    var(--black-translucent) 60%,
+    var(--black-translucent) 20%,
     var(--news-pink-color) 75%,
     var(--news-purple-color) 100%
   );
