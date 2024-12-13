@@ -6,7 +6,7 @@ import { FaArrowRightLong, FaApple, FaCirclePlay } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
 import Button from "../components/Button.jsx";
 import SignUpCards from "../components/SignUpCards.jsx";
-import bgImage from "../assets/images/bg-icon.jpg";
+import bgImage from "../assets/backgrounds/barsBackground.png";
 import Input from "../components/Input.jsx";
 import "../styles/main.css";
 import "../styles/pages/signUp.css";
@@ -78,14 +78,12 @@ function SignUpPage() {
           action="Sign Up"
           app="with Google"
           width={150}
-          bgImage=""
         />
         <SignUpCards
           icon={<FaApple className="display-6" />}
           action="Sign Up"
           app="with Apple"
           width={150}
-          bgImage=""
         />
         <SignUpCards
           icon={<FaCirclePlay className="display-6" />}
