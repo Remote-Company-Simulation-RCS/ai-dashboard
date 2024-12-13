@@ -3,11 +3,19 @@ import pfpImage from "../assets/images/pfp.svg";
 import { IoCubeOutline } from "react-icons/io5";
 import Button from "./Button";
 import { LuReceipt } from "react-icons/lu";
+import { useNavigate } from "react-router-dom";
 import CountUp from "react-countup";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/components/avatarProfile.css";
 
-function AvatarProfile(props) {
+
+
+function AvatarProfile() {
+  const navigate = useNavigate();
+
+  function handleSubscription() {
+    navigate("/subscription");
+  }
   return (
     <div className="avatar-profile rounded-5">
       <div className="avatar-profile-header h-100 py-3 px-3 d-flex flex-column justify-content-center align-items-end text-end rounded-top-5">
@@ -47,7 +55,7 @@ function AvatarProfile(props) {
         <div className="d-grid  text-end me-3">
           <small className="text-secondary">Next invoice will be at</small>
           <p className="fw-semibold">July 10, 2023 of $50</p>
-          <Button className="btn btn-primary mx-3 me-0 py-2 px-sm-5 py-sm-0 px-md-4 py-md-1 p-lg-3 d-flex align-items-center justify-content-center rounded-pill">
+          <Button onClick={handleSubscription} className="btn btn-primary mx-3 me-0 py-2 px-sm-5 py-sm-0 px-md-4 py-md-1 p-lg-3 d-flex align-items-center justify-content-center rounded-pill">
             <LuReceipt className="me-2" /> Manage Subscription
           </Button>
         </div>
