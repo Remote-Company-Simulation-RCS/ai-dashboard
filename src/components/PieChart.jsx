@@ -5,7 +5,7 @@ import "../styles/components/pieChart.css";
 
 function Chart({ country, percentage }) {
   return (
-    <div className="stat d-flex justify-content-between ">
+    <div className="d-flex justify-content-between ">
       <div>
         <h4>{country}</h4>
         <span>
@@ -19,8 +19,12 @@ function Chart({ country, percentage }) {
           series={[
             {
               data: [
-                { id: 0, value: 50, color: "#4c473f66" },
-                { id: 1, value: percentage, color: "#f1b451" },
+                { id: 0, value: 50, color: "rgba(120, 120, 120, 0.1)" },
+                {
+                  id: 1,
+                  value: percentage,
+                  color: " rgba(120, 120, 120, 0.5)",
+                },
               ],
             },
           ]}

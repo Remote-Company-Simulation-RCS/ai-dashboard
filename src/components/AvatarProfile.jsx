@@ -40,7 +40,7 @@ function AvatarProfile() {
           <div className="ms-3">
             <div className="d-flex">
               <h1 className="fw-bold">Nicole Fridman</h1>
-              <Button className="btn avatar-btn  mx-3 h-50 align-self-center rounded-5">
+              <Button className="btn avatar-btn mx-3 h-50 align-self-center rounded-5">
                 Change
               </Button>
             </div>

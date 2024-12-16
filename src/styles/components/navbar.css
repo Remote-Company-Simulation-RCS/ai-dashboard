@@ -4,6 +4,12 @@
 
 .logo-name {
   padding: 5px 25px !important;
+  transition: all 0.2s ease;
+}
+
+.logo-name:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .quickit-logo {
@@ -83,7 +89,9 @@
   background-color: var(--white);
   z-index: 100;
 
-  transition: all 500ms ease-out, opacity 300ms ease-out;
+  transition:
+    all 500ms ease-out,
+    opacity 300ms ease-out;
 }
 
 .vertical-nav.show {
@@ -151,6 +159,11 @@ body[data-theme="dark-mode"] {
     color: var(--white);
   }
 
+  .logo-name:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+  }
+
   .navbar .nav-links {
     background-color: var(--bg-dark-transparent);
   }
@@ -196,7 +209,9 @@ body[data-theme="dark-mode"] {
     color: var(--white) !important;
     z-index: 100;
 
-    transition: all 500ms ease-out, opacity 300ms ease-out;
+    transition:
+      all 500ms ease-out,
+      opacity 300ms ease-out;
   }
 
   .vertical-nav.show {

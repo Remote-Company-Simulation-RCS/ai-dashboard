@@ -17,6 +17,11 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.bg-blue-icon:hover{
+  background-color: var(--light-blue-btn-hover);
 }
 
 .details-item {
@@ -43,13 +48,11 @@
   color: var(--black) !important;
 }
 
-
 .customer-security-input:focus {
   .form-control-security::placeholder {
     color: var(--black) !important;
+    color: var(--black) !important;
   }
-
-  color: var(--black) !important;
 }
 
 .customer-security-span {
@@ -76,6 +79,10 @@ body[data-theme="dark-mode"] {
     height: 40px;
     cursor: pointer;
   }
+  
+  .bg-blue-icon:hover{
+    background-color: var(--bg-dark-transparent);
+  }
 
   .customer-security-input {
     color: var(--white) !important;
@@ -89,4 +96,6 @@ body[data-theme="dark-mode"] {
     color: var(--white) !important;
     box-shadow: none;
   }
+
+  
 }

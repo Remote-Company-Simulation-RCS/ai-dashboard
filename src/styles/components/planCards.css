@@ -72,6 +72,36 @@
   display: block;
   margin: 0 auto;
   font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.light {
+  background-color: var(--bg-light-nav);
+  color: var(--black);
+  &:hover {
+    background-color: color-mix(
+      in srgb,
+      var(--bg-light-nav) 90%,
+      var(--black) 10%
+    );
+  }
+}
+
+.blue:hover {
+  background-color: color-mix(
+    in srgb,
+    var(--blue) 90%,
+    var(--black) 10%
+  ) !important;
+}
+
+.black {
+  transition: all 0.5s ease;
+}
+
+.black:hover {
+  color: var(--black) !important;
+  background-color: var(--white) !important;
 }
 
 .nav-link {
@@ -133,6 +163,35 @@ body[data-theme="dark-mode"] {
       rgba(197, 34, 79, 0.8050070369944853) 35%,
       rgba(197, 34, 79, 0) 76%
     );
+  }
+
+  .light {
+    background-color: var(--bg-light-nav);
+    color: var(--black);
+    &:hover {
+      background-color: color-mix(
+        in srgb,
+        var(--bg-light-nav) 50%,
+        var(--black) 50%
+      );
+    }
+  }
+
+  .blue:hover {
+    background-color: color-mix(
+      in srgb,
+      var(--blue) 90%,
+      var(--black) 10%
+    ) !important;
+  }
+
+  .black {
+    transition: all 0.5s ease;
+  }
+
+  .black:hover {
+    color: var(--black) !important;
+    background-color: var(--white) !important;
   }
 
   .bottom-card {

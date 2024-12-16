@@ -19,7 +19,7 @@ function PlanCards() {
         button={
           <Button
             type="submit"
-            className="plan-card-btn w-75 p-3 my-4 border-0 rounded-5 fw-bold"
+            className="plan-card-btn light w-75 p-3 my-4 border-0 rounded-5 fw-bold"
           >
             Current Plan
           </Button>
@@ -39,7 +39,7 @@ function PlanCards() {
         button={
           <Button
             type="submit"
-            className="plan-card-btn w-75 p-3 my-4 text-white bg-primary border-0 rounded-5 fw-bold"
+            className="plan-card-btn blue w-75 p-3 my-4 text-white bg-primary border-0 rounded-5 fw-bold"
           >
             Upgrade to Pro
           </Button>
@@ -59,7 +59,7 @@ function PlanCards() {
         button={
           <Button
             type="submit"
-            className="plan-card-btn w-75 p-3 my-4 text-white bg-primary border-0 rounded-5 fw-bold"
+            className="plan-card-btn blue w-75 p-3 my-4 text-white bg-primary border-0 rounded-5 fw-bold"
           >
             Upgrade to Pro Max
           </Button>
@@ -80,7 +80,7 @@ function PlanCards() {
         button={
           <Button
             type="submit"
-            className="plan-card-btn w-75 p-3 my-4 text-white bg-black border-0 rounded-5 fw-bold"
+            className="plan-card-btn black w-75 p-3 my-4 text-white bg-black border-0 rounded-5 fw-bold"
           >
             <HiAnnotation className="mb-1" /> Contact Sales
           </Button>

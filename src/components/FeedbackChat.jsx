@@ -34,14 +34,6 @@ export default function Feedback() {
           }
         />
         <Achievements />
-        <p className="mb-0 px-3">
-          Check out{" "}
-          <span className="fw-bold " style={{ color: "var(--blue)" }}>
-          <Link to="/news" className="text-decoration-none">the new updates</Link>
-          </span>
-          that were
-          <pre className="mb-0">implemented on December 15, 2024 </pre>
-        </p>
         <Rating />
       </div>
     </>

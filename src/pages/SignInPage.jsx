@@ -100,7 +100,7 @@ function SignUpPage() {
 
   return (
     <div className="sign-in dark-signin d-flex flex-column align-items-center text-center">
-      <img src={Logo} className="img-fluid py-4" alt="icon image" />
+      <img src={Logo} className="img-fluid pt-3 pb-2" alt="icon image" />
       <h2 className="title-signin text-center mb-3 lh-lg ">Quickit: Sign In</h2>
       <form
         onSubmit={handleSubmit}

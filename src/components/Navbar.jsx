@@ -16,13 +16,13 @@ function Navbar({ chatHistoryToggle, phonePadding, toggleChat, background }) {
 
   const linkClass = ({ isActive }) =>
     isActive
-      ? `active nav-item text-decoration-none d-flex align-items-center px-4 rounded-5`
-      : "nav-item text-decoration-none d-flex align-items-center px-4 rounded-5";
+      ? `active h-100 w-100 nav-item d-flex justify-content-center text-decoration-none d-flex align-items-center px-3 rounded-5`
+      : "h-100 w-100 nav-item d-flex justify-content-center text-decoration-none d-flex align-items-center px-3 rounded-5";
 
   return (
     <>
       <header
-        className={`navbar px-1 ${
+        className={`navbar p-0 px-1 ${
           phonePadding === "px-md-5" ? "px-md-5" : "px-sm-5"
         }  d-flex justify-content-between`}
       >
@@ -40,7 +40,7 @@ function Navbar({ chatHistoryToggle, phonePadding, toggleChat, background }) {
             <h3 className="fw-bold fst-italic m-0">Quickit</h3>
           </div>
         )}
-        <nav className="nav-links d-none d-lg-flex justify-content-center align-items-center text-white rounded-5">
+        <nav className="nav-links p-0 d-none d-lg-flex justify-content-center align-items-center text-white rounded-5">
           <NavLink to="/dashboard" className={linkClass}>
             Dashboard
           </NavLink>
