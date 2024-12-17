@@ -25,6 +25,15 @@
   background-color: var(--bg-dark-transparent);
   color: var(--black);
   padding: 8px 16px;
+  transition: all 0.2s ease;
+}
+
+.changelog:hover {
+  background-color: color-mix(
+    in srgb,
+    var(--bg-light-nav) 90%,
+    var(--black) 10%
+  );
 }
 
 body[data-theme="dark-mode"] {
@@ -36,5 +45,13 @@ body[data-theme="dark-mode"] {
   .changelog {
     background-color: var(--translucent-button);
     color: var(--white);
+  }
+
+  .changelog:hover {
+    background-color: color-mix(
+      in srgb,
+      var(--translucent-button) 90%,
+      var(--black) 10%
+    );
   }
 }

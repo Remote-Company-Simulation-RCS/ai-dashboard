@@ -31,6 +31,7 @@ export async function main(content) {
   });
 
   const chatCompletion = await getGroqChatCompletion(messageHistory);
+
   function escapeHTML(str) {
     return str.replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
@@ -39,6 +40,7 @@ export async function main(content) {
     role: "assistant",
     content: chatCompletion.choices[0]?.message?.content || "",
   });
+
   chatMessages.scrollTop = chatMessages.scrollHeight;
 
   let element = document.createElement("div");
@@ -50,6 +52,7 @@ export async function main(content) {
     .replace(regexBold, (match, p1) => `<strong>${p1}</strong>`)
     .replace(regexBullet, (match, p1) => `<ul><li>${p1}</li></ul>`)
     .replace(regexInlineCode, (match, p1) => `<code>${escapeHTML(p1)}</code>`);
+
   let speed = 20;
   if (text.length > 100) {
     speed = 1;
@@ -63,13 +66,17 @@ export async function main(content) {
         element.innerHTML = text.substring(0, i + 1);
         i++;
         setTimeout(type, speed);
+        // Ensure auto-scrolling during the typing effect
+        chatMessages.scrollTop = chatMessages.scrollHeight;
       }
     }
-    chatMessages.scrollTop = chatMessages.scrollHeight;
     type();
   }
 
   typeEffect(element, text, speed);
+
+  // Ensuring auto-scrolling after the typing effect
+  chatMessages.scrollTop = chatMessages.scrollHeight;
 }
 
 export async function getGroqChatCompletion(messages) {

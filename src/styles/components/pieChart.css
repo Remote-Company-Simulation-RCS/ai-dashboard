@@ -1,11 +1,22 @@
+.countries-stats {
+  background-color: var(--white) !important;
+}
+
 .pie {
   position: relative;
   width: 70px;
   height: 70px;
 }
+
 .pie-chart {
   position: absolute;
   top: -50px;
   display: flex;
   align-items: start;
+}
+
+body[data-theme="dark-mode"] {
+  .countries-stats {
+    background-color: var(--bg-dark-transparent) !important;
+  }
 }

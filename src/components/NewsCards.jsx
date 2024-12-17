@@ -1,10 +1,10 @@
 import React from "react";
-import "../styles/components/newsCards.css";
 import NewsCard from "./NewsCard.jsx";
+import "../styles/components/newsCards.css";
 
 function NewsCards() {
   return (
-    <div className="news-cards w-100 d-flex justift-content-center align-items-center my-4 gap-5">
+    <div className="news-cards w-100 d-flex flex-column flex-xl-row justify-content-evenly align-items-center gap-5 gap-xl-0 my-4">
       <NewsCard
         version="Version 2.1"
         improvments={["Added a new page with a changelog."]}

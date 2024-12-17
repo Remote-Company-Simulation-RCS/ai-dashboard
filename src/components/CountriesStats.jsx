@@ -1,5 +1,6 @@
 import React from "react";
 import PieChart from "./PieChart.jsx";
+import "../styles/components/pieChart.css";
 
 function CountriesStats() {
   return (

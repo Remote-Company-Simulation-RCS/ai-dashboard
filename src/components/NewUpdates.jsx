@@ -8,7 +8,7 @@ function NewUpdates() {
       Checkout{" "}
       <Link to="/assistant" className="text-decoration-none">
         the new updates
-      </Link>
+      </Link>{" "}
       that were implemented on 11/04
     </div>
   );

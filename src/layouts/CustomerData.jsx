@@ -3,7 +3,7 @@ import CustomerDetails from "../components/CustomerDetails";
 import CustomerSecurity from "../components/CustomerSecurity";
 import "../styles/components/customer.css";
 
-const CustomerData = ({ col }) => {
+const CustomerData = () => {
   return (
     <div className="customer-info">
       <CustomerDetails />

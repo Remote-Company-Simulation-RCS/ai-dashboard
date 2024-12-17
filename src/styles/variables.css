@@ -22,6 +22,7 @@
   --bg-dark-nav: #2a2d36;
   --bg-dark-nav-hover: #55575e;
   --bg-dark-transparent: rgba(139, 139, 139, 0.1);
+  --bg-dark-transparent-hover: rgba(139, 139, 139, 0.2);
   --bg-body-gradient: linear-gradient(
     125deg,
     rgba(23, 23, 27, 1) 0%,
@@ -35,6 +36,7 @@
   --toggle-border-light: #a7a7a7;
   --border-dark: #3c3c3c;
   --light-blue-btn: rgba(0, 153, 255, 0.2);
+  --light-blue-btn-hover: rgba(0, 153, 255, 0.5);
   --orange-light: rgba(255, 166, 0, 0.4);
   --black-translucent: rgba(34, 34, 34, 0);
 

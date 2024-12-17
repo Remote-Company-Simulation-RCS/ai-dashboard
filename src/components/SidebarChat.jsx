@@ -64,7 +64,7 @@ export default function SidebarChat({ visibility, hideChat }) {
               className="list-item p-2 d-flex flex-row justify-content-between"
             >
               <div className="d-flex flex-column align-items-start">
-                <p className="fw-bold mb-0">
+                <p className="request-name fw-bold mb-0">
                   {truncate(
                     request.name,
                     window.innerWidth < 768
@@ -86,7 +86,7 @@ export default function SidebarChat({ visibility, hideChat }) {
 
       <Button
         type="submit"
-        className="btn btn-buttons text-start  w-100 rounded-pill"
+        className="btn btn-buttons text-start w-100 rounded-pill"
         onClick={handleNewChat}
         children={
           <div className="d-flex flex-row py-2 gap-2">

@@ -3,6 +3,10 @@
   height: 180px;
 }
 
+.bug-reports button {
+  transition: all 0.2s ease;
+}
+
 body[data-theme="dark-mode"] {
   .bug-reports {
     background-color: var(--bg-dark-transparent);

@@ -5,7 +5,7 @@ import "../styles/components/newsRow.css";
 
 function NewsRow() {
   return (
-    <div className="news-row px-4">
+    <div className="news-row px-5">
       <div className="news-row-top d-flex align-items-center justify-content-center">
         <div className="display-4 fw-bold text-center text-white">
           What's new?

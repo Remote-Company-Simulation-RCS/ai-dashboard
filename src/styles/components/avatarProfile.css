@@ -31,14 +31,13 @@
 
 .avatar-btn {
   background-color: var(--bg-light-nav);
-  color: var(--blue);
+  color: var(--black);
   &:hover {
     background-color: color-mix(
       in srgb,
       var(--bg-light-nav) 80%,
       var(--black) 20%
     );
-    color: var(--black);
   }
 }
 

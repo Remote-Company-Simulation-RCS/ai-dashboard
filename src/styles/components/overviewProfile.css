@@ -52,10 +52,20 @@
 
 .chat-btn {
   background-color: var(--white);
+  transition: all 0.2s ease;
+}
+
+.chat-btn:hover {
+  background-color: var(--light-blue-btn);
 }
 
 .img-btn {
   background-color: var(--light-blue-btn);
+  transition: all 0.2s ease;
+}
+
+.img-btn:hover {
+  background-color: var(--light-blue-btn-hover);
 }
 
 .overview-icon {
@@ -68,10 +78,6 @@
 
 .button-tittle {
   color: var(--blue);
-}
-
-.button-tittle:hover {
-  color: var(--bg-dark-color);
 }
 
 body[data-theme="dark-mode"] {
@@ -141,9 +147,23 @@ body[data-theme="dark-mode"] {
       rgba(32, 34, 44, 1) 100%
     );
     background-repeat: no-repeat;
+    transition: background 0.5s ease;
+  }
+  .chat-btn:hover {
+    background: linear-gradient(
+      274deg,
+      rgb(19, 117, 153) 0%,
+      rgb(25, 60, 130) 26%,
+      rgb(20, 21, 27) 100%
+    );
+    background-repeat: no-repeat;
   }
 
   .img-btn {
     background-color: var(--bg-dark-transparent);
+  }
+
+  .img-btn:hover {
+    background-color: var(--bg-dark-transparent-hover);
   }
 }
